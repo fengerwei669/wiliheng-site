@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Wiliheng-Knives-Line-Card.pdf
+
+Sitemap: https://wiliheng.com/sitemap.xml
