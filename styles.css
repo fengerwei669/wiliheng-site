@@ -104,6 +104,15 @@ tbody tr:last-child td{border-bottom:0}
 .contact-cta .big{font-size:20px;font-weight:700;margin:0 0 14px}
 .contact-cta .btn{display:block;text-align:center;margin-bottom:10px}
 
+/* 产品图库 */
+.pgroup{margin-top:22px}
+.pgroup h4{margin:0 0 10px;font-size:16px;color:var(--teal)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:14px}
+.pcard{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff}
+.pcard img{display:block;width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff}
+.pcard span{display:block;padding:8px 10px;border-top:1px solid var(--line);
+  font-size:12.3px;line-height:1.35;color:var(--muted)}
+
 /* 常见问题 */
 .faq{display:grid;gap:10px;margin-top:18px;max-width:900px}
 .faq details{border:1px solid var(--line);border-radius:var(--r);background:#fff;padding:12px 16px}
