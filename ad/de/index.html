@@ -11,6 +11,16 @@
 <meta property="og:title" content="Messer unter Ihrer Marke — OEM/ODM Messerfabrik in China | Wiliheng">
 <meta property="og:description" content="OEM/ODM-Messerfabrik in Yangjiang, China: wir fertigen Klapp-, Jagd-, Outdoor- und Küchenmesser unter Ihrer Marke — Klinge, Griff, Etui und Verpackung nach Vorgabe. Ab 500 Stück, Vorserienmuster. Modelle und echte Fotos schicken wir im Chat.">
 <meta property="og:type" content="website">
+<!-- Google tag (gtag.js) — AW-17434685893：WhatsApp 点击转化测量 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17434685893"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // 同意管理：欧盟流量：默认拒绝，用户点 Einverstanden 后再开
+  gtag('consent', 'default', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied', wait_for_update: 500});
+  gtag('js', new Date());
+  gtag('config', 'AW-17434685893');
+</script>
 <style>
   :root{--ink:#101417;--line:#2a343a;--paper:#f6f7f8;--dim:#9aa7ae;--acc:#c8f04a}
   *{box-sizing:border-box}
@@ -155,16 +165,53 @@
   <a class="btn big" href="https://wa.me/8618124886695?text=WH-DE-B%20-%20Eigene%20Marke%20(OEM)%20-%20bitte%20Modelle%20und%20Fotos" target="_blank" rel="noopener">WhatsApp: Muster &amp; Fotos anfragen</a>
 </div>
 <script>
-/* 归因：把广告关键词带进 WhatsApp 首条消息（跳到 WhatsApp 后 gclid 会丢，靠这个短码兜住） */
+/* 归因 + 转化测量（两件事，别混）：
+   ① 关键词短码：把广告关键词带进 WhatsApp 首条消息（跳到 WhatsApp 后 gclid 会丢，靠短码兜住）；
+   ② Google Ads 转化：点 WhatsApp 时上报一次转化，否则 Google 永远记不到询盘。
+      欧盟流量必须先默认拒绝、用户同意后再开（Consent Mode v2，Google 对 EEA 的硬要求）。 */
 (function(){
   var p = new URLSearchParams(location.search);
   var kw = p.get('kw') || p.get('utm_term') || p.get('utm_content');
-  if(!kw) return;
-  var code = 'AD-DE-' + String(kw).toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,10);
+  if(kw){
+    var code = 'AD-DE-' + String(kw).toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,10);
+    document.querySelectorAll('a[href*="wa.me/8618124886695"]').forEach(function(a){
+      a.href = a.href.replace(/(\?text=[^&]*)/, '$1%20[' + encodeURIComponent(code) + ']');
+    });
+  }
   document.querySelectorAll('a[href*="wa.me/8618124886695"]').forEach(function(a){
-    a.href = a.href.replace(/(\?text=[^&]*)/, '$1%20[' + encodeURIComponent(code) + ']');
+    a.addEventListener('click', function(){
+      if(typeof gtag === 'function'){
+        gtag('event', 'conversion', {send_to: 'AW-17434685893/8VZKCKaX2Y4bEMXjwPlA', transport_type: 'beacon'});
+      }
+    });
   });
 })();
 </script>
+<div id="cb" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:99;background:#101417;color:#e7edf0;
+     padding:14px 18px;font:14px/1.5 -apple-system,'Segoe UI',Roboto,sans-serif;border-top:1px solid #2a343a">
+  <div style="max-width:1080px;margin:0 auto;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+    <span style="flex:1;min-width:260px">Wir messen mit Google Ads, ob ein Klick auf WhatsApp fuehrt
+      (Conversion-Messung). Cookies dafuer nur mit Ihrer Einwilligung &mdash;
+      <a href="/ad/de/datenschutz.html" style="color:#cfe0c0">Details</a>.</span>
+    <button id="cb-yes" style="background:#c8f04a;color:#111;border:0;border-radius:8px;padding:10px 16px;font-weight:700;cursor:pointer">Einverstanden</button>
+    <button id="cb-no" style="background:transparent;color:#fff;border:1px solid #39454b;border-radius:8px;padding:10px 16px;cursor:pointer">Nur notwendige</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY = 'ad_consent';
+  function grant(){ if(typeof gtag==='function') gtag('consent','update',
+    {ad_storage:'granted', ad_user_data:'granted', ad_personalization:'granted', analytics_storage:'granted'}); }
+  var v = null;
+  try { v = localStorage.getItem(KEY); } catch(e){}
+  if(v === 'granted'){ grant(); }
+  else if(v !== 'denied'){
+    var b = document.getElementById('cb'); b.hidden = false;
+    document.getElementById('cb-yes').onclick = function(){ try{localStorage.setItem(KEY,'granted')}catch(e){}; grant(); b.hidden = true; };
+    document.getElementById('cb-no').onclick  = function(){ try{localStorage.setItem(KEY,'denied')}catch(e){};  b.hidden = true; };
+  }
+})();
+</script>
+
 </body>
 </html>

@@ -11,6 +11,16 @@
 <meta property="og:title" content="Knives Made Under Your Brand — OEM/ODM Factory in China | Wiliheng">
 <meta property="og:description" content="OEM/ODM knife factory in Yangjiang, China: folding, hunting, outdoor and kitchen knives made under your brand — blade, handle, sheath and packaging to your spec. From 500 pcs, sample before production. Models and real photos in chat.">
 <meta property="og:type" content="website">
+<!-- Google tag (gtag.js) — AW-17434685893：WhatsApp 点击转化测量 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17434685893"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // 同意管理：美国流量：无欧盟同意要求，默认可测量
+  gtag('consent', 'default', {ad_storage:'granted', ad_user_data:'granted', ad_personalization:'granted', analytics_storage:'granted'});
+  gtag('js', new Date());
+  gtag('config', 'AW-17434685893');
+</script>
 <style>
   :root{--ink:#101417;--line:#2a343a;--paper:#f6f7f8;--dim:#9aa7ae;--acc:#c8f04a}
   *{box-sizing:border-box}
@@ -155,16 +165,28 @@
   <a class="btn big" href="https://wa.me/8618124886695?text=WH-US-B%20-%20Private%20label%20(OEM)%20-%20please%20send%20models%20and%20photos" target="_blank" rel="noopener">WhatsApp: get models &amp; photos</a>
 </div>
 <script>
-/* 归因：把广告关键词带进 WhatsApp 首条消息（跳到 WhatsApp 后 gclid 会丢，靠这个短码兜住） */
+/* 归因 + 转化测量（两件事，别混）：
+   ① 关键词短码：把广告关键词带进 WhatsApp 首条消息（跳到 WhatsApp 后 gclid 会丢，靠短码兜住）；
+   ② Google Ads 转化：点 WhatsApp 时上报一次转化，否则 Google 永远记不到询盘。
+      欧盟流量必须先默认拒绝、用户同意后再开（Consent Mode v2，Google 对 EEA 的硬要求）。 */
 (function(){
   var p = new URLSearchParams(location.search);
   var kw = p.get('kw') || p.get('utm_term') || p.get('utm_content');
-  if(!kw) return;
-  var code = 'AD-US-' + String(kw).toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,10);
+  if(kw){
+    var code = 'AD-US-' + String(kw).toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,10);
+    document.querySelectorAll('a[href*="wa.me/8618124886695"]').forEach(function(a){
+      a.href = a.href.replace(/(\?text=[^&]*)/, '$1%20[' + encodeURIComponent(code) + ']');
+    });
+  }
   document.querySelectorAll('a[href*="wa.me/8618124886695"]').forEach(function(a){
-    a.href = a.href.replace(/(\?text=[^&]*)/, '$1%20[' + encodeURIComponent(code) + ']');
+    a.addEventListener('click', function(){
+      if(typeof gtag === 'function'){
+        gtag('event', 'conversion', {send_to: 'AW-17434685893/8VZKCKaX2Y4bEMXjwPlA', transport_type: 'beacon'});
+      }
+    });
   });
 })();
 </script>
+
 </body>
 </html>
