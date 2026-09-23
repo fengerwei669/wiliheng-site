@@ -1,0 +1,5 @@
+{
+ "_说明": "落地页点击上报地址。隧道地址变时由 gads_hourly.py 自动更新并重新发布；页面读不到就静默跳过（不影响任何功能）。",
+ "wa_click": "https://pour-attraction-qui-aluminium.trycloudflare.com/wa_click",
+ "updated": "2026-09-24 02:04:11"
+}

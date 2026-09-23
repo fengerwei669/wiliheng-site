@@ -187,6 +187,35 @@
   });
 })();
 </script>
+<script>
+/* 点击上报：客户点 WhatsApp 按钮 → 打一条到飞牛（记档 + 立刻推企业微信，用户好实时回复）。
+   地址不写死在页面里：隧道域名会变，改读 /ad/track.json（同源、稳定）；
+   读不到就静默跳过 —— 上报失败绝不能影响客户点按钮。 */
+(function(){
+  var TOKEN = 'wlc-7f3a91c2';
+  var LANG = 'us';
+  var BT = null;
+  fetch('/ad/track.json', {cache:'no-store'})
+    .then(function(r){ return r.json(); })
+    .then(function(d){ BT = d && d.wa_click; })
+    .catch(function(){});
+  document.querySelectorAll('a[href*="wa.me/8618124886695"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(!BT) return;
+      var p = new URLSearchParams(location.search);
+      var t = (a.href.split('text=')[1] || '');
+      try { t = decodeURIComponent(t); } catch(e){}
+      var body = JSON.stringify({
+        token: TOKEN, lang: LANG, page: location.pathname, intent: t.slice(0,140),
+        kw: p.get('kw') || p.get('utm_term') || '', gclid: p.get('gclid') || '',
+        ref: document.referrer || '', ua: navigator.userAgent
+      });
+      try { navigator.sendBeacon(BT, new Blob([body], {type:'text/plain'})); }
+      catch(e){ try{ fetch(BT, {method:'POST', body:body, keepalive:true}); }catch(e2){} }
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
