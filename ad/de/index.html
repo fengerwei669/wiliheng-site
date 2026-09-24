@@ -92,6 +92,38 @@
   </div>
 </div>
 
+<section id="enquiry" style="background:#f7f9f5">
+  <div class="wrap">
+    <h2>Anfrage in 30 Sekunden</h2>
+    <p class="sub">Sie brauchen kein WhatsApp: Firma und E-Mail genügen. Wir antworten mit <strong>3–5 passenden Modellen, echten Fotos und Preisen</strong> — in der Regel innerhalb von 24 Stunden (Mo–Fr).</p>
+    <style>
+      #enq{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+      #enq .full{grid-column:1/-1}
+      #enq input,#enq select,#enq textarea{width:100%;padding:12px 14px;border:1px solid #cfd9d2;
+        border-radius:10px;font:inherit;background:#fff}
+      #enq label.consent{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:#4c5a60}
+      #enq label.consent input{width:auto;margin-top:2px}
+      @media(max-width:640px){#enq{grid-template-columns:1fr}}
+    </style>
+    <form id="enq" novalidate>
+      <input name="company" required placeholder="Firma *" autocomplete="organization">
+      <input name="email" type="email" required placeholder="Geschäftliche E-Mail *" autocomplete="email">
+      <input name="name" placeholder="Ansprechpartner" autocomplete="name">
+      <input name="country" placeholder="Land" autocomplete="country-name">
+      <select name="product_line"><option value="">Produktlinie wählen</option><option>Küchenmesser</option><option>Klappmesser</option><option>Küchenhelfer &amp; Gadgets</option><option>Besteck &amp; Bestecksets</option><option>Scheren</option><option>Gemischt / Sortiment</option></select>
+      <select name="quantity"><option value="">Menge pro Modell</option><option>500–1.000 Stück</option><option>1.000–5.000 Stück</option><option>über 5.000 Stück</option><option>noch offen</option></select>
+      <textarea name="message" rows="3" class="full" placeholder="Nachricht (optional: Zielmarkt, Verpackung, Termin)"></textarea>
+      <label class="consent full"><input type="checkbox" name="consent" required>
+        <span>Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden. <a href="/ad/de/datenschutz.html" target="_blank" rel="noopener">Datenschutz</a></span></label>
+      <div class="full">
+        <button class="btn big" type="submit" style="border:0;cursor:pointer">Anfrage senden</button>
+        <span class="sub" style="margin-left:12px" id="enq-note">Kein Newsletter, keine Weitergabe an Dritte. Falls das Formular nicht sendet: direkt an fengerwei669@gmail.com schreiben.</span>
+      </div>
+    </form>
+    <p id="enq-ok" class="sub" hidden style="font-weight:600;color:#2f6b2f">Danke — Ihre Anfrage ist angekommen. Wir melden uns innerhalb von 24 Stunden (Mo–Fr) mit Modellen, Fotos und Preisen.</p>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <h2>Wie wir arbeiten</h2>
@@ -175,6 +207,49 @@
 <div class="sticky">
   <a class="btn big" href="https://wa.me/8618124886695?text=WH-DE-B%20-%20Eigene%20Marke%20(OEM)%20-%20bitte%20Modelle%20und%20Fotos" target="_blank" rel="noopener">WhatsApp: Muster &amp; Fotos anfragen</a>
 </div>
+<script>
+/* 询盘表单提交（第二条转化路径）。
+   与点击上报同一套约定：地址读 /ad/track.json（隧道域名会变），带同一枚 token。
+   失败**不能丢线索**：发不出去就把内容拼成 mailto 打开邮件客户端。 */
+(function(){
+  var f = document.getElementById('enq'); if(!f) return;
+  var EP = null, LABEL = 'AW-17434685893/R4CTCKq3poMdEMXjwPlA', LANG = 'de', CODE = 'WH-DE-F';
+  fetch('/ad/track.json', {cache:'no-store'}).then(function(r){return r.json();})
+    .then(function(d){ EP = d && d.lead; }).catch(function(){});
+  function val(n){ var e=f.elements[n]; return e ? String(e.value||'').trim() : ''; }
+  function mailtoFallback(){
+    var body = ['Company: '+val('company'), 'Name: '+val('name'), 'Email: '+val('email'),
+                'Country: '+val('country'), 'Product line: '+val('product_line'),
+                'Quantity: '+val('quantity'), '', val('message'), '', '['+CODE+']'].join('
+');
+    location.href = 'mailto:fengerwei669@gmail.com?subject=' + encodeURIComponent('Enquiry ' + CODE)
+                  + '&body=' + encodeURIComponent(body);
+  }
+  function ok(){
+    f.hidden = true; var n=document.getElementById('enq-note'); if(n) n.hidden=true;
+    var p=document.getElementById('enq-ok'); if(p){ p.hidden=false; }
+    if(typeof gtag === 'function'){ gtag('event','conversion',{send_to:LABEL}); }
+  }
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!val('email') || val('email').indexOf('@') < 1){ f.elements['email'].focus(); return; }
+    if(!val('company')){ f.elements['company'].focus(); return; }
+    if(f.elements['consent'] && !f.elements['consent'].checked){ f.elements['consent'].focus(); return; }
+    var b = f.querySelector('button[type=submit]'); if(b){ b.disabled = true; }
+    if(!EP){ mailtoFallback(); return; }
+    var p = new URLSearchParams(location.search);
+    var payload = { token:'wlc-7f3a91c2', lang:LANG, code:CODE, page:location.pathname,
+      company:val('company'), name:val('name'), email:val('email'), country:val('country'),
+      product_line:val('product_line'), quantity:val('quantity'), message:val('message'),
+      kw:p.get('kw')||p.get('utm_term')||p.get('utm_content')||'', gclid:p.get('gclid')||'' };
+    var payloadStr = JSON.stringify(payload);
+    fetch(EP, {method:'POST', headers:{'Content-Type':'text/plain'}, body:payloadStr, keepalive:true})
+      .then(function(r){ return r.json(); })
+      .then(function(j){ if(j && j.ok){ ok(); } else { mailtoFallback(); } })
+      .catch(function(){ mailtoFallback(); });
+  });
+})();
+</script>
 <script>
 /* 归因 + 转化测量（两件事，别混）：
    ① 关键词短码：把广告关键词带进 WhatsApp 首条消息（跳到 WhatsApp 后 gclid 会丢，靠短码兜住）；
