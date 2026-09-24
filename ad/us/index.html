@@ -220,8 +220,7 @@
   function mailtoFallback(){
     var body = ['Company: '+val('company'), 'Name: '+val('name'), 'Email: '+val('email'),
                 'Country: '+val('country'), 'Product line: '+val('product_line'),
-                'Quantity: '+val('quantity'), '', val('message'), '', '['+CODE+']'].join('
-');
+                'Quantity: '+val('quantity'), '', val('message'), '', '['+CODE+']'].join(String.fromCharCode(10));
     location.href = 'mailto:fengerwei669@gmail.com?subject=' + encodeURIComponent('Enquiry ' + CODE)
                   + '&body=' + encodeURIComponent(body);
   }
