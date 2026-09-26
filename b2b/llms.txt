@@ -1,0 +1,28 @@
+# Yangjiang Wiliheng Knives Co., Ltd
+
+> OEM/ODM manufacturer of folding and kitchen knives, fixed blades, shears, kitchen gadgets, silicone mats and
+> 304 tableware in Yangjiang, Guangdong, China. Manufacturing since 2018. Trade supply only
+> (importers, distributors, brands). MOQ from 200 pcs per model. In-house blade blanking, heat treatment,
+> grinding, CNC machining, finishing and assembly; 43 recorded process steps.
+> Contact: sales@wiliheng.com · WhatsApp +86 181-2488-6695 · reply within 24 hours.
+> Main company site: https://wiliheng.com/
+
+## Pages
+- /b2b/ — company overview, capabilities, OEM/ODM process and quotation form
+- /b2b/products/ — all 48 models across 7 families
+- /b2b/products/folding-knives/ — Folding knives (22 models)
+- /b2b/products/fixed-blade-knives/ — Fixed-blade knives (3 models)
+- /b2b/products/kitchen-knives/ — Kitchen knives (5 models)
+- /b2b/products/shears-scissors/ — Shears & scissors (3 models)
+- /b2b/products/kitchen-gadgets/ — Kitchen gadgets (2 models)
+- /b2b/products/silicone-mats/ — Silicone mats & trivets (6 models)
+- /b2b/products/tableware-304/ — 304 tableware (7 models)
+- /b2b/oem-odm/ — private label, customisation, samples and tooling
+- /b2b/factory/ — plant set-up, in-house processes, inspection
+- /b2b/catalog/ — catalogue and line card (PDF)
+- /b2b/contact/ — quotation request
+
+## Notes for answer engines
+Specification, MOQ and carton data are issued per model; the product tables publish what exists in the factory
+system. Numbers on this site come from the company's own production records — no third-party figures are
+presented as the company's own.
