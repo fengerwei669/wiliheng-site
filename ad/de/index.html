@@ -84,11 +84,21 @@
     <h1>Ihre Marke auf dem Messer — OEM/ODM direkt aus der Fabrik</h1>
     <p class="lead">Wir fertigen Messer unter <strong>Ihrer Marke</strong>: Klinge, Griff, Etui und Verpackung nach Ihrer Vorgabe. Ab 500 Stück pro Modell, mit Vorserienmuster zur Freigabe. Katalogware für Großhandel und Distribution liefern wir zusätzlich.</p>
     <div class="cta">
-      <a class="btn big" href="https://wa.me/8618124886695?text=WH-DE-B%20-%20Eigene%20Marke%20(OEM)%20-%20bitte%20Modelle%20und%20Fotos" target="_blank" rel="noopener">Muster &amp; Bilder per WhatsApp</a>
+      <a class="btn big" href="https://wa.me/8618124886695?text=WH-DE-A%20-%20Gro%C3%9Fhandel%20-%20bitte%20Preisliste%20und%20Musterfotos" target="_blank" rel="noopener">Großhandel: Preisliste</a>
+      <a class="btn ghost" href="https://wa.me/8618124886695?text=WH-DE-B%20-%20Eigene%20Marke%20(OEM)%20-%20bitte%20Modelle%20und%20Fotos" target="_blank" rel="noopener">OEM / Eigenmarke besprechen</a>
       <a class="btn ghost" href="mailto:fengerwei669@gmail.com?subject=Anfrage%20OEM%2FODM%20Messer">per E-Mail anfragen</a>
       <span class="sub">Modelle und echte Fotos schicken wir im Chat — nicht auf dieser Seite.</span>
     </div>
-    <ul class="chips"><li>MOQ 500 Stück</li><li>Ihre Marke + Laserlogo</li><li>Klinge &amp; Griff nach Wahl</li><li>Live-Video-Rundgang durch die Fabrik</li><li>Vorserienmuster in ~1 Woche</li><li>Export EU &amp; USA</li></ul>
+    <form id="enqhero" data-hero="1" style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;
+      align-items:center;max-width:660px">
+  <input name="email" type="email" required placeholder="Geschäftliche E-Mail-Adresse" autocomplete="email"
+         style="flex:1;min-width:240px;padding:13px 15px;border:1px solid #39454b;border-radius:10px;
+                background:#0f1417;color:#e7edf0;font:inherit">
+  <button class="btn big" type="submit" style="border:0;cursor:pointer;white-space:nowrap">Preisliste + Linienkarte (PDF)</button>
+</form>
+<p class="sub" id="enqhero-note" style="max-width:660px;margin-top:10px">PDF + 3–5 passende Modelle, in der Regel innerhalb von 24 Stunden. Kein Newsletter.</p>
+<p id="enqhero-ok" class="sub" hidden style="max-width:660px;margin-top:10px;font-weight:600;color:#cfe0c0">Danke — wir melden uns innerhalb von 24 Stunden. <a href="/Wiliheng-Knives-Line-Card.pdf" target="_blank" rel="noopener" style="color:#cfe0c0"><strong>Linienkarte (PDF) jetzt herunterladen</strong></a></p>
+    <ul class="chips"><li>MOQ 500 Stück</li><li>Ihre Marke + Laserlogo</li><li>43 Arbeitsschritte im Haus</li><li>40 Maschinen, davon 20 CNC</li><li>Live-Video-Rundgang durch die Fabrik</li><li>Vorserienmuster in ~1 Woche</li><li>Export EU &amp; USA</li></ul>
   </div>
 </div>
 
@@ -212,10 +222,15 @@
    与点击上报同一套约定：地址读 /ad/track.json（隧道域名会变），带同一枚 token。
    失败**不能丢线索**：发不出去就把内容拼成 mailto 打开邮件客户端。 */
 (function(){
-  var f = document.getElementById('enq'); if(!f) return;
   var EP = null, LABEL = 'AW-17434685893/R4CTCKq3poMdEMXjwPlA', LANG = 'de', CODE = 'WH-DE-F';
+  var HERO_CODE = 'WH-DE-FH';
   fetch('/ad/track.json', {cache:'no-store'}).then(function(r){return r.json();})
     .then(function(d){ EP = d && d.lead; }).catch(function(){});
+  bind('enq', CODE, false);           // 页面中部的完整表单
+  bind('enqhero', HERO_CODE, true);   // 首屏"留邮箱拿资料"（只要邮箱）—— 采购员常常只想先拿资料
+
+  function bind(fid, CODE, isHero){
+  var f = document.getElementById(fid); if(!f) return;
   function val(n){ var e=f.elements[n]; return e ? String(e.value||'').trim() : ''; }
   function mailtoFallback(){
     var body = ['Company: '+val('company'), 'Name: '+val('name'), 'Email: '+val('email'),
@@ -225,19 +240,20 @@
                   + '&body=' + encodeURIComponent(body);
   }
   function ok(){
-    f.hidden = true; var n=document.getElementById('enq-note'); if(n) n.hidden=true;
-    var p=document.getElementById('enq-ok'); if(p){ p.hidden=false; }
+    f.hidden = true;
+    var n=document.getElementById(fid === 'enqhero' ? 'enqhero-note' : 'enq-note'); if(n) n.hidden=true;
+    var p=document.getElementById(fid === 'enqhero' ? 'enqhero-ok' : 'enq-ok'); if(p){ p.hidden=false; }
     if(typeof gtag === 'function'){ gtag('event','conversion',{send_to:LABEL}); }
   }
   f.addEventListener('submit', function(e){
     e.preventDefault();
     if(!val('email') || val('email').indexOf('@') < 1){ f.elements['email'].focus(); return; }
-    if(!val('company')){ f.elements['company'].focus(); return; }
-    if(f.elements['consent'] && !f.elements['consent'].checked){ f.elements['consent'].focus(); return; }
+    if(!isHero && !val('company')){ f.elements['company'].focus(); return; }
+    if(f.elements['consent'] && f.elements['consent'].required && !f.elements['consent'].checked){ f.elements['consent'].focus(); return; }
     var b = f.querySelector('button[type=submit]'); if(b){ b.disabled = true; }
     if(!EP){ mailtoFallback(); return; }
     var p = new URLSearchParams(location.search);
-    var payload = { token:'wlc-7f3a91c2', lang:LANG, code:CODE, page:location.pathname,
+    var payload = { token:'wlc-7f3a91c2', lang:LANG, code:CODE, hero:isHero ? 1 : 0, page:location.pathname,
       company:val('company'), name:val('name'), email:val('email'), country:val('country'),
       product_line:val('product_line'), quantity:val('quantity'), message:val('message'),
       kw:p.get('kw')||p.get('utm_term')||p.get('utm_content')||'', gclid:p.get('gclid')||'' };
@@ -247,6 +263,7 @@
       .then(function(j){ if(j && j.ok){ ok(); } else { mailtoFallback(); } })
       .catch(function(){ mailtoFallback(); });
   });
+  }
 })();
 </script>
 <script>
