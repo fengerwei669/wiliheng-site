@@ -1,6 +1,6 @@
 {
  "_说明": "落地页上报地址（点击 + 询盘表单）。隧道地址变时由 sync_track_url.py 自动更新并重新发布；页面读不到就静默跳过（不影响任何功能）。",
- "wa_click": "https://speech-rob-method-kijiji.trycloudflare.com/wa_click",
- "lead": "https://speech-rob-method-kijiji.trycloudflare.com/lead",
- "updated": "2026-09-26 23:43:39"
+ "wa_click": "https://hampton-distances-sufficiently-seem.trycloudflare.com/wa_click",
+ "lead": "https://hampton-distances-sufficiently-seem.trycloudflare.com/lead",
+ "updated": "2026-09-26 23:57:35"
 }
