@@ -178,6 +178,22 @@ body.nav-open .mobile-nav{display:flex}
 .specblock-b{padding:0 0 20px}
 [hidden]{display:none!important}
 
+/* ── 询盘弹窗 ─────────────────────────────────────────── */
+.qmodal{position:fixed;inset:0;z-index:120;display:grid;place-items:start center;overflow-y:auto;padding:28px 18px}
+.qmodal[hidden]{display:none!important}
+.qmodal-back{position:fixed;inset:0;background:rgba(16,17,19,.55)}
+.qmodal-box{position:relative;background:#fff;border-radius:16px;width:100%;max-width:800px;padding:30px;
+  box-shadow:var(--sh-2);margin:auto}
+.qmodal-x{position:absolute;right:16px;top:12px;border:0;background:none;font-size:26px;line-height:1;
+  cursor:pointer;color:var(--muted);padding:4px 8px}
+.qmodal-x:hover{color:var(--ink)}
+.q-model{margin:6px 0 18px;font-size:14px;color:var(--muted)}
+.q-model b{color:var(--ink)}
+.qform{border:0;box-shadow:none;padding:0;border-radius:0}
+.qform .rfq-grid{margin-top:0}
+body.q-open{overflow:hidden}
+.mprod{cursor:pointer}
+
 /* 主推款卡 */
 .lead-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .lead{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;

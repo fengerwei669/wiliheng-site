@@ -39,7 +39,7 @@
     }
   }
 
-  /* 3) RFQ 表单 */
+  /* 3) RFQ 表单（页面内的那份；弹窗表单 #qform 走下面单独的处理） */
   function collect(form) {
     var out = {};
     form.querySelectorAll('input,select,textarea').forEach(function (el) {
@@ -58,15 +58,17 @@
     order.forEach(function (k) { if (data[k]) { lines.push(label[k] + ': ' + data[k]); } });
     return lines.join('\n');
   }
-  document.querySelectorAll('form.rfq').forEach(function (form) {
+  function required(data) {
+    var missing = [];
+    ['name', 'company', 'email'].forEach(function (k) { if (!data[k]) { missing.push(k); } });
+    return missing;
+  }
+  document.querySelectorAll('form.rfq:not(.qform)').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var note = form.querySelector('.rfq-note');
       var data = collect(form);
-      var missing = [];
-      ['name', 'company', 'email'].forEach(function (k) {
-        if (!data[k]) { missing.push(k); }
-      });
+      var missing = required(data);
       if (missing.length) {
         if (note) {
           note.hidden = false; note.className = 'rfq-note fine err';
@@ -140,7 +142,109 @@
     apply();
   });
 
-  /* 5) 页脚年份（模板已写死，这里只兜底静态托管年份偏差） */
+  /* 6) 询盘弹窗：点产品卡片/Request price 直接开单 */
+  var qm = document.getElementById('qmodal');
+  function qEsc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+  function openQ(sku, name, cat, url) {
+    if (!qm) { return; }
+    var line = document.getElementById('q-model-line');
+    var models = qm.querySelector('[name="models"]');
+    var fam = qm.querySelector('[name="family"]');
+    if (sku && sku !== '__all__') {
+      if (models && !models.value) { models.value = sku; }
+      if (line) {
+        line.innerHTML = 'Model: <b>' + qEsc(name || sku) + '</b> · SKU ' + qEsc(sku) +
+          (cat ? ' · ' + qEsc(cat) : '') +
+          (url ? ' — <a href="' + qEsc(url) + '">open the model page</a>' : '');
+      }
+      if (fam && cat) {
+        for (var i = 0; i < fam.options.length; i++) {
+          if (fam.options[i].value === cat) { fam.selectedIndex = i; }
+        }
+      }
+    } else if (line) {
+      line.textContent = 'Tell us the market and the models you are considering — we reply with prices and packing data.';
+    }
+    qm.hidden = false;
+    document.body.classList.add('q-open');
+    var first = qm.querySelector('input[name="name"]');
+    if (first) { first.focus(); }
+  }
+  function closeQ() {
+    if (!qm) { return; }
+    qm.hidden = true;
+    document.body.classList.remove('q-open');
+  }
+  document.addEventListener('click', function (e) {
+    var trigger = e.target.closest ? e.target.closest('[data-inquiry]') : null;
+    if (!trigger) { return; }
+    var link = e.target.closest ? e.target.closest('a') : null;
+    if (link && !link.hasAttribute('data-inquiry')) { return; }   // 卡片里的真链接照常跳转
+    e.preventDefault();
+    openQ(trigger.getAttribute('data-inquiry'), trigger.getAttribute('data-inquiry-name'),
+      trigger.getAttribute('data-inquiry-cat'), trigger.getAttribute('data-inquiry-url'));
+  });
+  document.querySelectorAll('[data-q-close]').forEach(function (el) { el.addEventListener('click', closeQ); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeQ(); } });
+
+  var qform = document.getElementById('qform');
+  if (qform) {
+    qform.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var note = document.getElementById('q-note');
+      var data = collect(qform);
+      var missing = required(data);
+      if (missing.length) {
+        note.hidden = false; note.className = 'rfq-note fine err';
+        note.textContent = 'Please fill in: ' + missing.join(', ') + '.';
+        return;
+      }
+      if (data.email.indexOf('@') < 1) {
+        note.hidden = false; note.className = 'rfq-note fine err';
+        note.textContent = 'That email address looks incomplete.';
+        return;
+      }
+      var endpoint = (qform.getAttribute('data-endpoint') || '').trim();
+      var body = compose(data);
+      function fallback(why) {
+        note.hidden = false; note.className = 'rfq-note fine';
+        note.innerHTML = (why ? qEsc(why) + '<br>' : '') +
+          'Send it by email instead — <a href="mailto:sales@wiliheng.com?subject=' +
+          encodeURIComponent('Product enquiry — ' + (data.company || '') + (data.models ? ' — ' + data.models : '')) +
+          '&body=' + encodeURIComponent(body) + '">open your email client</a>, or WhatsApp +86 181-2488-6695.';
+      }
+      if (!endpoint) {
+        note.hidden = false; note.className = 'rfq-note fine';
+        note.innerHTML = 'Opening your email client with the enquiry filled in — ' +
+          '<a href="mailto:sales@wiliheng.com?subject=' +
+          encodeURIComponent('Product enquiry — ' + (data.company || '') + (data.models ? ' — ' + data.models : '')) +
+          '&body=' + encodeURIComponent(body) + '">or click here if nothing opens</a>. ' +
+          'WhatsApp +86 181-2488-6695 works too.';
+        window.location.href = 'mailto:sales@wiliheng.com?subject=' +
+          encodeURIComponent('Product enquiry — ' + (data.company || '') + (data.models ? ' — ' + data.models : '')) +
+          '&body=' + encodeURIComponent(body);
+        return;
+      }
+      note.hidden = false; note.className = 'rfq-note fine';
+      note.textContent = 'Sending…';
+      fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (!res.ok || !res.j || !res.j.ok) { throw new Error((res.j && res.j.error) || 'HTTP error'); }
+          qform.reset();
+          note.hidden = false; note.className = 'rfq-note fine ok';
+          note.innerHTML = 'Thank you — your enquiry is with us.<br><b>Reference ' + qEsc(res.j.ref) +
+            '</b>. We reply within 24 hours, and we have sent a copy to our sales inbox with your address as the reply-to.';
+        })
+        .catch(function (err) { fallback('Automatic sending failed (' + err.message + ').'); });
+    });
+  }
+
+  /* 7) 页脚年份（模板已写死，这里只兜底静态托管年份偏差） */
   var y = new Date().getFullYear();
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = y; });
 })();
