@@ -146,6 +146,38 @@ body.nav-open .mobile-nav{display:flex}
 .card-n{font-size:12.5px;color:var(--muted);white-space:nowrap}
 .pcard-b{font-size:14px;color:var(--muted);margin-top:5px}
 
+/* 型号卡片墙（买家按卡片挑款） */
+.mgrid-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.mprod{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;
+  overflow:hidden;transition:box-shadow .18s ease,border-color .18s ease,transform .18s ease}
+.mprod:hover{box-shadow:var(--sh-2);border-color:#d5d8da;transform:translateY(-2px)}
+.mprod-img{display:grid;place-items:center;aspect-ratio:4/3;padding:16px;border-bottom:1px solid var(--line)}
+.mprod-img img{width:100%;height:100%;object-fit:contain}
+.mprod-b{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.mprod-sku{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--muted)}
+.mprod-t{font-size:16px;margin:0;line-height:1.32}
+.mprod-t a{color:var(--ink)}
+.mprod-t a:hover{color:var(--accent);text-decoration:none}
+.mprod-spec{font-size:13.5px;color:var(--ink-2);margin:0}
+.mprod-moq{font-size:13px;color:var(--muted);margin:0}
+.mprod-cta{margin-top:auto;padding-top:14px;display:flex;flex-direction:column;gap:9px;align-items:stretch}
+.mprod-cta .btn{width:100%;text-align:center}
+.mprod-view{font-size:13px;font-weight:600;text-align:center}
+.mprod-view.mut{font-weight:400}
+.mfilter{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:20px 0 22px}
+.mfilter input[type=search]{max-width:300px}
+.mf-only{font-size:14px;color:var(--ink-2);display:flex;gap:8px;align-items:center}
+.mf-only input{min-width:auto}
+.mf-count{margin-left:auto;font-size:13px}
+.specblock{border:1px solid var(--line);border-radius:12px;background:#fff;padding:4px 20px}
+.specblock summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;
+  display:flex;justify-content:space-between;gap:16px;align-items:center}
+.specblock summary::-webkit-details-marker{display:none}
+.specblock summary::after{content:"+";color:var(--accent);font-size:20px;font-weight:400}
+.specblock[open] summary::after{content:"–"}
+.specblock-b{padding:0 0 20px}
+[hidden]{display:none!important}
+
 /* 主推款卡 */
 .lead-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .lead{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;
@@ -316,7 +348,7 @@ textarea{resize:vertical}
   .burger{display:block}
   .hero-in{grid-template-columns:1fr;gap:34px}
   .pgrid,.fcards,.lead-grid,.dl-grid{grid-template-columns:repeat(2,1fr)}
-  .mgrid{grid-template-columns:repeat(3,1fr)}
+  .mgrid,.mgrid-cards{grid-template-columns:repeat(3,1fr)}
   .steps,.nums{grid-template-columns:repeat(2,1fr)}
   .contact-grid,.model-top{grid-template-columns:1fr;gap:28px}
   .ft-in{grid-template-columns:1fr 1fr;gap:26px}
@@ -329,7 +361,7 @@ textarea{resize:vertical}
 @media (max-width:720px){
   .sec{padding:52px 0}
   .hero{padding:40px 0 34px}
-  .pgrid,.fcards,.lead-grid,.dl-grid,.mgrid,.steps,.shots{grid-template-columns:1fr 1fr}
+  .pgrid,.fcards,.lead-grid,.dl-grid,.mgrid,.mgrid-cards,.steps,.shots{grid-template-columns:1fr 1fr}
   .nums{grid-template-columns:1fr 1fr}
   .trust-in{grid-template-columns:1fr 1fr;gap:16px}
   .rfq-grid{grid-template-columns:1fr}
@@ -346,4 +378,11 @@ textarea{resize:vertical}
 @media (max-width:480px){
   .pgrid,.mgrid,.shots,.steps{grid-template-columns:1fr}
   .cta-row .btn{width:100%;text-align:center}
+  /* 手机上型号卡改成横向紧凑行：22 张卡也能快速扫 */
+  .mgrid-cards{grid-template-columns:1fr;gap:12px}
+  .mprod{flex-direction:row}
+  .mprod-img{width:38%;flex:0 0 38%;aspect-ratio:1/1;border-bottom:0;border-right:1px solid var(--line);padding:10px}
+  .mprod-b{padding:12px}
+  .mprod-t{font-size:15px}
+  .mprod-cta{margin-top:10px}
 }

@@ -112,7 +112,35 @@
     }
   }
 
-  /* 4) 页脚年份（模板已写死，这里只兜底静态托管年份偏差） */
+  /* 4) 型号卡片墙筛选（无 JS 时全部卡片照常显示） */
+  document.querySelectorAll('.mgrid-cards').forEach(function (list) {
+    const bar = list.previousElementSibling;
+    if (!bar || !bar.classList.contains('mfilter')) { return; }
+    const q = bar.querySelector('.mf-q');
+    const only = bar.querySelector('.mf-spec');
+    const cnt = bar.querySelector('.mf-count');
+    const cards = [].slice.call(list.querySelectorAll('.mprod'));
+    const empty = list.nextElementSibling && list.nextElementSibling.classList.contains('mf-empty')
+      ? list.nextElementSibling : null;
+    function apply() {
+      const term = (q && q.value || '').trim().toLowerCase();
+      const onlySpec = !!(only && only.checked);
+      let n = 0;
+      cards.forEach(function (card) {
+        const hay = (card.getAttribute('data-sku') + ' ' + card.textContent).toLowerCase();
+        const ok = (!term || hay.indexOf(term) >= 0) && (!onlySpec || card.getAttribute('data-spec') === '1');
+        card.hidden = !ok;
+        if (ok) { n++; }
+      });
+      if (cnt) { cnt.textContent = n + ' of ' + cards.length + ' models shown'; }
+      if (empty) { empty.hidden = n !== 0; }
+    }
+    if (q) { q.addEventListener('input', apply); }
+    if (only) { only.addEventListener('change', apply); }
+    apply();
+  });
+
+  /* 5) 页脚年份（模板已写死，这里只兜底静态托管年份偏差） */
   var y = new Date().getFullYear();
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = y; });
 })();
