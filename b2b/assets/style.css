@@ -33,6 +33,7 @@ ul,ol{margin:0 0 14px;padding-left:20px}
 .eyebrow{margin:0 0 10px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}
 .gap{margin-top:32px}
 .gap-top{margin-top:20px}
+.mt-lg{margin-top:34px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 :focus:not(:focus-visible){outline:none}
 
@@ -104,9 +105,14 @@ body.nav-open .mobile-nav{display:flex}
 .hero-badge{position:absolute;left:16px;bottom:-18px;background:#fff;border:1px solid var(--line);
   border-radius:999px;padding:9px 16px;font-size:13px;color:var(--muted);box-shadow:var(--sh-1)}
 .hero-badge b{color:var(--ink);font-size:15px}
-.hero-note{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:12.5px;
+.hero-note{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);font-size:12.5px;
   color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;white-space:nowrap}
 .hero-shot{position:relative}
+.hero-facts{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh-1);
+  padding:24px;display:grid;gap:16px;align-content:center}
+.hero-facts div{display:flex;align-items:baseline;gap:12px}
+.hero-facts b{font-size:clamp(22px,2.2vw,28px);letter-spacing:-.02em;min-width:74px}
+.hero-facts span{font-size:13px;color:var(--muted)}
 
 /* 信任条 */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
@@ -278,6 +284,19 @@ textarea{resize:vertical}
 .rfq-note.err{color:#c0392b}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
+/* 手机底栏（询盘收口）：只在手机上出现，WhatsApp 与询价各占一半 */
+.mobile-bar{display:none}
+@media (max-width:720px){
+  .mobile-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff;
+    border-top:1px solid var(--line);box-shadow:0 -2px 10px rgba(0,0,0,.06)}
+  .mobile-bar a{flex:1;text-align:center;padding:15px 10px;font-weight:600;font-size:15px;min-height:48px;
+    display:flex;align-items:center;justify-content:center}
+  .mobile-bar a:hover{text-decoration:none}
+  .mobile-bar .mb-wa{color:var(--ink);border-right:1px solid var(--line)}
+  .mobile-bar .mb-quote{background:var(--accent);color:#fff}
+  body{padding-bottom:64px}
+}
+
 /* 页脚 */
 .ft{background:var(--ink);color:rgba(255,255,255,.72);font-size:14px;margin-top:8px}
 .ft-in{display:grid;grid-template-columns:1.4fr 1fr .8fr 1.1fr;gap:34px;padding:56px 0 34px}
@@ -316,8 +335,13 @@ textarea{resize:vertical}
   .rfq-grid{grid-template-columns:1fr}
   .rfq{padding:20px}
   .hero-shot img{height:220px}
+  .hero-facts{padding:18px;gap:12px}
   .ft-in{grid-template-columns:1fr}
   .mega{display:none!important}
+  /* 手机上点得到：页脚/链接给足触摸高度（44px 是下限） */
+  .ft-col{gap:2px}
+  .ft-col a,.plain li a,.crumbs a{display:inline-block;padding:11px 0;min-height:44px}
+  .faq summary{padding:4px 0}
 }
 @media (max-width:480px){
   .pgrid,.mgrid,.shots,.steps{grid-template-columns:1fr}

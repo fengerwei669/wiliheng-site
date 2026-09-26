@@ -19,7 +19,7 @@
 - /b2b/products/tableware-304/ — 304 tableware (7 models)
 - /b2b/oem-odm/ — private label, customisation, samples and tooling
 - /b2b/factory/ — plant set-up, in-house processes, inspection
-- /b2b/catalog/ — catalogue and line card (PDF)
+- /b2b/catalog/ — model list by family with MOQ, and how to get spec sheets and the catalogue (sent per enquiry)
 - /b2b/contact/ — quotation request
 
 ## Notes for answer engines
