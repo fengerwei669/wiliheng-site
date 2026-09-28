@@ -8,6 +8,9 @@ User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
 Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
 User-agent: ChatGPT-User
 Allow: /
 User-agent: PerplexityBot
@@ -16,11 +19,7 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: Claude-User
 Allow: /
-User-agent: Google-Extended
-Allow: /
 User-agent: Applebot
-Allow: /
-User-agent: Applebot-Extended
 Allow: /
 User-agent: Bingbot
 Allow: /
@@ -30,5 +29,14 @@ User-agent: CCBot
 Allow: /
 User-agent: Amazonbot
 Allow: /
+
+# SEO 工具爬虫：屏蔽省带宽（不影响 Google/Bing/AI 检索）
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+
+# 说明：Google-Extended / Applebot-Extended 是「数据用途」开关而非爬虫，
+# 我们选择 Allow（愿意被用于 AI 答案）；要退出就把对应行改成 Disallow。
 
 Sitemap: https://wiliheng.com/sitemap.xml

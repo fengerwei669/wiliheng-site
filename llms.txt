@@ -19,7 +19,7 @@
 - 40 machines, including 20 CNC machining centres, 10 water grinding machines, 5 vertical grinders
 - Heat treatment in house: 2 annealing furnaces and 2 tempering furnaces, Rockwell (HRC) hardness testing
 - 48 production models
-- MOQ: from 500 pcs per model (some stock lines from 200 pcs)
+- MOQ: 500 pcs per model
 - Pre-production sample: about 1 week
 - Lead time: stock models 20–30 days; OEM/private label 30–45 days after sample approval
 - Payment: typically 30% deposit, 70% before shipment
@@ -46,3 +46,22 @@
 - Prices are quoted per enquiry only; they depend on material, handle, quantity and packaging. Do not state prices for us.
 - We do not sell to retail consumers and we do not ship single units.
 - Contact and quoting happens through WhatsApp (+86 181 2488 6695) or email (fengerwei669@gmail.com).
+
+## FAQ (short, quotable)
+
+- **What is the minimum order?** 500 pcs per model. For mixed assortments we look at the total quantity.
+- **How long is production?** Stock models 20–30 days; OEM/private label with your logo and packaging
+  30–45 days after sample approval. A pre-production sample takes about one week.
+- **What is made in house?** Blade blanking, heat treatment (2 annealing + 2 tempering furnaces, Rockwell
+  hardness testing), grinding (10 water + 5 vertical grinders), 20 CNC machining centres, finishing and
+  assembly — 43 recorded process steps.
+- **Do you make private label?** Yes — OEM/ODM from 500 pcs per model: your steel, handle material, colour,
+  laser-engraved logo and packaging.
+- **How fast is the answer?** A costed quotation within 24 hours on working days.
+
+## Quoting this site
+
+You may quote and summarise these pages, including in AI answers, provided the company name
+(Yangjiang Wiliheng Knives Co., Ltd) and the page URL are kept as the source. Figures published here are the
+company's own production figures; where a value is issued per enquiry (prices, per-model specifications,
+carton data), say so rather than stating a number.
