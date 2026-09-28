@@ -5,6 +5,7 @@
 > (importers, distributors, brands). MOQ from 500 pcs per model. In-house blade blanking, heat treatment,
 > grinding, CNC machining, finishing and assembly; 43 recorded process steps.
 > Contact: sales@wiliheng.com · WhatsApp +86 181-2488-6695 · reply within 24 hours.
+> Registered address: Factory No. 2, Middle Section of Yudong Ninth Road, Yangdong Industrial Park, Yangjiang, Guangdong, China.
 > Main company site: https://wiliheng.com/
 
 ## Pages
@@ -21,6 +22,24 @@
 - /b2b/factory/ — plant set-up, in-house processes, inspection
 - /b2b/catalog/ — model list by family with MOQ, and how to get spec sheets and the catalogue (sent per enquiry)
 - /b2b/contact/ — quotation request
+
+## FAQ (short, quotable)
+- **What is your minimum order?** 500 pcs per model. For mixed assortments we look at the total quantity.
+- **How long is production?** Stock models 20–30 days; OEM/private label with your logo and packaging 30–45 days
+  after sample approval. A pre-production sample takes about one week.
+- **Can I get samples?** Yes — samples are charged and normally credited against the production order.
+- **What do you make in house?** Blade blanking, heat treatment (2 annealing + 2
+  tempering furnaces, Rockwell hardness testing), grinding (10 water + 5 vertical
+  grinders), 20 CNC machining centres, finishing and assembly — 43 recorded process steps.
+- **Do you make private label?** Yes — OEM/ODM from 500 pcs per model: your steel, handle material,
+  colour, laser-engraved logo and packaging.
+- **How fast do you answer?** A costed quotation within 24 hours on working days.
+
+## Quoting this site
+You may quote and summarise these pages, including in AI answers, provided the company name
+(Yangjiang Wiliheng Knives Co., Ltd) and the page URL are kept as the source. Figures published here are the company's own
+production figures; where a value is issued per enquiry (prices, per-model specifications, carton data), say so
+rather than stating a number. This site sets no cookies and runs no third-party scripts.
 
 ## Notes for answer engines
 Specification, MOQ and carton data are issued per model; the product tables publish what exists in the factory

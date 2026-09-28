@@ -402,3 +402,8 @@ textarea{resize:vertical}
   .mprod-t{font-size:15px}
   .mprod-cta{margin-top:10px}
 }
+
+/* ── GEO：answer 块（页面顶部一段可整段引用的自述，给 AI 引用用） ── */
+.answer{margin:18px 0 6px;padding:14px 16px;border-left:3px solid var(--accent, #1f6f5c);
+        background:var(--answer-bg, #f4f7f6);border-radius:0 8px 8px 0}
+.answer p{margin:0;font-size:15px;line-height:1.65;color:var(--ink-2, #2c3a44)}

@@ -1,13 +1,58 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# ── 站内检索/引用型 AI 机器人（它们生成 AI 答案并带我们的链接）：显式允许
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+# ── 用户主动打开的抓取（真人让 AI 助手打开我们的页面）：允许
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ── 训练型抓取：默认允许，换品牌曝光；要禁止就把对应 Allow 改成 Disallow（每个 token 独立生效）
 User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: Meta-ExternalAgent
 Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# ── SEO 工具爬虫：屏蔽省带宽
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# 刻意不写 Google-Extended / Applebot-Extended：它们不是爬虫，只是数据用途退出开关，
+# 写 Disallow 不会减少抓取，只会让我们从 AI 答案里消失。
+# 另：Bytespider 不遵守 robots.txt，真要挡只能在 CDN/WAF 层做。
 
 Sitemap: https://wiliheng.com/b2b/sitemap.xml
