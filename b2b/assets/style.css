@@ -407,3 +407,6 @@ textarea{resize:vertical}
 .answer{margin:18px 0 6px;padding:14px 16px;border-left:3px solid var(--accent, #1f6f5c);
         background:var(--answer-bg, #f4f7f6);border-radius:0 8px 8px 0}
 .answer p{margin:0;font-size:15px;line-height:1.65;color:var(--ink-2, #2c3a44)}
+
+/* 首页的 answer：整宽容器里的浅色条 */
+.answer-home{margin:20px auto 0}
