@@ -410,3 +410,14 @@ textarea{resize:vertical}
 
 /* 首页的 answer：整宽容器里的浅色条 */
 .answer-home{margin:20px auto 0}
+
+/* ── 产品图库页：矮首屏 + 分组跳转 chips ── */
+.hero-sm{padding:34px 0 26px}
+.hero-sm h1{font-size:30px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 10px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--line,#dfe6ea);
+      border-radius:999px;font-size:14px;text-decoration:none;color:var(--ink,#1d262c);background:#fff}
+.chip b{color:var(--accent,#1f6f5c);font-weight:600}
+.chip:hover{border-color:var(--accent,#1f6f5c)}
+.pcard-photo .mprod-img{background:#fff}
+.pcard-photo .mprod-img img{object-fit:contain}
