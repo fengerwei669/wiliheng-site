@@ -421,3 +421,9 @@ textarea{resize:vertical}
 .chip:hover{border-color:var(--accent,#1f6f5c)}
 .pcard-photo .mprod-img{background:#fff}
 .pcard-photo .mprod-img img{object-fit:contain}
+
+/* ── 买家问答页 ── */
+.qa-list{max-width:900px}
+.qa{border-top:1px solid var(--line,#dfe6ea);padding:16px 0}
+.qa h3{margin:0 0 8px;font-size:19px}
+.qa p{margin:0;color:var(--ink-2,#2c3a44);line-height:1.7}
