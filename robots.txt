@@ -40,3 +40,6 @@ Disallow: /
 # 我们选择 Allow（愿意被用于 AI 答案）；要退出就把对应行改成 Disallow。
 
 Sitemap: https://wiliheng.com/sitemap.xml
+# 子目录站（/b2b/ 共 30 页含 9 个语言版本）单独一份 sitemap，必须在这里声明：
+# robots.txt 只在域名根目录生效，/b2b/robots.txt 会被 Google 忽略。
+Sitemap: https://wiliheng.com/b2b/sitemap.xml
