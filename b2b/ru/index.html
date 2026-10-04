@@ -35,7 +35,49 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://wiliheng.com/b2b/"},{"@type":"ListItem","position":2,"name":"Русский"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Каков минимальный заказ?","acceptedAnswer":{"@type":"Answer","text":"500 штук на модель — и для каталожных позиций, и для OEM/private label. В смешанных ассортиментах считаем общее количество; первый заказ на одну модель — обычная практика."}},{"@type":"Question","name":"Сколько длится производство?","acceptedAnswer":{"@type":"Answer","text":"Каталожные позиции 20–30 дней. OEM/private label с вашим логотипом, рукоятью и упаковкой — 30–45 дней после утверждения образца."}},{"@type":"Question","name":"Можно получить образцы?","acceptedAnswer":{"@type":"Answer","text":"Да. Образцы платные и обычно зачитываются в счёт заказа. Предсерийный образец готов примерно через неделю после утверждения макета."}},{"@type":"Question","name":"Как быстро вы даёте цену?","acceptedAnswer":{"@type":"Answer","text":"В течение 24 часов в рабочие дни. Пришлите модели или коды фото и количество — вы получите цены вместе с листом спецификации и данными по упаковке."}},{"@type":"Question","name":"Какую сталь вы используете?","acceptedAnswer":{"@type":"Answer","text":"В зависимости от модели: 5Cr15MoV (52±2 HRC), 440C (56±2 HRC) и D2 (58±2 HRC) в текущих линейках. В OEM работаем с вашей сталью."}},{"@type":"Question","name":"Производите ли вы под нашим брендом?","acceptedAnswer":{"@type":"Answer","text":"Да, от 500 штук на модель: сталь, материал и цвет рукояти, лазерная гравировка, упаковка и штрихкоды. Утверждение образца до запуска производства."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Yangjiang Wiliheng Knives Co., Ltd","url":"https://wiliheng.com","email":"sales@wiliheng.com","address":{"@type":"PostalAddress","streetAddress":"Factory No. 2, Middle Section of Yudong Ninth Road, Yangdong Industrial Park","addressLocality":"Yangjiang","addressRegion":"Guangdong","addressCountry":"CN"}}</script>
-</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17434685893"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+/* 欧盟/英国默认全部拒绝，其它地区默认允许（与 /ad/ 落地页同一套口径） */
+var EU=['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
+var RGN=((navigator.language||'').split('-')[1]||'').toUpperCase();
+var inEU=EU.indexOf(RGN)>=0;
+function consentDefaults(g){gtag('consent','default',{ad_storage:g?'granted':'denied',ad_user_data:g?'granted':'denied',ad_personalization:g?'granted':'denied',analytics_storage:g?'granted':'denied'});}
+consentDefaults(!inEU);
+try{var c=localStorage.getItem('wl_consent');if(c==='y')consentDefaults(true);if(c==='n')consentDefaults(false);}catch(e){}
+gtag('config','AW-17434685893');
+</script>
+<script>
+/* 询盘/点击上报：地址运行时读 /ad/track.json（隧道会变，写死必失效）；读不到就静默/回退邮件。
+   token 与 /ad/ 落地页同一枚（端点只认它）+ 每 IP 限流 + 只记不执行。 */
+(function(){
+  var TOKEN='wlc-7f3a91c2',LBL_WA='AW-17434685893/8VZKCKaX2Y4bEMXjwPlA',LBL_FORM='AW-17434685893/R4CTCKq3poMdEMXjwPlA';
+  var LANG=(document.documentElement.lang||'en').slice(0,2).toLowerCase(),EP={};
+  fetch('/ad/track.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+    EP=d||{};
+    var fs=document.querySelectorAll('form[data-endpoint]');
+    for(var i=0;i<fs.length;i++){ if(!(fs[i].getAttribute('data-endpoint')||'').trim() && EP.lead){ fs[i].setAttribute('data-endpoint',EP.lead); } }
+  }).catch(function(){});
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me"]'):null; if(!a) return;
+    try{ var b=JSON.stringify({token:TOKEN,lang:LANG,code:'B2B-'+LANG.toUpperCase(),page:location.pathname,intent:'New site WhatsApp'}); if(navigator.sendBeacon&&EP.wa_click) navigator.sendBeacon(EP.wa_click,new Blob([b],{type:'text/plain'})); }catch(_){}
+    if(typeof gtag==='function') gtag('event','conversion',{send_to:LBL_WA});
+  },true);
+  document.addEventListener('submit',function(){setTimeout(function(){if(typeof gtag==='function')gtag('event','conversion',{send_to:LBL_FORM});},1000);},true);
+  try{ if(inEU&&!localStorage.getItem('wl_consent')){
+    var bar=document.createElement('div');
+    bar.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#0f1417;color:#e7edf0;font:14px/1.5 system-ui,sans-serif;padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap';
+    bar.innerHTML='<span style="flex:1;min-width:240px">We measure whether a click leads to a WhatsApp enquiry — only with your consent. <a href="/b2b/privacy/" style="color:#cfe0c0">Details</a></span>';
+    var ok=document.createElement('button');ok.textContent='Accept';ok.style.cssText='background:#b9e56b;color:#12210a;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer';
+    var no=document.createElement('button');no.textContent='Necessary only';no.style.cssText='background:transparent;color:#e7edf0;border:1px solid #39454b;border-radius:8px;padding:8px 14px;cursor:pointer';
+    ok.onclick=function(){consentDefaults(true);localStorage.setItem('wl_consent','y');bar.remove();};
+    no.onclick=function(){consentDefaults(false);localStorage.setItem('wl_consent','n');bar.remove();};
+    bar.appendChild(ok);bar.appendChild(no);document.body.appendChild(bar);
+  }}catch(e){}
+})();
+</script></head>
 <body>
 <div class="announce"><div class="container announce-in">Factory-direct supply only · MOQ from 500 pcs per model · OEM / ODM &amp; private label · samples available</div></div>
 <header class="hdr" id="hdr">
@@ -118,7 +160,7 @@
     <button class="qmodal-x" type="button" data-q-close aria-label="Close">×</button>
     <h2 id="q-title">Request a quotation</h2>
     <p class="q-model" id="q-model-line">Tell us what you need — we reply within 24 hours.</p>
-    <form class="rfq qform" id="qform" data-endpoint="https://api.wiliheng.com/inquiry">
+    <form class="rfq qform" id="qform" data-endpoint="">
       <div class="rfq-grid">
         <label class="fld"><span>Your name <span class="req">*</span></span><input type="text" name="name" required></label>
         <label class="fld"><span>Company <span class="req">*</span></span><input type="text" name="company" required></label>
