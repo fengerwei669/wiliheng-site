@@ -448,3 +448,9 @@ html[dir="rtl"] .nav-list,html[dir="rtl"] .cta-row,html[dir="rtl"] .chips,
 html[dir="rtl"] .facts-row,html[dir="rtl"] .ft-in{direction:rtl}
 html[dir="rtl"] .qa h3,html[dir="rtl"] .qa p,html[dir="rtl"] p,html[dir="rtl"] li{text-align:right}
 html[dir="rtl"] .fine,html[dir="rtl"] .mprod-sku{text-align:right}
+
+/* ── 同意条（Consent Mode）──
+   注意：这些样式不能写成内联 style —— 站点 CSP 会拦内联样式，条会走形。
+   同时这也是自检会报错的一项（"有内联 style="）。 */
+.cbar-txt{flex:1;min-width:240px}
+.cbar-a{color:#cfe0c0}

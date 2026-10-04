@@ -22,7 +22,7 @@
 <link rel="icon" href="/b2b/assets/img/favicon.png" sizes="any">
 <link rel="icon" type="image/png" href="/b2b/assets/img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/b2b/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/b2b/assets/style.css?v=9d31c53c">
+<link rel="stylesheet" href="/b2b/assets/style.css?v=dc0a3c21">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://wiliheng.com/b2b/"},{"@type":"ListItem","position":2,"name":"Products","item":"https://wiliheng.com/b2b/products/"},{"@type":"ListItem","position":3,"name":"Kitchen gadgets"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the minimum order for kitchen gadgets?","acceptedAnswer":{"@type":"Answer","text":"MOQ is 500 pcs per model. For mixed assortments we look at the total quantity rather than per line, and a first order of a single model is normal."}},{"@type":"Question","name":"Can you make kitchen gadgets under our own brand?","acceptedAnswer":{"@type":"Answer","text":"Yes — OEM/ODM from 500 pcs per model: your steel, handle material, colour, laser-engraved logo and packaging. A pre-production sample takes about one week after drawing approval, and the production lot 30-45 days after the sample is signed off."}},{"@type":"Question","name":"How do we get pricing and packing data for this family?","acceptedAnswer":{"@type":"Answer","text":"Send the models and quantities; you get a costed quotation within 24 hours on working days, with the specification sheet, carton data and packing list together. 2 models in this family are listed above."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Kitchen gadgets","numberOfItems":2,"itemListElement":[{"@type":"ListItem","position":1,"name":"Straight peeler PK-01"},{"@type":"ListItem","position":2,"name":"Mandoline slicer PK-02"}]}</script>
@@ -31,7 +31,7 @@
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-/* 欧盟/英国默认全部拒绝，其它地区默认允许（与 /ad/ 落地页同一套口径） */
+/* Consent Mode: denied by default in the EU and UK, granted elsewhere (same policy as the /ad/ landing pages). */
 var EU=['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
 var RGN=((navigator.language||'').split('-')[1]||'').toUpperCase();
 var inEU=EU.indexOf(RGN)>=0;
@@ -41,8 +41,10 @@ try{var c=localStorage.getItem('wl_consent');if(c==='y')consentDefaults(true);if
 gtag('config','AW-17434685893');
 </script>
 <script>
-/* 询盘/点击上报：地址运行时读 /ad/track.json（隧道会变，写死必失效）；读不到就静默/回退邮件。
-   token 与 /ad/ 落地页同一枚（端点只认它）+ 每 IP 限流 + 只记不执行。 */
+/* Enquiry / click reporting: the endpoint is read at runtime from /ad/track.json
+   (the tunnel URL changes, so hard-coding it would break); if it cannot be read we stay silent
+   and fall back to email. Same token as the /ad/ landing pages (the endpoint accepts only that one),
+   rate-limited per IP, and it records only - it never performs an action. */
 (function(){
   var TOKEN='wlc-7f3a91c2',LBL_WA='AW-17434685893/8VZKCKaX2Y4bEMXjwPlA',LBL_FORM='AW-17434685893/R4CTCKq3poMdEMXjwPlA';
   var LANG=(document.documentElement.lang||'en').slice(0,2).toLowerCase(),EP={};
@@ -60,7 +62,7 @@ gtag('config','AW-17434685893');
   try{ if(inEU&&!localStorage.getItem('wl_consent')){
     var bar=document.createElement('div');
     bar.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#0f1417;color:#e7edf0;font:14px/1.5 system-ui,sans-serif;padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap';
-    bar.innerHTML='<span style="flex:1;min-width:240px">We measure whether a click leads to a WhatsApp enquiry — only with your consent. <a href="/b2b/privacy/" style="color:#cfe0c0">Details</a></span>';
+    bar.innerHTML='<span class="cbar-txt">We measure whether a click leads to a WhatsApp enquiry — only with your consent. <a class="cbar-a" href="/b2b/privacy/">Details</a></span>';
     var ok=document.createElement('button');ok.textContent='Accept';ok.style.cssText='background:#b9e56b;color:#12210a;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer';
     var no=document.createElement('button');no.textContent='Necessary only';no.style.cssText='background:transparent;color:#e7edf0;border:1px solid #39454b;border-radius:8px;padding:8px 14px;cursor:pointer';
     ok.onclick=function(){consentDefaults(true);localStorage.setItem('wl_consent','y');bar.remove();};
