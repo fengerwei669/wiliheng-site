@@ -14,6 +14,11 @@ The site is published in these languages (hreflang cluster, `x-default` = Englis
 - /b2b/es/ — Español version of the company/commercial page
 - /b2b/fr/ — Français version of the company/commercial page
 - /b2b/it/ — Italiano version of the company/commercial page
+- /b2b/pt/ — Português version of the company/commercial page
+- /b2b/nl/ — Nederlands version of the company/commercial page
+- /b2b/pl/ — Polski version of the company/commercial page
+- /b2b/ar/ — العربية version of the company/commercial page
+- /b2b/ru/ — Русский version of the company/commercial page
 
 ## Pages
 - /b2b/ — company overview, capabilities, OEM/ODM process and quotation form

@@ -437,3 +437,10 @@ textarea{resize:vertical}
 .facts-row span{font-size:13px;color:var(--ink-2,#2c3a44)}
 .fam-list li{margin:6px 0}
 .fam-list b{color:var(--ink,#1d262c)}
+
+/* ── 阿拉伯语（RTL）排版 ── */
+html[dir="rtl"] body{direction:rtl;text-align:right}
+html[dir="rtl"] .nav-list,html[dir="rtl"] .cta-row,html[dir="rtl"] .chips,
+html[dir="rtl"] .facts-row,html[dir="rtl"] .ft-in{direction:rtl}
+html[dir="rtl"] .qa h3,html[dir="rtl"] .qa p,html[dir="rtl"] p,html[dir="rtl"] li{text-align:right}
+html[dir="rtl"] .fine,html[dir="rtl"] .mprod-sku{text-align:right}
