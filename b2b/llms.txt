@@ -8,6 +8,13 @@
 > Registered address: Factory No. 2, Middle Section of Yudong Ninth Road, Yangdong Industrial Park, Yangjiang, Guangdong, China.
 > Main company site: https://wiliheng.com/
 
+## Languages
+The site is published in these languages (hreflang cluster, `x-default` = English):
+- /b2b/de/ — Deutsch version of the company/commercial page
+- /b2b/es/ — Español version of the company/commercial page
+- /b2b/fr/ — Français version of the company/commercial page
+- /b2b/it/ — Italiano version of the company/commercial page
+
 ## Pages
 - /b2b/ — company overview, capabilities, OEM/ODM process and quotation form
 - /b2b/products/ — all 47 models across 7 families
