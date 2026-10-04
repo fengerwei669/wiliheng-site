@@ -43,3 +43,6 @@ Sitemap: https://wiliheng.com/sitemap.xml
 # 子目录站（/b2b/ 共 30 页含 9 个语言版本）单独一份 sitemap，必须在这里声明：
 # robots.txt 只在域名根目录生效，/b2b/robots.txt 会被 Google 忽略。
 Sitemap: https://wiliheng.com/b2b/sitemap.xml
+
+# /b2b/ 内 9 个语言页（de/es/fr/it/pt/nl/pl/ar/ru）的 hreflang 替代链接
+# 已写进 https://wiliheng.com/b2b/sitemap.xml，Google 靠它按语言分别收录。
