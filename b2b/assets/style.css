@@ -479,5 +479,7 @@ html[dir="rtl"] .fine,html[dir="rtl"] .mprod-sku{text-align:right}
 /* 手机上的页头两个主控件：logo 链接 206×36、汉堡 42×38 都差一点到 44px —— 补足 */
 @media (max-width:900px){
   .brand{min-height:44px;display:inline-flex;align-items:center}
-  .burger{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+  /* ⚠️ 不要改 .burger 的 display：它里面是 3 个 <span> 横杠，改成 flex 会横排且宽度变 0
+     → 按钮变空白方块（2026-10-05 截图发现）。只放大盒子即可。 */
+  .burger{min-width:44px;min-height:44px;padding:10px 9px;box-sizing:border-box}
 }
