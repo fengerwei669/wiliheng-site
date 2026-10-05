@@ -454,3 +454,17 @@ html[dir="rtl"] .fine,html[dir="rtl"] .mprod-sku{text-align:right}
    同时这也是自检会报错的一项（"有内联 style="）。 */
 .cbar-txt{flex:1;min-width:240px}
 .cbar-a{color:#cfe0c0}
+
+/* ── 手机/平板触控与表单（2026-10-05 实测补上）──
+   两个真问题：
+   ① 点击目标 <44px：手机上点不准（chips、卡片里的按钮、导航链接）
+   ② 输入框字号 <16px：iOS 会在聚焦时自动放大整页（用户以为页面坏了）
+   这两个不影响美观，但直接影响手机端转化 —— 而广告和邮件来的访客多数是手机。 */
+@media (max-width:900px){
+  .nav-list a,.hdr-wa,.ft-col a{padding:12px 0;min-height:44px;display:inline-flex;align-items:center}
+}
+@media (max-width:720px){
+  .chip{min-height:44px;padding:10px 14px}
+  .btn-sm{min-height:44px;padding:12px 16px}
+  input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{font-size:16px}
+}
