@@ -403,7 +403,10 @@ textarea{resize:vertical}
   /* ⚠️ align-items 必须是 flex-start：默认 stretch 会把图片列拉到跟右侧文字一样高，
      覆盖 aspect-ratio:1/1 → 方形白底图被拉成长条（2026-10-05 用户实测反馈）。 */
   .mprod{flex-direction:row;align-items:flex-start}
-  .mprod-img{width:34%;flex:0 0 34%;aspect-ratio:1/1;align-self:flex-start;
+  /* 用固定像素而不是 aspect-ratio：Safari 对"百分比 flex-basis + aspect-ratio"的计算
+     与 Chromium 不同，会按被拉伸的高度算 → 苹果浏览器上仍是长条（2026-10-05 反馈）。
+     像素尺寸各内核一致，最稳。 */
+  .mprod-img{width:104px;flex:0 0 104px;height:104px;align-self:flex-start;
              border-bottom:0;border-right:1px solid var(--line);padding:10px;overflow:hidden}
   .mprod-img img{width:100%;height:100%;object-fit:contain}
   .mprod-b{padding:12px}
