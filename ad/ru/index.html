@@ -39,7 +39,7 @@ consentDefaults(!inEU);
 try{var _c=localStorage.getItem('wl_consent');if(_c==='y')consentDefaults(true);if(_c==='n')consentDefaults(false);}catch(e){}
 gtag('config','AW-17434685893');
 (function(){
- var TOKEN='wlc-7f3a91c2',LBL_WA='AW-17434685893/8VZKCKaX2Y4bEMXjwPlA',LBL_FORM='AW-17434685893/R4CTCKq3poMdEMXjwPlA',LANG='ru',INTENT='Россия WhatsApp',EP={};
+ var TOKEN='wlc-7f3a91c2',LBL_WA='AW-17434685893/8VZKCKaX2Y4bEMXjwPlA',LBL_FORM='AW-17434685893/R4CTCKq3poMdEMXjwPlA',LANG='ru',INTENT='KZ/UZ/KG WhatsApp',EP={};
  fetch('/ad/track.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){EP=d||{};}).catch(function(){});
  document.addEventListener('click',function(e){
    var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me"]'):null; if(!a) return;
