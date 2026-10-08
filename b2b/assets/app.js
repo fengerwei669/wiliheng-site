@@ -248,3 +248,19 @@
   var y = new Date().getFullYear();
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = y; });
 })();
+
+/* ── 生产视频：点击封面才加载 YouTube（点击前零请求、零 cookie）── */
+document.addEventListener('click', function (e) {
+  var btn = e.target && e.target.closest ? e.target.closest('.vfacade') : null;
+  if (!btn) return;
+  var fig = btn.closest('.vcard');
+  var id = fig && fig.getAttribute('data-yt');
+  if (!id || btn.querySelector('iframe')) return;
+  var f = document.createElement('iframe');
+  f.src = 'https://www.youtube-nocookie.com/embed/' + id +
+          '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+  f.title = btn.getAttribute('aria-label') || 'Production video';
+  f.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture');
+  f.setAttribute('allowfullscreen', '');
+  btn.appendChild(f);
+}, false);
