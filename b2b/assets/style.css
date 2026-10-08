@@ -414,6 +414,17 @@ textarea{resize:vertical}
   .mprod-cta{margin-top:10px}
 }
 
+/* ── 小屏页头收紧（2026-10-09）────────────────────────────────
+   实测 iPhone SE/8(375px)：文档宽 381 > 视口 375；超宽元素 = .hdr-cta(124px) + .burger(44px)。
+   只收**间距与内边距**，不隐藏任何 CTA（藏按钮会直接掉转化），也不改字号主体。 */
+@media (max-width:430px){
+  .hdr-in{gap:10px}
+  .hdr-cta{gap:8px}
+  .hdr-cta .btn{padding:9px 12px;font-size:13.5px}
+  .hdr-wa{font-size:13px}
+  .brand-tx i{display:none}      /* 副标题在窄屏让位，品牌名保留 */
+}
+
 /* ── GEO：answer 块（页面顶部一段可整段引用的自述，给 AI 引用用） ── */
 .answer{margin:18px 0 6px;padding:14px 16px;border-left:3px solid var(--accent, #1f6f5c);
         background:var(--answer-bg, #f4f7f6);border-radius:0 8px 8px 0}
