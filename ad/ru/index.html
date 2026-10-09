@@ -31,6 +31,8 @@
    background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;
    box-shadow:0 6px 20px rgba(0,0,0,.28);text-decoration:none;-webkit-tap-highlight-color:transparent}
  .wa-float:active{transform:scale(.96)}
+ /* 悬浮按钮不能压住正文：给页面底部留出按钮高度（2026-10-10 截图发现的遮挡） */
+ body{padding-bottom:78px}
  @media (min-width:900px){.wa-float{width:52px;height:52px;right:22px;bottom:22px}}
 </style>
 
