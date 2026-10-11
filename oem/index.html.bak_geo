@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>img,svg,video,iframe{max-width:100%;height:auto}body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#1c1c1c;background:#fff;word-wrap:break-word;overflow-wrap:anywhere}h1{font-size:1.6rem}h2{font-size:1.3rem}h3{font-size:1.15rem}table{max-width:100%;display:block;overflow-x:auto;border-collapse:collapse}pre{max-width:100%;overflow-x:auto}header,footer,main,section{padding-left:12px;padding-right:12px;box-sizing:border-box}</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OEM Knife Builder — configure your knife | Wiliheng Knives</title>
+<meta name="description" content="Build your OEM knife online: choose blade profile, handle shape and handle material, then send the spec straight to our sales team. Yangjiang knife factory, MOQ 500 pcs.">
+<link rel="icon" href="../assets/favicon.png">
+<style>
+:root{
+  --navy:#14202e; --navy-2:#1d2c3d; --teal:#0f5c4f; --teal-2:#14786a;
+  --ink:#14202e; --muted:#5a6b7c; --line:#dfe7ee; --bg:#fff; --soft:#f6f9fa;
+  --max:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:clamp(24px,3.4vw,34px);line-height:1.2;margin:0 0 10px;letter-spacing:-.4px}
+h2{font-size:17px;margin:0}
+p{margin:0 0 12px}
+.sub{color:var(--muted)}
+.fine{font-size:13px;color:var(--muted)}
+.eyebrow{margin:0 0 8px;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--teal)}
+
+.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(1.4) blur(6px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:22px;height:62px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand-mark{width:34px;height:34px;border-radius:8px;background:var(--navy);color:#fff;
+  display:grid;place-items:center;font-weight:700;font-size:17px}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text b{font-size:15px}
+.brand-text i{font-style:normal;font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+.nav{margin-left:auto;display:flex;gap:20px;font-size:14.5px}
+.nav a{color:var(--ink);opacity:.85}
+.nav a:hover{opacity:1;text-decoration:none}
+
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:12px 20px;border-radius:8px;
+  font-weight:600;font-size:15px;border:1.5px solid var(--navy);cursor:pointer;text-align:center}
+.btn:hover{background:var(--navy-2);text-decoration:none}
+.btn.ghost{background:#fff;color:var(--navy)}
+.btn.ghost:hover{background:var(--soft)}
+.btn.sm{padding:8px 14px;font-size:14px;border-radius:7px}
+.btn.wa{background:var(--teal);border-color:var(--teal)}
+.btn.wa:hover{background:var(--teal-2)}
+
+header.lead{padding:34px 0 6px}
+.cfg{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;padding:18px 0 60px;align-items:start}
+
+.stage{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,#fbfdfe,#f2f6f8);
+  padding:14px;position:sticky;top:78px}
+.stage svg{display:block;width:100%;height:auto;touch-action:manipulation}
+.stage-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.stage-note{margin:8px 2px 0;font-size:12.5px;color:var(--muted)}
+
+.panel{border:1px solid var(--line);border-radius:var(--r);background:#fff;padding:6px 18px 20px}
+.group{padding:16px 0;border-bottom:1px solid var(--line)}
+.group:last-of-type{border-bottom:0}
+.group-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
+.group-head span{font-size:12.5px;color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{border:1.5px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;font:inherit;
+  font-size:14px;color:var(--ink);cursor:pointer;display:flex;align-items:center;gap:8px}
+.opt:hover{border-color:#b9c8d4}
+.opt[aria-pressed="true"]{border-color:var(--navy);background:var(--navy);color:#fff}
+.sw{width:16px;height:16px;border-radius:4px;border:1px solid rgba(0,0,0,.18);flex:0 0 auto}
+.opt[aria-pressed="true"] .sw{border-color:rgba(255,255,255,.5)}
+.opt:disabled{opacity:.38;cursor:not-allowed;border-style:dashed;background:#fff}
+.opt:disabled:hover{border-color:var(--line)}
+.dims{display:flex;gap:14px;flex-wrap:wrap;margin:9px 2px 0;font-size:13px;color:#31465a}
+.dims b{color:var(--teal);font-weight:700}
+.dims i{color:#c3ced7;font-style:normal}
+
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+label.f{display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--muted)}
+label.f input,label.f select{font:inherit;font-size:14.5px;color:var(--ink);padding:9px 11px;
+  border:1.5px solid var(--line);border-radius:8px;background:#fff;width:100%}
+label.f input:focus,label.f select:focus{outline:none;border-color:var(--navy)}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.cta-row .btn{flex:1 1 180px}
+pre.spec{margin:14px 0 0;padding:14px;background:var(--soft);border:1px solid var(--line);border-radius:8px;
+  font:12.5px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;color:#31465a}
+.foot{border-top:1px solid var(--line);background:var(--soft);padding:22px 0;font-size:13.5px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);opacity:0;
+  background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;
+  transition:.22s;pointer-events:none;z-index:60}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (max-width:900px){
+  .cfg{grid-template-columns:1fr}
+  .stage{position:static}
+  .nav{display:none}
+}
+@media (max-width:520px){
+  .fields{grid-template-columns:1fr}
+  .panel{padding:4px 14px 16px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">W</span>
+      <span class="brand-text"><b>Wiliheng Knives</b><i>Yangjiang, China · since 2018</i></span>
+    </a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#capabilities">Capabilities</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="https://wa.me/8618124886695">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<header class="lead">
+  <div class="wrap">
+    <p class="eyebrow">OEM / ODM · online builder</p>
+    <h1>Build your knife, send the spec</h1>
+    <p class="sub">Pick the blade profile, handle shape and handle material. The configurator writes the
+    specification for you — one click sends it to our sales team for pricing and sampling.
+    MOQ 500 pcs per model.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="cfg">
+
+    <!-- ============ 预览区 ============ -->
+    <section class="stage">
+      <svg id="view" viewBox="0 0 1000 300" role="img" aria-label="Knife preview">
+        <defs>
+          <!-- 刃面表面处理渐变 -->
+          <linearGradient id="g-satin" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#eef3f6"/><stop offset=".45" stop-color="#c3ced7"/>
+            <stop offset=".62" stop-color="#e8eef2"/><stop offset="1" stop-color="#9dabb6"/>
+          </linearGradient>
+          <linearGradient id="g-mirror" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#cbd8e2"/>
+            <stop offset=".55" stop-color="#fbfdff"/><stop offset=".8" stop-color="#8b9aa8"/>
+            <stop offset="1" stop-color="#dfe8ef"/>
+          </linearGradient>
+          <linearGradient id="g-stone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#dbe2e7"/><stop offset=".5" stop-color="#aab6bf"/>
+            <stop offset="1" stop-color="#8e9aa4"/>
+          </linearGradient>
+          <linearGradient id="g-black" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4a5259"/><stop offset=".45" stop-color="#2b3138"/>
+            <stop offset=".6" stop-color="#3c434a"/><stop offset="1" stop-color="#1b2026"/>
+          </linearGradient>
+          <linearGradient id="g-damascus" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#dfe6ea"/><stop offset=".3" stop-color="#9aa6b0"/>
+            <stop offset=".45" stop-color="#e6ecef"/><stop offset=".6" stop-color="#8d99a4"/>
+            <stop offset=".8" stop-color="#c9d3da"/><stop offset="1" stop-color="#7d8994"/>
+          </linearGradient>
+
+          <!-- 柄材纹理 -->
+          <pattern id="p-wood" width="26" height="14" patternUnits="userSpaceOnUse">
+            <rect width="26" height="14" fill="#6b3f22"/>
+            <path d="M0 4 Q6.5 1.4 13 4 T26 4" stroke="#8a5a33" stroke-width="2.2" fill="none"/>
+            <path d="M0 10 Q6.5 7.4 13 10 T26 10" stroke="#4f2c16" stroke-width="1.6" fill="none"/>
+          </pattern>
+          <pattern id="p-g10b" width="7" height="7" patternUnits="userSpaceOnUse">
+            <rect width="7" height="7" fill="#23272c"/>
+            <path d="M0 0 L7 7 M-1 6 L1 8 M6 -1 L8 1" stroke="#33393f" stroke-width="1.1"/>
+          </pattern>
+          <pattern id="p-g10o" width="7" height="7" patternUnits="userSpaceOnUse">
+            <rect width="7" height="7" fill="#b8531a"/>
+            <path d="M0 0 L7 7 M-1 6 L1 8 M6 -1 L8 1" stroke="#d06b28" stroke-width="1.1"/>
+          </pattern>
+          <pattern id="p-micarta" width="10" height="10" patternUnits="userSpaceOnUse">
+            <rect width="10" height="10" fill="#4b5341"/>
+            <path d="M0 5 L10 5 M5 0 L5 10" stroke="#5d6551" stroke-width="1.4"/>
+            <path d="M2 0 L2 10" stroke="#3d4436" stroke-width=".8"/>
+          </pattern>
+          <pattern id="p-carbon" width="12" height="12" patternUnits="userSpaceOnUse">
+            <rect width="12" height="12" fill="#1b1e22"/>
+            <path d="M0 0 L6 6 L12 0 L12 12 L6 6 L0 12 Z" fill="#2b3138"/>
+            <path d="M0 0 L12 0 M0 12 L6 6" stroke="#0f1114" stroke-width=".6" fill="none"/>
+          </pattern>
+          <pattern id="p-maroon" width="22" height="12" patternUnits="userSpaceOnUse">
+            <rect width="22" height="12" fill="#5c2230"/>
+            <path d="M0 6 Q5.5 3 11 6 T22 6" stroke="#7a3140" stroke-width="2.4" fill="none"/>
+          </pattern>
+
+          <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+        </defs>
+
+        <!-- 阴影 -->
+        <ellipse id="shadow" cx="500" cy="243" rx="430" ry="9" fill="#14202e" opacity=".13" filter="url(#soft)"/>
+
+        <!-- 刀刃层（在下，柄舌被手柄压住） -->
+        <g id="layer-blade">
+          <path id="pBlade" fill="url(#g-satin)" stroke="#6d7b87" stroke-width="1.6" stroke-linejoin="round"/>
+          <path id="pBladeBevel" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="2.4"/>
+          <image id="pBladeImg" x="0" y="0" width="1000" height="300" preserveAspectRatio="xMidYMid meet" style="display:none"/>
+        </g>
+
+        <!-- 手柄层（在上） -->
+        <g id="layer-handle">
+          <path id="pHandle" fill="url(#p-wood)" stroke="#2b333b" stroke-width="2" stroke-linejoin="round"/>
+          <image id="pHandleImg" x="0" y="0" width="1000" height="300" preserveAspectRatio="xMidYMid meet" style="display:none"/>
+          <g id="bolster" opacity=".95">
+            <rect id="bolsterRect" x="460" y="100" width="28" height="100" rx="5" fill="url(#g-satin)" stroke="#6d7b87" stroke-width="1.4"/>
+          </g>
+          <g id="rivets" fill="#c9d2d9" stroke="#7d8894" stroke-width="1.2">
+            <circle id="rv1" cx="600" cy="152" r="6.5"/><circle id="rv2" cx="700" cy="152" r="6.5"/><circle id="rv3" cx="800" cy="152" r="6.5"/>
+          </g>
+          <!-- 激光刻字位 -->
+          <text id="engraveBlade" x="330" y="132" font-size="22" font-weight="700" letter-spacing="1.4"
+                fill="#2b333b" fill-opacity=".62" text-anchor="middle" style="display:none">YOUR LOGO</text>
+          <text id="engraveHandle" x="700" y="188" font-size="19" font-weight="700" letter-spacing="1.2"
+                fill="#f2f5f7" fill-opacity=".72" text-anchor="middle" style="display:none">YOUR LOGO</text>
+        </g>
+      </svg>
+
+      <div class="stage-actions">
+        <button class="btn ghost sm" id="savePng" type="button">Save preview as image</button>
+        <button class="btn ghost sm" id="copySpec" type="button">Copy specification</button>
+        <button class="btn ghost sm" id="reset" type="button">Reset</button>
+      </div>
+      <p class="stage-note" id="stageName">Drop-point blade · straight handle · rosewood</p>
+      <div class="dims" id="dims"></div>
+    </section>
+
+    <!-- ============ 选项区 ============ -->
+    <section class="panel">
+
+      <div class="group">
+        <div class="group-head"><h2>1. Blade profile</h2><span>choose one</span></div>
+        <div class="opts" id="optBlade"></div>
+        <button class="btn ghost sm" id="moreBlades" type="button" style="margin-top:10px"></button>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h2>2. Handle shape</h2><span>choose one</span></div>
+        <div class="opts" id="optHandle"></div>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h2>3. Handle material</h2><span>choose one</span></div>
+        <div class="opts" id="optMat"></div>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h2>4. Blade steel</h2><span>choose one</span></div>
+        <div class="opts" id="optSteel"></div>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h2>5. Blade finish</h2><span>choose one</span></div>
+        <div class="opts" id="optFinish"></div>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h2>6. Laser engraving</h2><span>choose one</span></div>
+        <div class="opts" id="optEngraving"></div>
+      </div>
+
+      <div class="group">
+        <div class="group-head"><h2>Your details</h2><span>so we can quote</span></div>
+        <div class="fields">
+          <label class="f">Company<input id="fCompany" type="text" placeholder="Brand / importer name" autocomplete="organization"></label>
+          <label class="f">Business email<input id="fEmail" type="email" placeholder="you@company.com" autocomplete="email"></label>
+          <label class="f">Country<input id="fCountry" type="text" placeholder="Germany" autocomplete="country-name"></label>
+          <label class="f">Target quantity (pcs)<input id="fQty" type="number" min="500" step="100" value="1000"></label>
+        </div>
+        <div class="cta-row">
+          <a class="btn wa" id="waBtn" href="#" target="_blank" rel="noopener">Send RFQ on WhatsApp</a>
+          <a class="btn" id="mailBtn" href="#">Send RFQ by email</a>
+        </div>
+        <p class="fine" style="margin-top:10px">No account, no obligation. We reply with tooling cost,
+        sample lead time and unit price at your quantity — usually within one working day.</p>
+        <pre class="spec" id="specOut"></pre>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    Yangjiang Wiliheng Knives Co., Ltd · since 2018 · Yangjiang, Guangdong, China ·
+    <a href="mailto:sales@wiliheng.com">sales@wiliheng.com</a> ·
+    <a href="https://wa.me/8618124886695">+86 181-2488-6695</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<!-- 形状/材质数据（由 import_knife_assets.py 生成，不要手改） -->
+<script src="knife_data.js"></script>
+<script>
+(function(){
+  "use strict";
+
+
+  /* ---------------- 数据层来自 knife_data.js（导入脚本重写，不要手改） ----------------
+     数组按 key 索引，保持 render 里 SHAPES.blade[key].d 的访问方式不变。 */
+  var D = window.KNIFE_DATA || {};
+  function byKey(arr){ var o = {}; (arr || []).forEach(function(it){ o[it.key] = it; }); return o; }
+
+  var SHAPES    = { blade: byKey(D.blade), handle: byKey(D.handle) };
+  var MATERIALS = byKey(D.materials);
+  var STEELS    = byKey(D.steels);
+  var FINISHES  = byKey(D.finishes);
+  var ENGRAV    = byKey(D.engraving);
+  var RIVETS = {}, ENGRAVE_POS = {};
+  (D.handle || []).forEach(function(h){
+    RIVETS[h.key]      = h.rivets  || [[600,152],[700,152],[800,152]];
+    ENGRAVE_POS[h.key] = h.engrave || [700,186];
+  });
+
+  var state = {
+    blade:"", handle:"", mat:"", steel:"", finish:"", engraving:"",
+    company:"", email:"", country:"", qty:1000
+  };
+
+  /* 默认值 = 每一项的第一个（数据换了 key 也不会点空） */
+  var DEFAULTS = {};
+  [["blade", SHAPES.blade], ["handle", SHAPES.handle], ["mat", MATERIALS],
+   ["steel", STEELS], ["finish", FINISHES], ["engraving", ENGRAV]].forEach(function(p){
+    var ks = Object.keys(p[1]);
+    DEFAULTS[p[0]] = ks.length ? ks[0] : "";
+    state[p[0]] = DEFAULTS[p[0]];
+  });
+
+  var $ = function(id){ return document.getElementById(id); };
+
+  /* 单个形状的渲染：矢量走 path（可换填充色/柄材纹理），位图走 <image>（CAD 导出分层 PNG） */
+  function setShape(pathId, imgId, item, fill){
+    var p = $(pathId), im = $(imgId);
+    if (!item) { return; }
+    if (item.type === "image" && item.img){
+      im.setAttribute("href", item.img.href);
+      im.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", item.img.href);
+      im.setAttribute("x", item.img.x);
+      im.setAttribute("y", item.img.y);
+      im.setAttribute("width",  item.img.w);
+      im.setAttribute("height", item.img.h);
+      im.style.display = "";
+      p.style.display = "none";
+    } else {
+      im.style.display = "none";
+      p.style.display = "";
+      p.setAttribute("d", item.d || "");
+      p.setAttribute("fill", fill);
+    }
+  }
+
+  /* ---------- 预设链接：?blade=tanto&handle=groove&mat=carbon&steel=d2&finish=black&engraving=both&qty=2000&company=Acme
+     销售可以直接把预设组合发客户，客户打开就是配置好的样子。 ---------- */
+  (function applyQuery(){
+    var q;
+    try { q = new URLSearchParams(location.search); } catch(e){ return; }
+    [["blade", SHAPES.blade], ["handle", SHAPES.handle], ["mat", MATERIALS],
+     ["steel", STEELS], ["finish", FINISHES], ["engraving", ENGRAV]].forEach(function(pair){
+      var v = q.get(pair[0]);
+      if (v && pair[1][v]) state[pair[0]] = v;
+    });
+    ["company","email","country"].forEach(function(k){ var v = q.get(k); if (v) state[k] = v; });
+    var qv = parseInt(q.get("qty"), 10);
+    if (qv > 0) state.qty = qv;
+    $("fCompany").value = state.company;
+    $("fEmail").value   = state.email;
+    $("fCountry").value = state.country;
+    $("fQty").value     = state.qty;
+  })();
+
+  /* ---------- 组合规则（B2B 客户不该配出一把做不出来的刀） ----------
+     1) 折叠刀刃只能配折叠手柄、直刀刀身只能配直刀手柄 —— 结构不同不能混
+     2) 折叠刀：刃长 + 收刀余量 必须 <= 手柄内腔长度，否则刀折不进去
+     不满足的组合直接把按钮禁用，并写明原因。 */
+  var JOINT = D.joint || {};
+  var CLR = JOINT.pocketClearance || 8;
+
+  function fits(b, h){
+    if (!b || !h) { return true; }
+    var bm = b.mount || "folding", hm = h.mount || "folding";
+    if (bm !== hm) { return false; }
+    if (bm === "folding" && b.bladeLen && h.pocketLen){
+      return (b.bladeLen + CLR) <= h.pocketLen + 0.01;
+    }
+    return true;                       // 直刀不靠内腔收刀，长度自由
+  }
+
+  function whyNot(b, h){
+    if (!b || !h) { return ""; }
+    var bm = b.mount || "folding", hm = h.mount || "folding";
+    if (bm !== hm){
+      return bm === "folding"
+        ? "Folding blade — only fits a folding handle (this one is for fixed blades)."
+        : "Fixed blade — only fits a fixed-blade handle (this one is for folding knives).";
+    }
+    if (bm === "folding" && b.bladeLen && h.pocketLen && (b.bladeLen + CLR) > h.pocketLen + 0.01){
+      return "Blade " + b.bladeLen + " mm will not close into this handle — it takes up to " +
+             Math.max(0, Math.round((h.pocketLen - CLR) * 10) / 10) + " mm.";
+    }
+    return "";
+  }
+
+  function refreshAvailability(){
+    var B = SHAPES.blade[state.blade], H = SHAPES.handle[state.handle];
+    [["optBlade", "blade", SHAPES.blade], ["optHandle", "handle", SHAPES.handle]].forEach(function(p){
+      Array.prototype.forEach.call($(p[0]).children, function(btn){
+        var it = p[2][btn.dataset.k];
+        var isBlade = (p[1] === "blade");
+        var ok = isBlade ? fits(it, H) : fits(B, it);
+        btn.disabled = !ok;
+        btn.title = ok ? "" : whyNot(isBlade ? it : B, isBlade ? H : it);
+      });
+    });
+  }
+
+  /* 当前组合被新选择搞成不合法时自动纠偏：优先保刚点的那一项，换另一项 */
+  function ensureValid(){
+    if (fits(SHAPES.blade[state.blade], SHAPES.handle[state.handle])) { return; }
+    var B = SHAPES.blade[state.blade];
+    var hk = Object.keys(SHAPES.handle).filter(function(k){ return fits(B, SHAPES.handle[k]); })[0];
+    if (hk){ state.handle = hk; return; }
+    var bk = Object.keys(SHAPES.blade).filter(function(k){
+      return fits(SHAPES.blade[k], SHAPES.handle[state.handle]); })[0];
+    if (bk){ state.blade = bk; }
+  }
+
+  function sync(){ ensureValid(); refreshPressed(); refreshAvailability(); updateMoreBtn(); render(); }
+
+  /* 刃形分两层：tier1 = 客户最认的常规形；tier2 折叠起来，别让选择题压垮采购 */
+  var showAllBlades = false;
+  function bladeFilter(it){ return showAllBlades || it.tier !== 2; }
+  if ((SHAPES.blade[state.blade] || {}).tier === 2){ showAllBlades = true; }
+
+  function updateMoreBtn(){
+    var t2 = Object.keys(SHAPES.blade).filter(function(k){ return SHAPES.blade[k].tier === 2; }).length;
+    var btn = $("moreBlades");
+    if (!btn) { return; }
+    if (!t2){ btn.style.display = "none"; return; }
+    btn.style.display = "";
+    btn.textContent = showAllBlades
+      ? "\u2212 Show standard profiles only"
+      : "+ Show " + t2 + " more profiles";
+  }
+
+  function el(tag, cls, txt){
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (txt != null) n.textContent = txt;
+    return n;
+  }
+
+  /* ---------- 选项按钮 ---------- */
+  function buildGroup(hostId, dict, key, extraSwatch, filter){
+    var host = $(hostId);
+    host.innerHTML = "";
+    Object.keys(dict).forEach(function(k){
+      var item = dict[k];
+      if (filter && !filter(item)) { return; }
+      var b = el("button", "opt");
+      b.type = "button";
+      b.setAttribute("aria-pressed", state[key] === k ? "true" : "false");
+      b.dataset.k = k;
+      if (extraSwatch && item.sw){
+        var s = el("span", "sw");
+        s.style.background = item.sw;
+        b.appendChild(s);
+      }
+      b.appendChild(el("span", null, item.label));
+      b.addEventListener("click", function(){
+        state[key] = k;
+        Array.prototype.forEach.call(host.children, function(c){
+          c.setAttribute("aria-pressed", c.dataset.k === k ? "true" : "false");
+        });
+        sync();
+      });
+      host.appendChild(b);
+    });
+  }
+
+  /* ---------- 预览渲染 ---------- */
+  function render(){
+    var B = SHAPES.blade[state.blade] || {}, H = SHAPES.handle[state.handle] || {};
+    var F = FINISHES[state.finish] || {}, M = MATERIALS[state.mat] || {};
+    setShape("pBlade",  "pBladeImg",  B, F.grad);
+    setShape("pHandle", "pHandleImg", H, M.fill);
+
+    // 护手跟随表面处理；深色刃面上刻字改用浅色，否则看不见
+    $("bolsterRect").setAttribute("fill", F.grad || "");
+    var lightBlade = F.light === true;
+    $("engraveBlade").setAttribute("fill", lightBlade ? "#eef3f6" : "#2b333b");
+    $("engraveBlade").setAttribute("fill-opacity", lightBlade ? ".82" : ".62");
+
+    // 刃口高光线（仅矢量图层有意义）
+    $("pBladeBevel").setAttribute("d", B.d || "");
+    $("pBladeBevel").style.display = (B.type === "image" || !B.d) ? "none" : "";
+
+    // 刻字
+    var showB = state.engraving === "blade" || state.engraving === "both";
+    var showH = state.engraving === "handle" || state.engraving === "both";
+    $("engraveBlade").style.display = showB ? "" : "none";
+    $("engraveHandle").style.display = showH ? "" : "none";
+    var word = state.company ? state.company.slice(0,18).toUpperCase() : "YOUR LOGO";
+    $("engraveBlade").textContent = word;
+    $("engraveHandle").textContent = word;
+    // 柄刻字位置随柄型（弯柄下缘低，字要往上挪，否则被裁在柄外）
+    var hp = ENGRAVE_POS[state.handle] || [700,186];
+    $("engraveHandle").setAttribute("x", hp[0]);
+    $("engraveHandle").setAttribute("y", hp[1]);
+
+    // 铆钉跟随柄型坐标（弯柄时不能浮在柄外）
+    (RIVETS[state.handle] || [[600,152],[700,152],[800,152]]).forEach(function(p, i){
+      var c = $("rv" + (i + 1));
+      c.setAttribute("cx", p[0]);
+      c.setAttribute("cy", p[1]);
+    });
+
+    $("stageName").textContent =
+      (B.label || "") + " · " + (H.label || "").toLowerCase() + " · " + (M.label || "").toLowerCase();
+
+    // 真实尺寸：客户最在意的三项
+    var dims = [];
+    if (B.bladeLen) { dims.push("Blade <b>" + B.bladeLen + " mm</b>"); }
+    if (H.pocketLen) { dims.push("Handle <b>" + H.pocketLen + " mm</b>"); }
+    if (B.bladeLen && H.pocketLen) {
+      dims.push("Open <b>" + (Math.round((B.bladeLen + H.pocketLen) * 10) / 10) + " mm</b>");
+    }
+    $("dims").innerHTML = dims.join('<i> | </i>');
+
+    var spec = specText();
+    $("specOut").textContent = spec;
+    $("waBtn").href = "https://wa.me/8618124886695?text=" + encodeURIComponent(spec);
+    $("mailBtn").href = "mailto:sales@wiliheng.com?subject=" +
+      encodeURIComponent("OEM knife RFQ — " + (state.company || "new enquiry")) +
+      "&body=" + encodeURIComponent(spec);
+  }
+
+  /* ---------- 规格文本（询价单） ---------- */
+  function specText(){
+    var L = [];
+    L.push("OEM KNIFE RFQ — Wiliheng Knives");
+    L.push("--------------------------------");
+    L.push("Blade profile : " + (SHAPES.blade[state.blade] || {}).label);
+    var st = STEELS[state.steel] || {};
+    L.push("Blade steel   : " + (st.label || state.steel) + (st.note ? " (" + st.note + ")" : ""));
+    L.push("Blade finish  : " + (FINISHES[state.finish] || {}).label);
+    L.push("Handle shape  : " + (SHAPES.handle[state.handle] || {}).label);
+    L.push("Handle mat.   : " + (MATERIALS[state.mat] || {}).label);
+    var _b = SHAPES.blade[state.blade] || {}, _h = SHAPES.handle[state.handle] || {};
+    L.push("Mounting      : " + (_b.mount === "fixed" ? "Fixed blade" : "Folding"));
+    if (_b.bladeLen) { L.push("Blade length  : " + _b.bladeLen + " mm"); }
+    if (_b.bladeLen && _h.pocketLen) {
+      L.push("Overall length: " + (Math.round((_b.bladeLen + _h.pocketLen) * 10) / 10) + " mm (open)");
+    }
+    L.push("Engraving     : " + (ENGRAV[state.engraving] || {}).label);
+    L.push("Quantity      : " + (state.qty || 0) + " pcs");
+    L.push("--------------------------------");
+    L.push("Company       : " + (state.company  || "—"));
+    L.push("Country       : " + (state.country  || "—"));
+    L.push("Email         : " + (state.email    || "—"));
+    L.push("");
+    L.push("Request: tooling cost, sample lead time, unit price and packaging options.");
+    return L.join("\n");
+  }
+
+  /* ---------- 导出预览 PNG ---------- */
+  function savePng(){
+    var svg = $("view");
+    var clone = svg.cloneNode(true);
+    clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    clone.setAttribute("width", 2000);
+    clone.setAttribute("height", 600);
+    var bg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    bg.setAttribute("width","1000"); bg.setAttribute("height","300"); bg.setAttribute("fill","#ffffff");
+    clone.insertBefore(bg, clone.firstChild);
+    var data = new XMLSerializer().serializeToString(clone);
+    var img = new Image();
+    img.onload = function(){
+      var c = document.createElement("canvas");
+      c.width = 2000; c.height = 600;
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#fff"; ctx.fillRect(0,0,2000,600);
+      ctx.drawImage(img, 0, 0, 2000, 600);
+      var a = document.createElement("a");
+      a.download = "wiliheng-knife-config.png";
+      a.href = c.toDataURL("image/png");
+      a.click();
+      toast("Preview image saved");
+    };
+    img.onerror = function(){ toast("Could not export — take a screenshot instead"); };
+    img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(data);
+  }
+
+  function toast(msg){
+    var t = $("toast");
+    t.textContent = msg;
+    t.classList.add("on");
+    setTimeout(function(){ t.classList.remove("on"); }, 1800);
+  }
+
+  function copySpec(){
+    var txt = specText();
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){ toast("Specification copied"); },
+        function(){ fallbackCopy(txt); });
+    } else { fallbackCopy(txt); }
+  }
+  function fallbackCopy(txt){
+    var ta = document.createElement("textarea");
+    ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); toast("Specification copied"); }
+    catch(e){ toast("Select the text above and copy"); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------- 绑定输入 ---------- */
+  ["company","email","country","qty"].forEach(function(k){
+    var node = $("f" + k.charAt(0).toUpperCase() + k.slice(1));
+    node.addEventListener("input", function(){
+      state[k] = (k === "qty") ? (parseInt(node.value,10) || 0) : node.value;
+      render();
+    });
+  });
+
+  $("savePng").addEventListener("click", savePng);
+  $("copySpec").addEventListener("click", copySpec);
+  function refreshPressed(){
+    [["optBlade","blade"],["optHandle","handle"],["optMat","mat"],
+     ["optSteel","steel"],["optFinish","finish"],["optEngraving","engraving"]].forEach(function(p){
+      Array.prototype.forEach.call($(p[0]).children, function(c){
+        c.setAttribute("aria-pressed", c.dataset.k === state[p[1]] ? "true" : "false");
+      });
+    });
+  }
+
+  $("reset").addEventListener("click", function(){
+    ["blade","handle","mat","steel","finish","engraving"].forEach(function(k){ state[k] = DEFAULTS[k]; });
+    sync(); toast("Reset");
+  });
+
+  buildGroup("optBlade",   SHAPES.blade,  "blade", false, bladeFilter);
+  buildGroup("optHandle",  SHAPES.handle, "handle");
+  buildGroup("optMat",     MATERIALS,     "mat",  true);
+  buildGroup("optSteel",   STEELS,        "steel");
+  buildGroup("optFinish",  FINISHES,      "finish");
+  buildGroup("optEngraving", ENGRAV,      "engraving");
+
+  $("moreBlades").addEventListener("click", function(){
+    showAllBlades = !showAllBlades;
+    // 收起时若正选着细分形，回到常规形，免得选中项从列表里消失
+    if (!showAllBlades && (SHAPES.blade[state.blade] || {}).tier === 2){
+      var first = Object.keys(SHAPES.blade).filter(function(k){ return SHAPES.blade[k].tier !== 2; })[0];
+      if (first){ state.blade = first; }
+    }
+    buildGroup("optBlade", SHAPES.blade, "blade", false, bladeFilter);
+    sync();
+  });
+
+  sync();
+})();
+</script>
+</body>
+</html>
