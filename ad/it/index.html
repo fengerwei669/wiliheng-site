@@ -46,66 +46,8 @@ function consentDefaults(g){gtag('consent','default',{ad_storage:g?'granted':'de
 consentDefaults(!inEU);
 try{var _c=localStorage.getItem('wl_consent');if(_c==='y')consentDefaults(true);if(_c==='n')consentDefaults(false);}catch(e){}
 gtag('config','AW-17434685893');
-(function(){
- var TOKEN='wlc-7f3a91c2',LBL_WA='AW-17434685893/8VZKCKaX2Y4bEMXjwPlA',LBL_FORM='AW-17434685893/R4CTCKq3poMdEMXjwPlA',LANG='it',INTENT='Italia WhatsApp',EP={};
- fetch('/ad/track.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){EP=d||{};}).catch(function(){});
- document.addEventListener('click',function(e){
-   var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me"]'):null; if(!a) return;
-   try{var b=JSON.stringify({token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase(),page:location.pathname,intent:INTENT,msg:a.getAttribute('data-intent')||''});
-       if(navigator.sendBeacon&&EP.wa_click) navigator.sendBeacon(EP.wa_click,new Blob([b],{type:'text/plain'}));}catch(_){}
-   if(typeof gtag==='function') gtag('event','conversion',{send_to:LBL_WA});
- },true);
- function ok(){document.getElementById('enq').hidden=true;document.getElementById('enq-note').hidden=true;document.getElementById('enq-ok').hidden=false;}
- document.getElementById('enq').addEventListener('submit',function(e){
-   e.preventDefault();
-   var f=e.target,v=function(n){return (f.elements[n]&&f.elements[n].value||'').trim();};
-   if(!v('email')){f.elements['email'].focus();return;}
-   if(f.elements['consent']&&!f.elements['consent'].checked){f.elements['consent'].focus();return;}
-   var payload={token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase()+'F',page:location.pathname,
-                company:v('company'),name:v('name'),email:v('email'),country:v('country'),
-                product_line:v('product_line'),quantity:v('quantity'),message:v('message'),intent:'landing form'};
-   var send=function(url){return fetch(url,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});};
-   var fallback=function(){location.href='mailto:fengerwei669@gmail.com?subject=Enquiry%20'+LANG.toUpperCase()+'&body='+encodeURIComponent(JSON.stringify(payload,null,1));};
-   if(EP.lead){send(EP.lead).then(function(r){if(r.ok){ok();if(typeof gtag==='function')gtag('event','conversion',{send_to:LBL_FORM});}else fallback();}).catch(fallback);}
-   else{send('/ad/track.json').catch(function(){}).finally(fallback);}
- });
- if(inEU&&!localStorage.getItem('wl_consent')){
-   var bar=document.createElement('div');
-   bar.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#0f1417;color:#e7edf0;font:14px/1.5 system-ui,sans-serif;padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap';
-   var src=document.getElementById('ui-consent');
-   bar.innerHTML='<span style="flex:1;min-width:220px"></span>';
-   bar.firstChild.textContent=src?src.textContent:'We measure ad clicks only with your consent.';
-   var y=document.createElement('button'),n=document.createElement('button');
-   y.textContent='OK';y.style.cssText='background:#b9e56b;color:#12210a;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer';
-   n.textContent='No';n.style.cssText='background:transparent;color:#e7edf0;border:1px solid #39454b;border-radius:8px;padding:8px 14px;cursor:pointer';
-   y.onclick=function(){consentDefaults(true);localStorage.setItem('wl_consent','y');bar.remove();};
-   n.onclick=function(){consentDefaults(false);localStorage.setItem('wl_consent','n');bar.remove();};
-   bar.appendChild(y);bar.appendChild(n);document.body.appendChild(bar);
- }
-})();
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://wiliheng.com/#organization",
-  "name": "Yangjiang Wiliheng Knives Co., Ltd",
-  "foundingDate": "2018",
-  "url": "https://wiliheng.com/",
-  "sameAs": ["https://www.youtube.com/@wiliheng"],
-  "logo": "https://wiliheng.com/assets/favicon.png",
-  "email": "sales@wiliheng.com",
-  "telephone": "+86-181-2488-6695",
-  "description": "OEM/ODM manufacturer of folding and kitchen knives, kitchen tools and housewares in Yangjiang, China. In-house heat treatment, grinding, CNC machining and hardness testing. MOQ from 500 pcs, private label welcome.",
-  "address": {"@type": "PostalAddress",
-    "streetAddress": "Factory No. 2, Middle Section of Yudong Ninth Road, Yangdong Industrial Park",
-    "addressLocality": "Yangjiang", "addressRegion": "Guangdong", "addressCountry": "CN"}
-}
-</script>
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "WebPage", "url": "https://wiliheng.com/ad/it/", "dateModified": "2026-10-11", "about": {"@id": "https://wiliheng.com/#organization"}, "publisher": {"@id": "https://wiliheng.com/#organization"}}
-</script>
 </head>
 <body>
 <div class="hero"><div class="wrap">
@@ -165,4 +107,45 @@ gtag('config','AW-17434685893');
 
 <div id="ui-consent" hidden>Accetto che i miei dati siano usati per rispondere alla richiesta.</div>
 <footer><div class="wrap">MOQ 500 pz per modello. Prezzi e tempi confermati per iscritto. Solo ingrosso/B2B.<br>Factory No. 2, Middle Section of Yudong Ninth Road, Yangdong Industrial Park, Yangjiang City, Guangdong, China · since 2018</div></footer>
+
+<script>
+(function(){
+ var TOKEN='wlc-7f3a91c2',LBL_WA='AW-17434685893/8VZKCKaX2Y4bEMXjwPlA',LBL_FORM='AW-17434685893/R4CTCKq3poMdEMXjwPlA',LANG='it',INTENT='Italia WhatsApp',EP={};
+ fetch('/ad/track.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){EP=d||{};}).catch(function(){});
+ document.addEventListener('click',function(e){
+   var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me"]'):null; if(!a) return;
+   try{var b=JSON.stringify({token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase(),page:location.pathname,intent:INTENT,msg:a.getAttribute('data-intent')||''});
+       if(navigator.sendBeacon&&EP.wa_click) navigator.sendBeacon(EP.wa_click,new Blob([b],{type:'text/plain'}));}catch(_){}
+   if(typeof gtag==='function') gtag('event','conversion',{send_to:LBL_WA});
+ },true);
+ function ok(){document.getElementById('enq').hidden=true;document.getElementById('enq-note').hidden=true;document.getElementById('enq-ok').hidden=false;}
+ document.getElementById('enq').addEventListener('submit',function(e){
+   e.preventDefault();
+   var f=e.target,v=function(n){return (f.elements[n]&&f.elements[n].value||'').trim();};
+   if(!v('email')){f.elements['email'].focus();return;}
+   if(f.elements['consent']&&!f.elements['consent'].checked){f.elements['consent'].focus();return;}
+   var payload={token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase()+'F',page:location.pathname,
+                company:v('company'),name:v('name'),email:v('email'),country:v('country'),
+                product_line:v('product_line'),quantity:v('quantity'),message:v('message'),intent:'landing form'};
+   var send=function(url){return fetch(url,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});};
+   var fallback=function(){location.href='mailto:fengerwei669@gmail.com?subject=Enquiry%20'+LANG.toUpperCase()+'&body='+encodeURIComponent(JSON.stringify(payload,null,1));};
+   if(EP.lead){send(EP.lead).then(function(r){if(r.ok){ok();if(typeof gtag==='function')gtag('event','conversion',{send_to:LBL_FORM});}else fallback();}).catch(fallback);}
+   else{send('/ad/track.json').catch(function(){}).finally(fallback);}
+ });
+ if(inEU&&!localStorage.getItem('wl_consent')){
+   var bar=document.createElement('div');
+   bar.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#0f1417;color:#e7edf0;font:14px/1.5 system-ui,sans-serif;padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap';
+   var src=document.getElementById('ui-consent');
+   bar.innerHTML='<span style="flex:1;min-width:220px"></span>';
+   bar.firstChild.textContent=src?src.textContent:'We measure ad clicks only with your consent.';
+   var y=document.createElement('button'),n=document.createElement('button');
+   y.textContent='OK';y.style.cssText='background:#b9e56b;color:#12210a;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer';
+   n.textContent='No';n.style.cssText='background:transparent;color:#e7edf0;border:1px solid #39454b;border-radius:8px;padding:8px 14px;cursor:pointer';
+   y.onclick=function(){consentDefaults(true);localStorage.setItem('wl_consent','y');bar.remove();};
+   n.onclick=function(){consentDefaults(false);localStorage.setItem('wl_consent','n');bar.remove();};
+   bar.appendChild(y);bar.appendChild(n);document.body.appendChild(bar);
+ }
+})();
+</script>
+
 </body></html>
