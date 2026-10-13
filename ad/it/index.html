@@ -34,6 +34,8 @@
  /* 悬浮按钮不能压住正文：给页面底部留出按钮高度（2026-10-10 截图发现的遮挡） */
  body{padding-bottom:78px}
  @media (min-width:900px){.wa-float{width:52px;height:52px;right:22px;bottom:22px}}
+ /* 欧盟同意条出现时把悬浮 WhatsApp 抬高，别被盖住（2026-10-13） */
+ body.consent-open .wa-float{bottom:104px}
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17434685893"></script>
@@ -141,8 +143,9 @@ gtag('config','AW-17434685893');
    var y=document.createElement('button'),n=document.createElement('button');
    y.textContent='OK';y.style.cssText='background:#b9e56b;color:#12210a;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer';
    n.textContent='No';n.style.cssText='background:transparent;color:#e7edf0;border:1px solid #39454b;border-radius:8px;padding:8px 14px;cursor:pointer';
-   y.onclick=function(){consentDefaults(true);localStorage.setItem('wl_consent','y');bar.remove();};
-   n.onclick=function(){consentDefaults(false);localStorage.setItem('wl_consent','n');bar.remove();};
+   document.body.classList.add('consent-open');
+   y.onclick=function(){consentDefaults(true);localStorage.setItem('wl_consent','y');document.body.classList.remove('consent-open');bar.remove();};
+   n.onclick=function(){consentDefaults(false);localStorage.setItem('wl_consent','n');document.body.classList.remove('consent-open');bar.remove();};
    bar.appendChild(y);bar.appendChild(n);document.body.appendChild(bar);
  }
 })();
