@@ -13,18 +13,18 @@
 <style>
  *{box-sizing:border-box}body{margin:0;font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#101417;background:#fff}
  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
- .hero{background:#0f1417;color:#eef3f5;padding:54px 0 42px}
+ .hero{background:#0b1626;color:#ffffff;padding:54px 0 42px}
  h1{font-size:30px;line-height:1.25;margin:0 0 14px} .lede{font-size:17px;color:#c6d0d6;max-width:700px;margin:0 0 22px}
- .btn{display:inline-block;background:#b9e56b;color:#12210a;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:10px;margin:0 8px 10px 0}
+ .btn{display:inline-block;background:#4a90e2;color:#04121f;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:10px;margin:0 8px 10px 0}
  .btn.ghost{background:transparent;color:#eef3f5;border:1px solid #39454b}
  .chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:18px 0 0}
- .chips li{background:#1b2226;border:1px solid #2b343a;border-radius:999px;padding:6px 12px;font-size:13px;color:#cfd8dd}
+ .chips li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 12px;font-size:13px;color:#dfe7ea}
  section{padding:40px 0} h2{font-size:22px;margin:0 0 8px} .sub{color:#54626b;margin:0 0 16px;max-width:760px}
  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
  .card{border:1px solid #e6ebe3;border-radius:14px;padding:16px} .card b{display:block;margin-bottom:6px}
  form#enq{display:grid;gap:10px;max-width:640px;margin-top:8px}
  input,select,textarea{width:100%;padding:12px 14px;border:1px solid #ccd4d9;border-radius:10px;font:inherit;background:#fff;color:#101417}
- button[type=submit]{background:#b9e56b;color:#12210a;border:0;border-radius:10px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}
+ button[type=submit]{background:#4a90e2;color:#04121f;border:0;border-radius:10px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}
  footer{border-top:1px solid #e6eaec;color:#6b7780;font-size:13px;padding:22px 0 40px}
  a{color:#3f6b00}
  .wa-float{position:fixed;right:16px;bottom:16px;z-index:80;width:56px;height:56px;border-radius:50%;
@@ -141,7 +141,7 @@ gtag('config','AW-17434685893');
    bar.innerHTML='<span style="flex:1;min-width:220px"></span>';
    bar.firstChild.textContent=src?src.textContent:'We measure ad clicks only with your consent.';
    var y=document.createElement('button'),n=document.createElement('button');
-   y.textContent='OK';y.style.cssText='background:#b9e56b;color:#12210a;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer';
+   y.textContent='OK';y.style.cssText='background:{accent};color:{accent_text};border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer';
    n.textContent='No';n.style.cssText='background:transparent;color:#e7edf0;border:1px solid #39454b;border-radius:8px;padding:8px 14px;cursor:pointer';
    document.body.classList.add('consent-open');
    y.onclick=function(){consentDefaults(true);localStorage.setItem('wl_consent','y');document.body.classList.remove('consent-open');bar.remove();};
