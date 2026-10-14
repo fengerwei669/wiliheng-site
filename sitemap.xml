@@ -7,20 +7,234 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wiliheng.com/ad/de/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us/"/>
+    <loc>https://wiliheng.com/privacy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://wiliheng.com/ad/us/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <loc>https://wiliheng.com/ad/de/impressum.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
-  <url><loc>https://wiliheng.com/privacy.html</loc><priority>0.3</priority></url>
-  <url><loc>https://wiliheng.com/ad/de/impressum.html</loc><priority>0.3</priority></url>
-  <url><loc>https://wiliheng.com/ad/de/datenschutz.html</loc><priority>0.3</priority></url>
+  <url>
+    <loc>https://wiliheng.com/ad/de/datenschutz.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/es/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/fr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/it/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/pt/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/nl/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/pl/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/ru/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/ar/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/tr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/ro/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/us-ware/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
+  <url>
+    <loc>https://wiliheng.com/ad/de/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wiliheng.com/ad/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wiliheng.com/ad/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://wiliheng.com/ad/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiliheng.com/ad/pt/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wiliheng.com/ad/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://wiliheng.com/ad/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://wiliheng.com/ad/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://wiliheng.com/ad/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wiliheng.com/ad/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://wiliheng.com/ad/ro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiliheng.com/ad/us-ware/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wiliheng.com/ad/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wiliheng.com/ad/us-ware/"/>
+  </url>
 </urlset>
