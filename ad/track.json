@@ -1,6 +1,6 @@
 {
- "_说明": "落地页上报地址（点击 + 询盘表单）。隧道地址变时由 sync_track_url.py 自动更新并重新发布；页面读不到就静默跳过（不影响任何功能）。",
- "wa_click": "https://continues-fast-birthday-furthermore.trycloudflare.com/wa_click",
- "lead": "https://continues-fast-birthday-furthermore.trycloudflare.com/lead",
- "updated": "2026-10-16 22:26:29"
+ "_说明": "落地页上报地址。**已改为直连正式 Worker api.wiliheng.com**（2026-10-16）。原先指向 trycloudflare 临时隧道，隧道一重启就失效，导致询盘表单静默失败、广告点击 0 转化。**不要再改回隧道地址**；确需恢复隧道同步请设 ALLOW_TRACK_SYNC=1。",
+ "wa_click": "https://api.wiliheng.com/inquiry",
+ "lead": "https://api.wiliheng.com/inquiry",
+ "updated": "2026-10-16 22:28:25"
 }

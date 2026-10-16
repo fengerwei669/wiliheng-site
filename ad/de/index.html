@@ -153,9 +153,10 @@
       <!-- 2026-10-16 体检：与 10 个语种页统一为 4 字段（公司/邮箱/WhatsApp/国家），
            少一个必填就少一层流失；客户名在邮件或 WhatsApp 里自然会给。 -->
       <input name="country" placeholder="Land" autocomplete="country-name">
-      <select name="product_line"><option value="">Produktlinie wählen</option><option>Küchenmesser</option><option>Klappmesser</option><option>Küchenhelfer &amp; Gadgets</option><option>Besteck &amp; Bestecksets</option><option>Scheren</option><option>Gemischt / Sortiment</option></select>
-      <select name="quantity"><option value="">Menge pro Modell</option><option>500–1.000 Stück</option><option>1.000–5.000 Stück</option><option>über 5.000 Stück</option><option>noch offen</option></select>
-      <textarea name="message" rows="3" class="full" placeholder="Nachricht (optional: Zielmarkt, Verpackung, Termin)"></textarea>
+      <!-- 2026-10-16 体检：与 12 个语种页统一为 4 字段（公司*/邮箱*/WhatsApp/国家）。
+           产品线、数量、留言三个下拉/文本块撤掉 —— B2B 冷访客只愿意填联系信息，
+           采购细节在 WhatsApp 里问反而更快。 -->
+      <p class="sub" style="margin:2px 0 0;font-size:13px">Nachricht (optional: Zielmarkt, Verpackung, Termin)</p>
       <label class="consent full"><input type="checkbox" name="consent" required>
         <span>Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden. <a href="/ad/de/datenschutz.html" target="_blank" rel="noopener">Datenschutz</a></span></label>
       <div class="full">
