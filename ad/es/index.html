@@ -116,11 +116,8 @@ gtag('config','AW-17434685893');
   <form id="enq">
     <input name="company" placeholder="Empresa" required>
     <input id="email2" name="email" type="email" placeholder="Correo de empresa" required>
-    <input name="name" placeholder="Su nombre">
+    <input name="whatsapp" placeholder="WhatsApp (opcional)">
     <input name="country" placeholder="País">
-    <input name="product_line" placeholder="Línea de producto que compra">
-    <input name="quantity" placeholder="Cantidad estimada">
-    <textarea name="message" rows="3" placeholder="Algo más"></textarea>
     <label style="font-size:14px;color:#54626b"><input type="checkbox" name="consent" required style="width:auto"> Acepto que mis datos se usen para responder a mi consulta.</label>
     <button type="submit">Enviar solicitud</button>
   </form>
@@ -133,11 +130,12 @@ gtag('config','AW-17434685893');
 
 <script>
 (function(){
+ function QP(k){try{var m=new RegExp('[?&]'+k+'=([^&]*)').exec(location.search);return m?decodeURIComponent(m[1].replace(/\+/g,' ')):'';}catch(_){return '';}}
  var TOKEN='wlc-7f3a91c2',LBL_WA='AW-17434685893/8VZKCKaX2Y4bEMXjwPlA',LBL_FORM='AW-17434685893/R4CTCKq3poMdEMXjwPlA',LANG='es',INTENT='España WhatsApp',EP={};
  fetch('/ad/track.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){EP=d||{};}).catch(function(){});
  document.addEventListener('click',function(e){
    var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me"]'):null; if(!a) return;
-   try{var b=JSON.stringify({token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase(),page:location.pathname,intent:INTENT,msg:a.getAttribute('data-intent')||''});
+   try{var b=JSON.stringify({token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase(),page:location.pathname,intent:INTENT,msg:a.getAttribute('data-intent')||'',kw:QP('kw'),campaign:QP('cpn'),adgroup:QP('adg'),device:QP('dev'),gclid:QP('gclid')});
        if(navigator.sendBeacon&&EP.wa_click) navigator.sendBeacon(EP.wa_click,new Blob([b],{type:'text/plain'}));}catch(_){}
    if(typeof gtag==='function') gtag('event','conversion',{send_to:LBL_WA});
  },true);
@@ -149,7 +147,7 @@ gtag('config','AW-17434685893');
    if(f.elements['consent']&&!f.elements['consent'].checked){f.elements['consent'].focus();return;}
    var payload={token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase()+'F',page:location.pathname,
                 company:v('company'),name:v('name'),email:v('email'),country:v('country'),
-                product_line:v('product_line'),quantity:v('quantity'),message:v('message'),intent:'landing form'};
+                whatsapp:v('whatsapp'),kw:QP('kw'),campaign:QP('cpn'),adgroup:QP('adg'),gclid:QP('gclid'),intent:'landing form'};
    var send=function(url){return fetch(url,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});};
    var fallback=function(){location.href='mailto:fengerwei669@gmail.com?subject=Enquiry%20'+LANG.toUpperCase()+'&body='+encodeURIComponent(JSON.stringify(payload,null,1));};
    if(EP.lead){send(EP.lead).then(function(r){if(r.ok){ok();if(typeof gtag==='function')gtag('event','conversion',{send_to:LBL_FORM});}else fallback();}).catch(fallback);}
