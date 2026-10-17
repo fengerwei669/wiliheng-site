@@ -1,0 +1,455 @@
+{
+ "_note": "主站图库清单（ingest_catalog_photos.py 生成）：slug 即图片文件名，caption 只写图上看得见的事实；编号 W-#### 供客户询盘时引用。",
+ "items": [
+  {
+   "slug": "W-1353",
+   "src": "hengli/Damascus-knife_p05_04_blue-handle.png",
+   "category": "Chef's knives — Damascus",
+   "caption": "Damascus pattern chef's knife — blue handle · W-1353"
+  },
+  {
+   "slug": "W-1768",
+   "src": "hengli/Damascus-knife_p05_03_wood-handle.png",
+   "category": "Chef's knives — Damascus",
+   "caption": "Damascus pattern chef's knife — wood handle · W-1768"
+  },
+  {
+   "slug": "W-4453",
+   "src": "hengli/Damascus-knife_p05_01_black-handle.png",
+   "category": "Chef's knives — Damascus",
+   "caption": "Damascus pattern chef's knife — black handle · W-4453"
+  },
+  {
+   "slug": "W-5903",
+   "src": "hengli/Damascus-knife_p05_02_black-handle.png",
+   "category": "Chef's knives — Damascus",
+   "caption": "Damascus pattern chef's knife — black handle · W-5903"
+  },
+  {
+   "slug": "W-2705",
+   "src": "angele/p09-02_8inCHEFKNIFEB011.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-2705"
+  },
+  {
+   "slug": "W-2735",
+   "src": "hengli/Damascus-knife_p06_02_olive-green-handle.png",
+   "category": "Chef's knives",
+   "caption": "Chef's knife — green handle · W-2735"
+  },
+  {
+   "slug": "W-3625",
+   "src": "angele/p09-04_8inCHEFKNIFEB014.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-3625"
+  },
+  {
+   "slug": "W-4357",
+   "src": "angele/p09-08_8inCHEFKNIFEB033.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-4357"
+  },
+  {
+   "slug": "W-4958",
+   "src": "hengli/Damascus-knife_p06_05_red-wood-handle.png",
+   "category": "Chef's knives",
+   "caption": "Chef's knife — wood handle · W-4958"
+  },
+  {
+   "slug": "W-5515",
+   "src": "hengli/Damascus-knife_p06_01_green-handle.png",
+   "category": "Chef's knives",
+   "caption": "Chef's knife — green handle · W-5515"
+  },
+  {
+   "slug": "W-8157",
+   "src": "angele/p09-07_8inCHEFKNIFEB027.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-8157"
+  },
+  {
+   "slug": "W-8248",
+   "src": "hengli/Damascus-knife_p06_04_black-handle.png",
+   "category": "Chef's knives",
+   "caption": "Chef's knife — black handle · W-8248"
+  },
+  {
+   "slug": "W-8532",
+   "src": "angele/p09-03_8inCHEFKNIFEB023.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-8532"
+  },
+  {
+   "slug": "W-9155",
+   "src": "hengli/Damascus-knife_p06_03_white-pearl-handle.png",
+   "category": "Chef's knives",
+   "caption": "Chef's knife — pearl white handle · W-9155"
+  },
+  {
+   "slug": "W-9182",
+   "src": "angele/p09-06_8inCHEFKNIFEB034.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-9182"
+  },
+  {
+   "slug": "W-9281",
+   "src": "angele/p09-09_8inCHEFKNIFEB002.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-9281"
+  },
+  {
+   "slug": "W-9682",
+   "src": "angele/p09-05_8inCHEFKNIFEB036.png",
+   "category": "Chef's knives",
+   "caption": "8-inch chef's knife · W-9682"
+  },
+  {
+   "slug": "W-1787",
+   "src": "hengli/Steak-knife-set_p04_01_gift-box-dark-handles.png",
+   "category": "Steak knife sets",
+   "caption": "Steak knife set in wooden gift box — dark handles · W-1787"
+  },
+  {
+   "slug": "W-2352",
+   "src": "hengli/Steak-knife-set_p04_02_gift-box-red-handles.png",
+   "category": "Steak knife sets",
+   "caption": "Steak knife set in wooden gift box — red handles · W-2352"
+  },
+  {
+   "slug": "W-4939",
+   "src": "hengli/Steak-knife-set_p03_01_gift-box-red-wood-handles.png",
+   "category": "Steak knife sets",
+   "caption": "Steak knife set in wooden gift box — red wood handles · W-4939"
+  },
+  {
+   "slug": "W-5217",
+   "src": "hengli/Steak-knife-set_p03_02_gift-box-dark-handles.png",
+   "category": "Steak knife sets",
+   "caption": "Steak knife set in wooden gift box — dark handles · W-5217"
+  },
+  {
+   "slug": "W-7575",
+   "src": "hengli/Steak-knife-set_p04_03_gift-box-dark-handles.png",
+   "category": "Steak knife sets",
+   "caption": "Steak knife set in wooden gift box — dark handles · W-7575"
+  },
+  {
+   "slug": "W-1391",
+   "src": "angele/p26-15_P23.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Knife set in a gift box · W-1391"
+  },
+  {
+   "slug": "W-3711",
+   "src": "angele/p08-05_3.5in-Paring-Knife.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Paring knife in a gift box · W-3711"
+  },
+  {
+   "slug": "W-3718",
+   "src": "angele/p11-21.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Knife rack set with knives and forks · W-3718"
+  },
+  {
+   "slug": "W-6622",
+   "src": "angele/p14-01.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Kitchen utensil set with knives · W-6622"
+  },
+  {
+   "slug": "W-6878",
+   "src": "angele/p26-13_P21_P12-Gift-box-with-EVA-holder.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Knife set in a gift box with EVA holder · W-6878"
+  },
+  {
+   "slug": "W-7351",
+   "src": "angele/p26-03_P19_P1-3Gift-box.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Knife set in a gift box · W-7351"
+  },
+  {
+   "slug": "W-8943",
+   "src": "angele/p11-22_26.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Rotating knife stand set · W-8943"
+  },
+  {
+   "slug": "W-9157",
+   "src": "angele/p04-04.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Kitchen knife block set · W-9157"
+  },
+  {
+   "slug": "W-9852",
+   "src": "angele/p10-10_m.png",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Kitchen knife block set with scissors · W-9852"
+  },
+  {
+   "slug": "W-6641",
+   "src": "angele/p12-09_cuttingboard.png",
+   "category": "Chopping boards",
+   "caption": "Chopping board set · W-6641"
+  },
+  {
+   "slug": "W-9417",
+   "src": "angele/p12-10_cuttingboard.png",
+   "category": "Chopping boards",
+   "caption": "Chopping board set · W-9417"
+  },
+  {
+   "slug": "W-2676",
+   "src": "angele/p19-08_Sharpener.png",
+   "category": "Knife sharpeners",
+   "caption": "Hand-held knife sharpener · W-2676"
+  },
+  {
+   "slug": "W-3726",
+   "src": "angele/p19-10_Sharpener.png",
+   "category": "Knife sharpeners",
+   "caption": "Hand-held knife sharpener · W-3726"
+  },
+  {
+   "slug": "W-5510",
+   "src": "angele/p19-11_Sharpener.png",
+   "category": "Knife sharpeners",
+   "caption": "Hand-held knife sharpener · W-5510"
+  },
+  {
+   "slug": "W-7609",
+   "src": "angele/p19-09_Sharpener.png",
+   "category": "Knife sharpeners",
+   "caption": "Hand-held knife sharpener · W-7609"
+  },
+  {
+   "slug": "W-2329",
+   "src": "angele/p24-09_PocketKnife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Pocket knife · W-2329"
+  },
+  {
+   "slug": "W-2343",
+   "src": "angele/p24-04_Folding-Knife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding knife · W-2343"
+  },
+  {
+   "slug": "W-2385",
+   "src": "angele/p24-03_FoldingKnife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding knife · W-2385"
+  },
+  {
+   "slug": "W-3167",
+   "src": "angele/p24-10_PocketKnife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Pocket knife · W-3167"
+  },
+  {
+   "slug": "W-4193",
+   "src": "angele/p24-08_PocketKnife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Pocket knife · W-4193"
+  },
+  {
+   "slug": "W-4255",
+   "src": "angele/p24-07_Hunting-Knife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Hunting knife with sheath · W-4255"
+  },
+  {
+   "slug": "W-4301",
+   "src": "angele/p24-05_HuntingKnife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Hunting knife with sheath · W-4301"
+  },
+  {
+   "slug": "W-5049",
+   "src": "angele/p24-02_Folding-Knife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding knife · W-5049"
+  },
+  {
+   "slug": "W-5081",
+   "src": "angele/p24-06_HuntingKnife.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Hunting knife with sheath · W-5081"
+  },
+  {
+   "slug": "W-5585",
+   "src": "apai/D33-803_面包刀.png",
+   "category": "Kitchen knives",
+   "caption": "Bread knife · W-5585"
+  },
+  {
+   "slug": "W-5762",
+   "src": "apai/D33-605_剔骨刀.png",
+   "category": "Kitchen knives",
+   "caption": "Boning knife · W-5762"
+  },
+  {
+   "slug": "W-7433",
+   "src": "apai/D33-802_切肉刀.png",
+   "category": "Kitchen knives",
+   "caption": "Carving / meat knife · W-7433"
+  },
+  {
+   "slug": "W-7938",
+   "src": "apai/D33-504_多用刀.png",
+   "category": "Kitchen knives",
+   "caption": "Utility knife · W-7938"
+  },
+  {
+   "slug": "W-8781",
+   "src": "apai/D33-701_厨师刀.png",
+   "category": "Kitchen knives",
+   "caption": "Chef's knife · W-8781"
+  },
+  {
+   "slug": "W-1024",
+   "src": "apai/No.K08-8203_厨房剪.png",
+   "category": "Shears & scissors",
+   "caption": "Kitchen shears · W-1024"
+  },
+  {
+   "slug": "W-1234",
+   "src": "apai/No.A61_铝柄剪.png",
+   "category": "Shears & scissors",
+   "caption": "Aluminium-handle shears · W-1234"
+  },
+  {
+   "slug": "W-1885",
+   "src": "apai/No.A62_多功能厨房剪.png",
+   "category": "Shears & scissors",
+   "caption": "Kitchen multi-purpose shears · W-1885"
+  },
+  {
+   "slug": "W-2061",
+   "src": "apai/No.K05-8177_民用剪_2.png",
+   "category": "Shears & scissors",
+   "caption": "Household scissors · W-2061"
+  },
+  {
+   "slug": "W-2324",
+   "src": "apai/No.A18_民用剪.png",
+   "category": "Shears & scissors",
+   "caption": "Household scissors · W-2324"
+  },
+  {
+   "slug": "W-2331",
+   "src": "apai/No.A35_鸡骨剪.png",
+   "category": "Shears & scissors",
+   "caption": "Poultry shears · W-2331"
+  },
+  {
+   "slug": "W-3023",
+   "src": "apai/No.A37_厨房剪.png",
+   "category": "Shears & scissors",
+   "caption": "Kitchen shears · W-3023"
+  },
+  {
+   "slug": "W-3040",
+   "src": "apai/No.A56_多功能厨房剪.png",
+   "category": "Shears & scissors",
+   "caption": "Kitchen multi-purpose shears · W-3040"
+  },
+  {
+   "slug": "W-3054",
+   "src": "apai/No.A17_民用剪.png",
+   "category": "Shears & scissors",
+   "caption": "Household scissors · W-3054"
+  },
+  {
+   "slug": "W-3124",
+   "src": "apai/No.A33_全钢剪.png",
+   "category": "Shears & scissors",
+   "caption": "All-steel scissors · W-3124"
+  },
+  {
+   "slug": "W-4238",
+   "src": "apai/No.A21_厨房多用剪.png",
+   "category": "Shears & scissors",
+   "caption": "Kitchen multi-purpose shears · W-4238"
+  },
+  {
+   "slug": "W-6099",
+   "src": "apai/No.A52_五层多功能剪.png",
+   "category": "Shears & scissors",
+   "caption": "Five-layer multi-purpose shears · W-6099"
+  },
+  {
+   "slug": "W-6382",
+   "src": "apai/No.A46_民用剪.png",
+   "category": "Shears & scissors",
+   "caption": "Household scissors · W-6382"
+  },
+  {
+   "slug": "W-6406",
+   "src": "apai/No.A55_多功能厨房剪.png",
+   "category": "Shears & scissors",
+   "caption": "Kitchen multi-purpose shears · W-6406"
+  },
+  {
+   "slug": "W-6450",
+   "src": "apai/No.K08-9232_烤肉剪.png",
+   "category": "Shears & scissors",
+   "caption": "BBQ shears · W-6450"
+  },
+  {
+   "slug": "W-6811",
+   "src": "apai/No.A39_龙凤剪.png",
+   "category": "Shears & scissors",
+   "caption": "Decorative dragon & phoenix scissors · W-6811"
+  },
+  {
+   "slug": "W-6842",
+   "src": "apai/No.K08-10225_烤肉剪.png",
+   "category": "Shears & scissors",
+   "caption": "BBQ shears · W-6842"
+  },
+  {
+   "slug": "W-6911",
+   "src": "apai/No.A11_强力剪.png",
+   "category": "Shears & scissors",
+   "caption": "Heavy-duty shears · W-6911"
+  },
+  {
+   "slug": "W-7053",
+   "src": "apai/No.K01-502_文具剪.png",
+   "category": "Shears & scissors",
+   "caption": "Stationery scissors · W-7053"
+  },
+  {
+   "slug": "W-7056",
+   "src": "apai/No.A29_文具剪.png",
+   "category": "Shears & scissors",
+   "caption": "Stationery scissors · W-7056"
+  },
+  {
+   "slug": "W-9033",
+   "src": "apai/No.K01-809_办公剪刀.png",
+   "category": "Shears & scissors",
+   "caption": "Office scissors · W-9033"
+  },
+  {
+   "slug": "W-9211",
+   "src": "apai/No.A47_民用剪.png",
+   "category": "Shears & scissors",
+   "caption": "Household scissors · W-9211"
+  },
+  {
+   "slug": "W-9318",
+   "src": "apai/No.K01-701_文具剪.png",
+   "category": "Shears & scissors",
+   "caption": "Stationery scissors · W-9318"
+  },
+  {
+   "slug": "W-9499",
+   "src": "apai/No.K04-7116-A10_强力剪.png",
+   "category": "Shears & scissors",
+   "caption": "Heavy-duty shears · W-9499"
+  }
+ ]
+}

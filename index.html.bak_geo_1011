@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- 内联关键样式（约 300 字节）：样式表万一没加载 —— 客户手机开省流量/精简模式、网络丢包、
+     或被老旧 WebView 拦截 —— 图片会按原始尺寸（1600px）撑开整页，手机上就变成横向溢出、
+     超长的一团乱码。这段保证任何情况下版面都不塌：图片不超屏、字体可读、宽表格可横向滚动。
+     它与外链样式表不冲突（写在前面，被它覆盖）。 -->
+<style>img,svg,video,iframe{max-width:100%;height:auto}body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#1c1c1c;background:#fff;word-wrap:break-word;overflow-wrap:anywhere}h1{font-size:1.6rem}h2{font-size:1.3rem}h3{font-size:1.15rem}table{max-width:100%;display:block;overflow-x:auto;border-collapse:collapse}pre{max-width:100%;overflow-x:auto}header,footer,main,section{padding-left:12px;padding-right:12px;box-sizing:border-box}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knife &amp; Kitchenware Manufacturer — Yangjiang Wiliheng Knives</title>
+<meta name="description" content="OEM/ODM knives and kitchenware from Yangjiang, China: folding and kitchen knives, shears, silicone mats, 304 tableware. MOQ 500 pcs, private label.">
+<link rel="canonical" href="https://wiliheng.com/">
+<link rel="alternate" hreflang="en" href="https://wiliheng.com/">
+<link rel="alternate" hreflang="x-default" href="https://wiliheng.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yangjiang Wiliheng Knives — OEM/ODM knife manufacturer">
+<meta property="og:description" content="Factory-direct OEM/ODM knives from Yangjiang, China. In-house heat treatment, grinding, CNC, HRC testing. MOQ from 500 pcs.">
+<meta property="og:url" content="https://wiliheng.com/">
+<meta property="og:image" content="https://wiliheng.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Yangjiang Wiliheng Knives Co., Ltd">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Knife &amp; Kitchenware Manufacturer — Yangjiang Wiliheng Knives">
+<meta name="twitter:description" content="Factory-direct OEM/ODM knives and kitchenware from Yangjiang, China. MOQ from 500 pcs, private label.">
+<meta name="twitter:image" content="https://wiliheng.com/assets/og.jpg">
+<link rel="icon" href="assets/favicon.png" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Yangjiang Wiliheng Knives Co., Ltd",
+  "foundingDate": "2018",
+  "url": "https://wiliheng.com/",
+  "logo": "https://wiliheng.com/assets/favicon.png",
+  "image": "https://wiliheng.com/assets/og.jpg",
+  "email": "sales@wiliheng.com",
+  "description": "OEM/ODM manufacturer of folding and kitchen knives, kitchen tools and housewares in Yangjiang, China. In-house heat treatment, grinding, CNC machining and hardness testing. MOQ from 500 pcs, private label welcome.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Factory No. 2, Middle Section of Yudong Ninth Road, Yangdong Industrial Park",
+    "addressLocality": "Yangjiang",
+    "addressRegion": "Guangdong",
+    "addressCountry": "CN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "sales@wiliheng.com",
+    "telephone": "+86-181-2488-6695",
+    "availableLanguage": ["en", "zh"]
+  },
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Folding knives"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Kitchen and utility knives"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Kitchen knives and shears"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Silicone kitchen mats and 304 tableware"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Are you a factory or a trading company?",
+     "acceptedAnswer": {"@type": "Answer", "text": "We are the factory: blade blanking, heat treatment, grinding, CNC machining and assembly all take place in our own plant in Yangjiang, Guangdong."}},
+    {"@type": "Question", "name": "What is your minimum order quantity?",
+     "acceptedAnswer": {"@type": "Answer", "text": "500 pcs per model. For mixed assortments we look at the total quantity."}},
+    {"@type": "Question", "name": "Do you make private label?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your logo can be laser-engraved on the blade and handle, and we pack in your own artwork."}},
+    {"@type": "Question", "name": "Do you sell to consumers?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. We supply importers, distributors and brands only; orders below the MOQ for a model are not accepted, and we do not ship single units."}},
+    {"@type": "Question", "name": "How do you quote and ship?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Send the models and quantities and you get factory pricing within 24 hours. We quote FOB and ship with your forwarder or ours, with the packing list and carton data confirmed before the goods leave."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <span class="brand-mark">W</span>
+      <span class="brand-text"><b>Wiliheng Knives</b><i>Yangjiang &middot; China</i></span>
+    </a>
+    <nav class="nav">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#products">Products</a>
+      <a href="/b2b/">Catalogue</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#oem">OEM / ODM</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm" href="https://wa.me/8618124886695" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">OEM / ODM manufacturer &middot; est. Yangjiang, Guangdong</p>
+      <h1>Wholesale knives, cutlery and kitchenware — made in our own factory.</h1>
+      <p class="lede">We manufacture folding and kitchen knives, kitchen tools and housewares — plus silicone
+        and 304 tableware — for importers, distributors and private-label brands. Blanking, heat
+        treatment, grinding, CNC and assembly all run under one roof, so your spec, your logo and
+        your lead time stay under our control.</p>
+      <div class="cta-row">
+        <a class="btn" href="#contact">Get wholesale pricing</a>
+        <a class="btn ghost" href="Wiliheng-Knives-Line-Card.pdf" download>Download line card (PDF)</a>
+      </div>
+      <p class="fine">Trade supply only &middot; MOQ from 500 pcs &middot; trial orders accepted
+        &middot; reply within 24 hours</p>
+    </div>
+    <div class="hero-card">
+      <img src="assets/hero-1200.jpg"
+           srcset="assets/hero-800.jpg 800w, assets/hero-1200.jpg 1200w, assets/hero.jpg 1600w"
+           sizes="(max-width: 640px) 92vw, (max-width: 1000px) 60vw, 700px"
+           width="1600" height="900" fetchpriority="high" decoding="async"
+           alt="Operator running a CNC machining centre at the Wiliheng factory in Yangjiang"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-ph',textContent:'Product photo'}))">
+      <dl class="stats">
+        <div><dt>48</dt><dd>active models</dd></div>
+        <div><dt>40</dt><dd>machines on site</dd></div>
+        <div><dt>20</dt><dd>CNC machining centres</dd></div>
+        <div><dt>43</dt><dd>in-house processes</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="capabilities">
+  <div class="wrap">
+    <h2>What we do in-house</h2>
+    <p class="sub">40 machines on site — 20 of them CNC — and everything that
+      decides how a knife feels and lasts is done by us. No subcontracted workshops, no third party
+      between you and the line.</p>
+    <div class="cards3">
+      <div class="card">
+        <h3>Blades &amp; heat treatment</h3>
+        <p>Blanking, annealing and tempering in our own 2 annealing and 2 tempering
+          furnaces, with hardness verified on our Rockwell tester and recorded per batch.</p>
+      </div>
+      <div class="card">
+        <h3>Grinding</h3>
+        <p>5 vertical grinders and 10 water grinders for bevels, primary edges and
+          mirror polishing — the step most factories outsource and most buyers complain about.</p>
+      </div>
+      <div class="card">
+        <h3>Machining</h3>
+        <p>20 CNC machining centres, plus drilling, pivot and spring-pin work for liner locks,
+          frame locks and fixed-blade kitchen knives.</p>
+      </div>
+      <div class="card">
+        <h3>Finishes</h3>
+        <p>Stonewash, sandblast, titanium coating, etching, anodising and laser engraving — your
+          logo cut into the blade, not printed on the box.</p>
+      </div>
+      <div class="card">
+        <h3>Handles &amp; assembly</h3>
+        <p>Wood, G10/FRN, die-cast and injection-moulded handles, assembled and inspected in-house.</p>
+      </div>
+      <div class="card">
+        <h3>Private label</h3>
+        <p>Your steel spec, your handle material, your packaging and your branding — including
+          low-volume trial runs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="products">
+  <h2>Product range</h2>
+  <p class="sub">48 active models across the categories below. Full specification sheets are
+    available on request.</p>
+  <div class="cats"><div class="cat"><span class="n">22 models</span><h4>Folding knives</h4><p>Liner lock and frame lock folding knives in G10 or wood</p><code>001 &middot; A010 &middot; A011 &middot; A012 &middot; A013 &middot; A014 &hellip;</code></div>
+    <div class="cat"><span class="n">3 models</span><h4>Fixed-blade knives</h4><p>Fixed-blade utility and kitchen designs</p><code>A028 &middot; KH-002 &middot; KH-004</code></div>
+    <div class="cat"><span class="n">5 models</span><h4>Kitchen knives</h4><p>Chef, santoku, utility and paring knives in 5Cr15MoV / 440C</p><code>A036 &middot; A037 &middot; A038 &middot; A057 &middot; KH-003</code></div>
+    <div class="cat"><span class="n">3 models</span><h4>Shears &amp; scissors</h4><p>German-type kitchen shears and poultry shears</p><code>A039 &middot; A040 &middot; A041</code></div>
+    <div class="cat"><span class="n">2 models</span><h4>Kitchen gadgets</h4><p>Peelers, mandoline slicers and small stainless / silicone kitchen tools</p><code>A042 &middot; A043</code></div>
+    <div class="cat"><span class="n">6 models</span><h4>Silicone mats</h4><p>Honeycomb, fibreglass and round trivets, table mats and drain mats</p><code>A044 &middot; A045 &middot; A046 &middot; A047 &middot; A048 &middot; A049</code></div>
+    <div class="cat"><span class="n">7 models</span><h4>304 tableware</h4><p>Serving spoons, slotted spoons, cake servers, tea spoons and forks</p><code>A050 &middot; A051 &middot; A052 &middot; A053 &middot; A054 &middot; A055 &hellip;</code></div></div>
+
+  <div class="cta-row" style="margin-top:24px">
+    <a class="btn" href="/b2b/">Browse the catalogue — model list with specifications</a>
+    <span class="fine" style="align-self:center">All 48 models, grouped by family, with steel,
+      packing and MOQ where we publish them.</span>
+  </div>
+
+  <h3 class="gap">Lead models — full specification</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>SKU</th><th>Model</th><th>Blade / OAL</th><th>Steel</th><th>HRC</th><th>Net wt</th><th>Packing</th><th>MOQ</th></tr></thead>
+      <tbody><tr><td><b>KH-001</b></td><td>Folding knife</td><td>blade 90mm/ / OAL 210mm</td><td>5Cr15MoV</td><td>52±2</td><td>145 g</td><td>Colour box + blister</td><td>500</td></tr>
+      <tr><td><b>KH-002</b></td><td>Utility knife</td><td>blade 120mm/ / OAL 245mm</td><td>440C</td><td>56±2</td><td>230 g</td><td>Colour box + protective cover</td><td>500</td></tr>
+      <tr><td><b>KH-003</b></td><td>Chef&#x27;s knife</td><td>8 inch</td><td>5Cr15MoV</td><td>54±2</td><td>210 g</td><td>Colour box</td><td>500</td></tr>
+      <tr><td><b>KH-004</b></td><td>Fixed-blade utility knife</td><td>blade 150mm</td><td>D2</td><td>58±2</td><td>320 g</td><td>Colour box + protective cover</td><td>500</td></tr></tbody>
+    </table>
+  </div>
+  <p class="fine">Other models: steel, hardness and carton data are issued per model while we
+    finalise the printed catalogue.</p>
+
+  <p><a class="btn ghost" href="Wiliheng-Product-Catalogue.pdf" target="_blank" rel="noopener">Download the PDF catalogue — all photos with reference codes</a></p><h3 class="gap" id="gallery">Product gallery</h3>
+  <p class="sub">Photographed on our own bench — the knives, tools and mats we run most often.
+    Specifications for any item on request; your logo and packaging from 500 pcs.</p>
+    <div class="pgroup"><h4>Chef&#x27;s knives — Damascus <span style="color:#8593a1;font-weight:400;font-size:13px">(4)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-1353.jpg" alt="Damascus pattern chef&#x27;s knife — blue handle · W-1353" loading="lazy" width="900" height="900"></div><span>Damascus pattern chef&#x27;s knife — blue handle · W-1353</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-1768.jpg" alt="Damascus pattern chef&#x27;s knife — wood handle · W-1768" loading="lazy" width="900" height="900"></div><span>Damascus pattern chef&#x27;s knife — wood handle · W-1768</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4453.jpg" alt="Damascus pattern chef&#x27;s knife — black handle · W-4453" loading="lazy" width="900" height="900"></div><span>Damascus pattern chef&#x27;s knife — black handle · W-4453</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5903.jpg" alt="Damascus pattern chef&#x27;s knife — black handle · W-5903" loading="lazy" width="900" height="900"></div><span>Damascus pattern chef&#x27;s knife — black handle · W-5903</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Chef&#x27;s knives <span style="color:#8593a1;font-weight:400;font-size:13px">(13)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2705.jpg" alt="8-inch chef&#x27;s knife · W-2705" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-2705</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2735.jpg" alt="Chef&#x27;s knife — green handle · W-2735" loading="lazy" width="900" height="900"></div><span>Chef&#x27;s knife — green handle · W-2735</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3625.jpg" alt="8-inch chef&#x27;s knife · W-3625" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-3625</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4357.jpg" alt="8-inch chef&#x27;s knife · W-4357" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-4357</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4958.jpg" alt="Chef&#x27;s knife — wood handle · W-4958" loading="lazy" width="900" height="900"></div><span>Chef&#x27;s knife — wood handle · W-4958</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5515.jpg" alt="Chef&#x27;s knife — green handle · W-5515" loading="lazy" width="900" height="900"></div><span>Chef&#x27;s knife — green handle · W-5515</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-8157.jpg" alt="8-inch chef&#x27;s knife · W-8157" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-8157</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-8248.jpg" alt="Chef&#x27;s knife — black handle · W-8248" loading="lazy" width="900" height="900"></div><span>Chef&#x27;s knife — black handle · W-8248</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-8532.jpg" alt="8-inch chef&#x27;s knife · W-8532" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-8532</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9155.jpg" alt="Chef&#x27;s knife — pearl white handle · W-9155" loading="lazy" width="900" height="900"></div><span>Chef&#x27;s knife — pearl white handle · W-9155</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9182.jpg" alt="8-inch chef&#x27;s knife · W-9182" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-9182</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9281.jpg" alt="8-inch chef&#x27;s knife · W-9281" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-9281</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9682.jpg" alt="8-inch chef&#x27;s knife · W-9682" loading="lazy" width="900" height="900"></div><span>8-inch chef&#x27;s knife · W-9682</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Steak knife sets <span style="color:#8593a1;font-weight:400;font-size:13px">(5)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-1787.jpg" alt="Steak knife set in wooden gift box — dark handles · W-1787" loading="lazy" width="900" height="900"></div><span>Steak knife set in wooden gift box — dark handles · W-1787</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2352.jpg" alt="Steak knife set in wooden gift box — red handles · W-2352" loading="lazy" width="900" height="900"></div><span>Steak knife set in wooden gift box — red handles · W-2352</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4939.jpg" alt="Steak knife set in wooden gift box — red wood handles · W-4939" loading="lazy" width="900" height="900"></div><span>Steak knife set in wooden gift box — red wood handles · W-4939</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5217.jpg" alt="Steak knife set in wooden gift box — dark handles · W-5217" loading="lazy" width="900" height="900"></div><span>Steak knife set in wooden gift box — dark handles · W-5217</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-7575.jpg" alt="Steak knife set in wooden gift box — dark handles · W-7575" loading="lazy" width="900" height="900"></div><span>Steak knife set in wooden gift box — dark handles · W-7575</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Knife sets, blocks &amp; racks <span style="color:#8593a1;font-weight:400;font-size:13px">(9)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-1391.jpg" alt="Knife set in a gift box · W-1391" loading="lazy" width="900" height="900"></div><span>Knife set in a gift box · W-1391</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3711.jpg" alt="Paring knife in a gift box · W-3711" loading="lazy" width="900" height="900"></div><span>Paring knife in a gift box · W-3711</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3718.jpg" alt="Knife rack set with knives and forks · W-3718" loading="lazy" width="900" height="900"></div><span>Knife rack set with knives and forks · W-3718</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6622.jpg" alt="Kitchen utensil set with knives · W-6622" loading="lazy" width="900" height="900"></div><span>Kitchen utensil set with knives · W-6622</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6878.jpg" alt="Knife set in a gift box with EVA holder · W-6878" loading="lazy" width="900" height="900"></div><span>Knife set in a gift box with EVA holder · W-6878</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-7351.jpg" alt="Knife set in a gift box · W-7351" loading="lazy" width="900" height="900"></div><span>Knife set in a gift box · W-7351</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-8943.jpg" alt="Rotating knife stand set · W-8943" loading="lazy" width="900" height="900"></div><span>Rotating knife stand set · W-8943</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9157.jpg" alt="Kitchen knife block set · W-9157" loading="lazy" width="900" height="900"></div><span>Kitchen knife block set · W-9157</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9852.jpg" alt="Kitchen knife block set with scissors · W-9852" loading="lazy" width="900" height="900"></div><span>Kitchen knife block set with scissors · W-9852</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Chopping boards <span style="color:#8593a1;font-weight:400;font-size:13px">(2)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6641.jpg" alt="Chopping board set · W-6641" loading="lazy" width="900" height="900"></div><span>Chopping board set · W-6641</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9417.jpg" alt="Chopping board set · W-9417" loading="lazy" width="900" height="900"></div><span>Chopping board set · W-9417</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Knife sharpeners <span style="color:#8593a1;font-weight:400;font-size:13px">(4)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2676.jpg" alt="Hand-held knife sharpener · W-2676" loading="lazy" width="900" height="900"></div><span>Hand-held knife sharpener · W-2676</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3726.jpg" alt="Hand-held knife sharpener · W-3726" loading="lazy" width="900" height="900"></div><span>Hand-held knife sharpener · W-3726</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5510.jpg" alt="Hand-held knife sharpener · W-5510" loading="lazy" width="900" height="900"></div><span>Hand-held knife sharpener · W-5510</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-7609.jpg" alt="Hand-held knife sharpener · W-7609" loading="lazy" width="900" height="900"></div><span>Hand-held knife sharpener · W-7609</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Folding, hunting &amp; pocket knives <span style="color:#8593a1;font-weight:400;font-size:13px">(9)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2329.jpg" alt="Pocket knife · W-2329" loading="lazy" width="900" height="900"></div><span>Pocket knife · W-2329</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2343.jpg" alt="Folding knife · W-2343" loading="lazy" width="900" height="900"></div><span>Folding knife · W-2343</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2385.jpg" alt="Folding knife · W-2385" loading="lazy" width="900" height="900"></div><span>Folding knife · W-2385</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3167.jpg" alt="Pocket knife · W-3167" loading="lazy" width="900" height="900"></div><span>Pocket knife · W-3167</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4193.jpg" alt="Pocket knife · W-4193" loading="lazy" width="900" height="900"></div><span>Pocket knife · W-4193</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4255.jpg" alt="Hunting knife with sheath · W-4255" loading="lazy" width="900" height="900"></div><span>Hunting knife with sheath · W-4255</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4301.jpg" alt="Hunting knife with sheath · W-4301" loading="lazy" width="900" height="900"></div><span>Hunting knife with sheath · W-4301</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5049.jpg" alt="Folding knife · W-5049" loading="lazy" width="900" height="900"></div><span>Folding knife · W-5049</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5081.jpg" alt="Hunting knife with sheath · W-5081" loading="lazy" width="900" height="900"></div><span>Hunting knife with sheath · W-5081</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Kitchen knives <span style="color:#8593a1;font-weight:400;font-size:13px">(5)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5585.jpg" alt="Bread knife · W-5585" loading="lazy" width="900" height="900"></div><span>Bread knife · W-5585</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-5762.jpg" alt="Boning knife · W-5762" loading="lazy" width="900" height="900"></div><span>Boning knife · W-5762</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-7433.jpg" alt="Carving / meat knife · W-7433" loading="lazy" width="900" height="900"></div><span>Carving / meat knife · W-7433</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-7938.jpg" alt="Utility knife · W-7938" loading="lazy" width="900" height="900"></div><span>Utility knife · W-7938</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-8781.jpg" alt="Chef&#x27;s knife · W-8781" loading="lazy" width="900" height="900"></div><span>Chef&#x27;s knife · W-8781</span></figure>
+    </div></div>
+    <div class="pgroup"><h4>Shears &amp; scissors <span style="color:#8593a1;font-weight:400;font-size:13px">(24)</span></h4>
+    <div class="gallery">
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-1024.jpg" alt="Kitchen shears · W-1024" loading="lazy" width="900" height="900"></div><span>Kitchen shears · W-1024</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-1234.jpg" alt="Aluminium-handle shears · W-1234" loading="lazy" width="900" height="900"></div><span>Aluminium-handle shears · W-1234</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-1885.jpg" alt="Kitchen multi-purpose shears · W-1885" loading="lazy" width="900" height="900"></div><span>Kitchen multi-purpose shears · W-1885</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2061.jpg" alt="Household scissors · W-2061" loading="lazy" width="900" height="900"></div><span>Household scissors · W-2061</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2324.jpg" alt="Household scissors · W-2324" loading="lazy" width="900" height="900"></div><span>Household scissors · W-2324</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-2331.jpg" alt="Poultry shears · W-2331" loading="lazy" width="900" height="900"></div><span>Poultry shears · W-2331</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3023.jpg" alt="Kitchen shears · W-3023" loading="lazy" width="900" height="900"></div><span>Kitchen shears · W-3023</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3040.jpg" alt="Kitchen multi-purpose shears · W-3040" loading="lazy" width="900" height="900"></div><span>Kitchen multi-purpose shears · W-3040</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3054.jpg" alt="Household scissors · W-3054" loading="lazy" width="900" height="900"></div><span>Household scissors · W-3054</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-3124.jpg" alt="All-steel scissors · W-3124" loading="lazy" width="900" height="900"></div><span>All-steel scissors · W-3124</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-4238.jpg" alt="Kitchen multi-purpose shears · W-4238" loading="lazy" width="900" height="900"></div><span>Kitchen multi-purpose shears · W-4238</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6099.jpg" alt="Five-layer multi-purpose shears · W-6099" loading="lazy" width="900" height="900"></div><span>Five-layer multi-purpose shears · W-6099</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6382.jpg" alt="Household scissors · W-6382" loading="lazy" width="900" height="900"></div><span>Household scissors · W-6382</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6406.jpg" alt="Kitchen multi-purpose shears · W-6406" loading="lazy" width="900" height="900"></div><span>Kitchen multi-purpose shears · W-6406</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6450.jpg" alt="BBQ shears · W-6450" loading="lazy" width="900" height="900"></div><span>BBQ shears · W-6450</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6811.jpg" alt="Decorative dragon &amp; phoenix scissors · W-6811" loading="lazy" width="900" height="900"></div><span>Decorative dragon &amp; phoenix scissors · W-6811</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6842.jpg" alt="BBQ shears · W-6842" loading="lazy" width="900" height="900"></div><span>BBQ shears · W-6842</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-6911.jpg" alt="Heavy-duty shears · W-6911" loading="lazy" width="900" height="900"></div><span>Heavy-duty shears · W-6911</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-7053.jpg" alt="Stationery scissors · W-7053" loading="lazy" width="900" height="900"></div><span>Stationery scissors · W-7053</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-7056.jpg" alt="Stationery scissors · W-7056" loading="lazy" width="900" height="900"></div><span>Stationery scissors · W-7056</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9033.jpg" alt="Office scissors · W-9033" loading="lazy" width="900" height="900"></div><span>Office scissors · W-9033</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9211.jpg" alt="Household scissors · W-9211" loading="lazy" width="900" height="900"></div><span>Household scissors · W-9211</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9318.jpg" alt="Stationery scissors · W-9318" loading="lazy" width="900" height="900"></div><span>Stationery scissors · W-9318</span></figure>
+      <figure class="pcard"><div class="ph"><img src="assets/products/W-9499.jpg" alt="Heavy-duty shears · W-9499" loading="lazy" width="900" height="900"></div><span>Heavy-duty shears · W-9499</span></figure>
+    </div></div>
+
+  <p class="fine" style="margin-top:18px">Want the whole thing in one file?
+    <a href="Wiliheng-Knives-Catalogue.pdf" download>Download the product catalogue (PDF)</a>.</p>
+</section>
+
+<section class="band" id="oem">
+  <div class="wrap">
+    <h2>How an order runs</h2>
+    <div class="steps">
+      <div class="step"><span>1</span><h4>You send the spec</h4><p>Models or photos, quantity, steel and handle preferences, branding requirements.</p></div>
+      <div class="step"><span>2</span><h4>We quote &amp; sample</h4><p>Factory pricing within 24 hours, then samples of the actual production build for your approval.</p></div>
+      <div class="step"><span>3</span><h4>Production in-house</h4><p>Blade, heat treatment, grinding, machining, finishing, assembly and QC on one site.</p></div>
+      <div class="step"><span>4</span><h4>Packing &amp; shipping</h4><p>Your packaging or ours, carton data confirmed before shipment, FOB or your forwarder.</p></div>
+    </div>
+    <p class="fine">Sample cost and lead time are quoted per project — we would rather give you a
+      real number than a marketing one.</p>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <h2>Common questions from buyers</h2>
+    <div class="faq">
+      <details open>
+        <summary>Are you a factory or a trading company?</summary>
+        <p>We are the factory. Our plant is in Yangjiang, Guangdong, and the blades are blanked,
+          heat treated, ground, machined and assembled on the same site. You are welcome to visit,
+          or to arrange a third-party inspection.</p>
+      </details>
+      <details>
+        <summary>What is your minimum order quantity?</summary>
+        <p>500 pcs per model. A first order of a single model is normal; for mixed
+          assortments we look at the total quantity.</p>
+      </details>
+      <details>
+        <summary>Do you make private label — our brand?</summary>
+        <p>Yes. Your logo can be laser-engraved on the blade and the handle, and we pack in your own
+          artwork: colour boxes, blisters or protective sleeves.</p>
+      </details>
+      <details>
+        <summary>Do you sell to consumers?</summary>
+        <p>No. We supply importers, distributors and brands only — orders below the MOQ for a model
+          are not accepted, and we do not ship single units.</p>
+      </details>
+      <details>
+        <summary>How do you quote and ship?</summary>
+        <p>Send the models and quantities and you get factory pricing within 24 hours. We quote FOB
+          and ship with your forwarder or ours, with the packing list and carton data confirmed
+          before the goods leave.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <div class="contact">
+    <div>
+      <h2>Get in touch</h2>
+      <p class="sub">Tell us the models and quantities you are considering. You will get factory
+        pricing, packaging details and the matching spec sheets.</p>
+      <ul class="contact-list">
+        <li><b>Email</b> <a href="mailto:sales@wiliheng.com">sales@wiliheng.com</a></li>
+        <li><b>WhatsApp</b> <a href="https://wa.me/8618124886695" target="_blank" rel="noopener">+86 181-2488-6695</a></li>
+        <li><b>Factory</b> Yangjiang, Guangdong, China</li>
+      </ul>
+    </div>
+    <div class="contact-cta">
+      <p class="big">Ready to compare prices?</p>
+      <a class="btn" href="mailto:sales@wiliheng.com?subject=Wholesale%20enquiry%20%E2%80%94%20models%20%26%20quantities">Send your RFQ</a>
+      <a class="btn ghost" href="Wiliheng-Knives-Line-Card.pdf" download>Download line card (PDF)</a>
+      <p class="fine">B2B enquiries only. We reply to every enquiry within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <p>&copy; 2026 Yangjiang Wiliheng Knives Co., Ltd &middot; OEM/ODM knife &amp; houseware manufacturer</p>
+    <p class="addr">Factory No. 2, Middle Section of Yudong Ninth Road, Yangdong Industrial Park, Yangjiang, Guangdong, China</p>
+    <p class="fine">Folders &middot; kitchen knives &middot; kitchen tools &middot; shears &middot; kitchen gadgets &middot; silicone mats &middot; 304 tableware</p>
+    <p class="fine">Manufacturing in Yangjiang since 2018 · Trade supply only — we sell to importers, distributors and brands.
+      <a href="privacy.html" style="color:#a9bac9">Privacy policy</a></p>
+    <p class="fine">Catalogue &amp; model specifications: <a href="/b2b/" style="color:#a9bac9">wiliheng.com/b2b</a></p>
+    <p class="fine">Our catalogue in other languages:
+      <a href="/b2b/de/" style="color:#a9bac9">Deutsch</a> &middot;
+      <a href="/b2b/es/" style="color:#a9bac9">Español</a> &middot;
+      <a href="/b2b/fr/" style="color:#a9bac9">Français</a> &middot;
+      <a href="/b2b/it/" style="color:#a9bac9">Italiano</a> &middot;
+      <a href="/b2b/pt/" style="color:#a9bac9">Português</a> &middot;
+      <a href="/b2b/nl/" style="color:#a9bac9">Nederlands</a> &middot;
+      <a href="/b2b/pl/" style="color:#a9bac9">Polski</a> &middot;
+      <a href="/b2b/ar/" style="color:#a9bac9">العربية</a> &middot;
+      <a href="/b2b/ru/" style="color:#a9bac9">Русский</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
