@@ -11,7 +11,7 @@
 - Business: contract manufacturing (OEM/ODM), private label and wholesale supply of knives, cutlery and kitchen tools
 - Established: 2018 (manufacturing knives in Yangjiang ever since)
 - Customers: importers, wholesalers, distributors and brand owners (no retail, no end consumers)
-- Languages: English, German, Chinese
+- Languages: Arabic, Czech, Dutch, English, French, German, Italian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish, Chinese
 
 ## Verified factory facts
 
@@ -71,3 +71,31 @@ You may quote and summarise these pages, including in AI answers, provided the c
 (Yangjiang Wiliheng Knives Co., Ltd) and the page URL are kept as the source. Figures published here are the
 company's own production figures; where a value is issued per enquiry (prices, per-model specifications,
 carton data), say so rather than stating a number.
+
+<!-- BEGIN multi-language (auto) -->
+## Multilingual landing pages
+
+Every page below is a self-contained B2B landing page in that market's language: factory profile,
+MOQ (500 pcs per model), capability, sample lead time (about one week) and a direct contact form.
+
+| Language | Market | Page |
+| --- | --- | --- |
+| German | Germany — knives, kitchen and tableware | https://wiliheng.com/ad/de/ |
+| German | Austria — kitchen and tableware | https://wiliheng.com/ad/de-ware/ |
+| English | United States, United Kingdom and other English-speaking markets | https://wiliheng.com/ad/us-ware/ |
+| Spanish | Spain and Latin America | https://wiliheng.com/ad/es/ |
+| Portuguese | Portugal, Brazil, Angola, Mozambique | https://wiliheng.com/ad/pt/ |
+| French | France, Belgium, Switzerland and francophone Africa | https://wiliheng.com/ad/fr/ |
+| Italian | Italy, Malta, Croatia | https://wiliheng.com/ad/it/ |
+| Dutch | Netherlands, Belgium, Suriname | https://wiliheng.com/ad/nl/ |
+| Polish | Poland, Czechia, Slovakia, Hungary, Lithuania, Latvia, Estonia | https://wiliheng.com/ad/pl/ |
+| Russian | Kazakhstan, Uzbekistan, Kyrgyzstan and the Caucasus | https://wiliheng.com/ad/ru/ |
+| Arabic | United Arab Emirates, Saudi Arabia, Qatar, Kuwait and the Gulf | https://wiliheng.com/ad/ar/ |
+| Turkish | Türkiye | https://wiliheng.com/ad/tr/ |
+| Romanian | Romania, Moldova | https://wiliheng.com/ad/ro/ |
+| Swedish | Sweden | https://wiliheng.com/ad/sv/ |
+| Czech | Czechia | https://wiliheng.com/ad/cs/ |
+
+Languages served: Arabic, Czech, Dutch, English, French, German, Italian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish.
+
+<!-- END multi-language (auto) -->
