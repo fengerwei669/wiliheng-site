@@ -22,7 +22,7 @@ The site is published in these languages (hreflang cluster, `x-default` = Englis
 
 ## Pages
 - /b2b/ — company overview, capabilities, OEM/ODM process and quotation form
-- /b2b/products/ — all 51 models across 7 families
+- /b2b/products/ — all 51 models across 8 families
 - /b2b/products/folding-knives/ — Folding knives (24 models)
 - /b2b/products/fixed-blade-knives/ — Fixed-blade knives (3 models)
 - /b2b/products/kitchen-knives/ — Kitchen knives (5 models)
@@ -30,6 +30,7 @@ The site is published in these languages (hreflang cluster, `x-default` = Englis
 - /b2b/products/kitchen-gadgets/ — Kitchen gadgets (3 models)
 - /b2b/products/silicone-mats/ — Silicone mats & trivets (6 models)
 - /b2b/products/tableware-304/ — 304 tableware (7 models)
+- /b2b/products/pots-pans/ — Pots & pans — clad steel (0 models)
 - /b2b/oem-odm/ — private label, customisation, samples and tooling
 - /b2b/factory/ — plant set-up, in-house processes, inspection
 - /b2b/catalog/ — model list by family with MOQ, and how to get spec sheets and the catalogue (sent per enquiry)
