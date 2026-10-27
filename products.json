@@ -116,6 +116,12 @@
    "caption": "Steak knife set in wooden gift box — red handles · W-2352"
   },
   {
+   "slug": "W-4731",
+   "src": "art-1019/steak-knife-set-wood-43.jpg",
+   "category": "Steak knife sets",
+   "caption": "Steak knife set · W-4731"
+  },
+  {
    "slug": "W-4939",
    "src": "hengli/Steak-knife-set_p03_01_gift-box-red-wood-handles.png",
    "category": "Steak knife sets",
@@ -168,6 +174,12 @@
    "src": "angele/p26-03_P19_P1-3Gift-box.png",
    "category": "Knife sets, blocks & racks",
    "caption": "Knife set in a gift box · W-7351"
+  },
+  {
+   "slug": "W-7868",
+   "src": "art-1019/knife-set-45.jpg",
+   "category": "Knife sets, blocks & racks",
+   "caption": "Knife set · W-7868"
   },
   {
    "slug": "W-8943",
@@ -242,10 +254,28 @@
    "caption": "Folding knife · W-2385"
   },
   {
+   "slug": "W-3136",
+   "src": "art-self/folding-knife-green-52.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — green handle · W-3136"
+  },
+  {
    "slug": "W-3167",
    "src": "angele/p24-10_PocketKnife.png",
    "category": "Folding, hunting & pocket knives",
    "caption": "Pocket knife · W-3167"
+  },
+  {
+   "slug": "W-3271",
+   "src": "art-1019/folding-knife-silver-48.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — silver handle · W-3271"
+  },
+  {
+   "slug": "W-4182",
+   "src": "art-self/folding-knife-green-51.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — green handle · W-4182"
   },
   {
    "slug": "W-4193",
@@ -276,6 +306,54 @@
    "src": "angele/p24-06_HuntingKnife.png",
    "category": "Folding, hunting & pocket knives",
    "caption": "Hunting knife with sheath · W-5081"
+  },
+  {
+   "slug": "W-5534",
+   "src": "art-1019/folding-knife-blue-49.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — blue handle · W-5534"
+  },
+  {
+   "slug": "W-6219",
+   "src": "art-self/folding-knife-silver-55.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — silver handle · W-6219"
+  },
+  {
+   "slug": "W-6680",
+   "src": "art-self/folding-knife-black-54.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — black handle · W-6680"
+  },
+  {
+   "slug": "W-6883",
+   "src": "art-self/folding-knife-purple-53.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — purple handle · W-6883"
+  },
+  {
+   "slug": "W-7909",
+   "src": "art-1019/folding-knife-silver-47.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — silver handle · W-7909"
+  },
+  {
+   "slug": "W-9011",
+   "src": "art-1019/folding-knife-silver-50.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — silver handle · W-9011"
+  },
+  {
+   "slug": "W-9165",
+   "src": "art-1019/folding-knife-wood-inlay-42.png",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife · W-9165"
+  },
+  {
+   "slug": "W-9856",
+   "src": "art-1019/folding-knife-green-46.jpg",
+   "category": "Folding, hunting & pocket knives",
+   "caption": "Folding pocket knife — green handle · W-9856"
   },
   {
    "slug": "W-5585",
@@ -450,6 +528,42 @@
    "src": "apai/No.K04-7116-A10_强力剪.png",
    "category": "Shears & scissors",
    "caption": "Heavy-duty shears · W-9499"
+  },
+  {
+   "slug": "W-2345",
+   "src": "art-pots/clad-steel-frying-pan-59.jpg",
+   "category": "Pots & pans — clad steel",
+   "caption": "Clad steel frying pan · W-2345"
+  },
+  {
+   "slug": "W-2510",
+   "src": "art-pots/clad-steel-steamer-pot-57.jpg",
+   "category": "Pots & pans — clad steel",
+   "caption": "Clad steel steamer pot · W-2510"
+  },
+  {
+   "slug": "W-4074",
+   "src": "art-pots/stainless-316-stock-pot-61.jpg",
+   "category": "Pots & pans — clad steel",
+   "caption": "316 stainless stock pot · W-4074"
+  },
+  {
+   "slug": "W-5784",
+   "src": "art-pots/clad-steel-saucepan-58.jpg",
+   "category": "Pots & pans — clad steel",
+   "caption": "Clad steel saucepan · W-5784"
+  },
+  {
+   "slug": "W-5824",
+   "src": "art-pots/clad-steel-saute-pan-cover-56.jpg",
+   "category": "Pots & pans — clad steel",
+   "caption": "Clad steel sauté pan · W-5824"
+  },
+  {
+   "slug": "W-7526",
+   "src": "art-pots/clad-steel-saucepan-wood-handle-60.jpg",
+   "category": "Pots & pans — clad steel",
+   "caption": "Clad steel saucepan — wood handle — wood handle · W-7526"
   }
  ]
 }

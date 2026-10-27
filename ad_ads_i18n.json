@@ -59,7 +59,8 @@
    ]
   ],
   "faq_title": "Frequently asked questions",
-  "f_wa": "WhatsApp (optional)"
+  "f_wa": "WhatsApp (optional)",
+  "form_note": "No catalogue needed — just tell us what you need."
  },
  "es": {
   "meta_title": "Menaje de cocina y mesa al por mayor — fábrica desde 2018 | Wiliheng",
@@ -116,10 +117,16 @@
    [
     "¿Hacen marca blanca (OEM)?",
     "Sí, es nuestro negocio principal: su logo grabado o impreso, su caja y embalaje, y códigos de barras con su referencia."
+   ],
+   [
+    "¿Cuál es el plazo de entrega para un pedido OEM con nuestro logo y embalaje?",
+    "Para modelos en stock, 20-30 días. Para OEM/marca blanca con su logo y embalaje, 30-45 días tras la aprobación de la muestra. Confirmamos por escrito en el presupuesto."
    ]
   ],
   "faq_title": "Preguntas frecuentes",
-  "f_wa": "WhatsApp (opcional)"
+  "f_wa": "WhatsApp (opcional)",
+  "form_note": "No hace falta catálogo — simplemente díganos qué necesita.",
+  "privacy": "Política de privacidad"
  },
  "fr": {
   "meta_title": "Arts de la table et ustensiles de cuisine en gros — usine depuis 2018 | Wiliheng",
@@ -176,10 +183,16 @@
    [
     "Faites-vous de la marque blanche (OEM) ?",
     "Oui, c'est notre activité principale : votre logo, votre boîte et emballage, codes-barres à votre référence."
+   ],
+   [
+    "Pouvez-vous nous faire visiter votre usine à distance avant une première commande ?",
+    "Oui. Nous envoyons une visite vidéo de 15 à 20 minutes sous 1 à 2 jours ouvrés après votre demande. Elle présente notre usine de Yangjiang, en activité depuis 2018, et nos 40 machines, dont 20 centres d’usinage à commande numérique. Un appel peut suivre pour vos questions techniques."
    ]
   ],
   "faq_title": "Questions fréquentes",
-  "f_wa": "WhatsApp (facultatif)"
+  "f_wa": "WhatsApp (facultatif)",
+  "form_note": "Pas de catalogue nécessaire — dites-nous simplement ce qu'il vous faut.",
+  "privacy": "Politique de confidentialité"
  },
  "it": {
   "meta_title": "Articoli da cucina e tavola all'ingrosso — fabbrica dal 2018 | Wiliheng",
@@ -236,10 +249,16 @@
    [
     "Lavorate in private label (OEM)?",
     "Sì, è la nostra attività principale: il vostro logo, la vostra scatola e imballo, codici a barre con il vostro codice."
+   ],
+   [
+    "Quali sono i tempi di consegna per modelli a stock e per un ordine con logo e imballo personalizzati?",
+    "Per i modelli a stock servono 20-30 giorni; per OEM/private label con vostro logo e imballo 30-45 giorni dall'approvazione. Il preventivo arriva di norma entro 24 ore lavorative."
    ]
   ],
   "faq_title": "Domande frequenti",
-  "f_wa": "WhatsApp (facoltativo)"
+  "f_wa": "WhatsApp (facoltativo)",
+  "form_note": "Nessun catalogo necessario — dicci semplicemente cosa ti serve.",
+  "privacy": "Informativa privacy"
  },
  "pt": {
   "meta_title": "Utensílios de cozinha e mesa por atacado — fábrica desde 2018 | Wiliheng",
@@ -296,10 +315,16 @@
    [
     "Fazem marca própria (OEM)?",
     "Sim, é o nosso negócio principal: o seu logo, a sua caixa e embalagem, e códigos de barras com a sua referência."
+   ],
+   [
+    "Podem combinar vários modelos e categorias num único pedido?",
+    "Sim. Em pedidos mistos, a quantidade total conta para o mínimo de 500 unidades por modelo. Para modelos em stock, o prazo é de 20 a 30 dias; OEM com logo e embalagem própria fica em 30 a 45 dias após aprovação."
    ]
   ],
   "faq_title": "Perguntas frequentes",
-  "f_wa": "WhatsApp (opcional)"
+  "f_wa": "WhatsApp (opcional)",
+  "form_note": "Não é preciso catálogo — diga-nos apenas o que precisa.",
+  "privacy": "Política de privacidade"
  },
  "nl": {
   "meta_title": "Keuken- en tafelartikelen groothandel — fabriek sinds 2018 | Wiliheng",
@@ -356,10 +381,16 @@
    [
     "Doen jullie private label (OEM)?",
     "Ja, dat is onze hoofdactiviteit: uw logo, uw doos en verpakking, barcodes met uw artikelnummer."
+   ],
+   [
+    "Hoe lang is de levertijd voor OEM/private label?",
+    "Voor voorraadmodellen 20-30 dagen; OEM/private label met uw logo en verpakking 30-45 dagen na goedkeuring van het monster. De planning bevestigen we in de offerte."
    ]
   ],
   "faq_title": "Veelgestelde vragen",
-  "f_wa": "WhatsApp (optioneel)"
+  "f_wa": "WhatsApp (optioneel)",
+  "form_note": "Geen catalogus nodig — vertel ons gewoon wat u zoekt.",
+  "privacy": "Privacybeleid"
  },
  "pl": {
   "meta_title": "Akcesoria kuchenne i stołowe hurt — fabryka od 2018 | Wiliheng",
@@ -416,10 +447,16 @@
    [
     "Czy produkujecie pod naszą marką (OEM)?",
     "Tak, to nasza główna działalność: Twoje logo, Twoje opakowanie, kody kreskowe z Twoim numerem."
+   ],
+   [
+    "Jakie są warunki płatności przy pierwszym zamówieniu?",
+    "Standardowo 30% zadatku, 70% przed wysyłką. Warunki potwierdzamy w zamówieniu; wycena zwykle w ciągu 24 godzin w dni robocze."
    ]
   ],
   "faq_title": "Częste pytania",
-  "f_wa": "WhatsApp (opcjonalnie)"
+  "f_wa": "WhatsApp (opcjonalnie)",
+  "form_note": "Katalog nie jest potrzebny — napisz po prostu, czego potrzebujesz.",
+  "privacy": "Polityka prywatności"
  },
  "ru": {
   "meta_title": "Кухонные и столовые товары оптом — фабрика с 2018 | Wiliheng",
@@ -476,10 +513,16 @@
    [
     "Работаете под нашим брендом?",
     "Да, это наше основное направление: ваше лого, ваша упаковка и штрихкоды с вашим артикулом."
+   ],
+   [
+    "Какие сроки производства по складским позициям и под нашим брендом?",
+    "По складским моделям — 20–30 дней. Для OEM/private label с вашим лого и упаковкой — 30–45 дней после утверждения образца и макета. Точный график подтверждаем в коммерческом предложении."
    ]
   ],
   "faq_title": "Частые вопросы",
-  "f_wa": "WhatsApp (необязательно)"
+  "f_wa": "WhatsApp (необязательно)",
+  "form_note": "Каталог не нужен — просто напишите, что вам нужно.",
+  "privacy": "Политика конфиденциальности"
  },
  "ar": {
   "rtl": true,
@@ -537,10 +580,16 @@
    [
     "هل تصنعون بعلامتنا التجارية؟",
     "نعم، هذا نشاطنا الأساسي: شعارك على المنتج، والتغليف بمواصفاتك، والباركود بأرقامك."
+   ],
+   [
+    "هل يمكن خلط موديلات مختلفة في حاوية واحدة؟",
+    "نعم، الحد الأدنى 500 قطعة لكل موديل، ويمكن احتساب إجمالي الكمية المختلطة. نوفر تغليفًا جاهزًا للبيع بالتجزئة، ومدة الإنتاج للموديلات المتوفرة 20-30 يومًا. نرسل عرض السعر خلال 24 ساعة عمل."
    ]
   ],
   "faq_title": "أسئلة شائعة",
-  "f_wa": "واتساب (اختياري)"
+  "f_wa": "واتساب (اختياري)",
+  "form_note": "لا حاجة لكتالوج — أخبرنا فقط بما تحتاجه.",
+  "privacy": "سياسة الخصوصية"
  },
  "tr": {
   "meta_title": "Toptan mutfak ve sofra ürünleri — 2018'den beri fabrika | Wiliheng",
@@ -597,10 +646,16 @@
    [
     "Kendi markamızla üretim (OEM) yapıyor musunuz?",
     "Evet, ana işimiz bu: ürün üzerine logonuz, kutunuz ve ambalajınız, barkodlar sizin kodunuzla."
+   ],
+   [
+    "İhracat ambalajı için hangi seçenekleri sunuyorsunuz?",
+    "Renkli kutu, blister ve koruyucu kılıf seçenekleri sunuyoruz; sevkiyatlar perakendeye hazır ihracat kolileriyle yapılır. Ambalaj ve logo onayı sonrası OEM üretim süresi 30-45 gündür."
    ]
   ],
   "faq_title": "Sık sorulan sorular",
-  "f_wa": "WhatsApp (isteğe bağlı)"
+  "f_wa": "WhatsApp (isteğe bağlı)",
+  "form_note": "Katalog gerekmez — ihtiyacınız olanı yazmanız yeterli.",
+  "privacy": "Gizlilik politikası"
  },
  "ro": {
   "meta_title": "Veselă și accesorii de bucătărie en-gros — fabrică din 2018 | Wiliheng",
@@ -657,10 +712,16 @@
    [
     "Produceți sub marca noastră (OEM)?",
     "Da, este activitatea noastră principală: logo-ul dumneavoastră, cutia și ambalajul dumneavoastră, coduri de bare cu codul dumneavoastră."
+   ],
+   [
+    "Care este termenul de livrare pentru o comandă OEM cu ambalaj personalizat?",
+    "Pentru OEM/private label, cu logo și ambalaj aprobate, termenul este de 30-45 zile după aprobarea mostrei. Pentru modelele din stoc livrăm în 20-30 zile. Confirmăm calendarul în ofertă, de obicei în 24 de ore lucrătoare."
    ]
   ],
   "faq_title": "Întrebări frecvente",
-  "f_wa": "WhatsApp (opțional)"
+  "f_wa": "WhatsApp (opțional)",
+  "form_note": "Nu este nevoie de catalog — spuneți-ne pur și simplu ce aveți nevoie.",
+  "privacy": "Politica de confidențialitate"
  },
  "_theme": {
   "_说明": "按当地视觉习惯调色。依据：绿色在中东/伊斯兰市场是强正向色；蓝色在独联体=可信/专业；土耳其偏好深青+暖色；拉美偏暖色调。欧洲/北美维持品牌绿。改动都很克制（只动主色与首屏底色），便于后续按转化数据 A/B 归因。",
@@ -737,7 +798,9 @@
    "hero_text": "#ffffff"
   }
  },
- "_hero_variant": {},
+ "_hero_variant": {
+  "tr": "B"
+ },
  "de-ware": {
   "meta_title": "Großhandel Küche & Tischwaren — Fabrik seit 2018 | Wiliheng",
   "meta_desc": "Küchenscheren, Schäler, Schneidebretter, Silikonmatten und Geschirr 304 aus eigener Fabrik in Yangjiang. MOQ 500 pro Modell, OEM unter Ihrer Marke.",
@@ -792,10 +855,16 @@
    [
     "Können Sie unter unserer Marke fertigen?",
     "Ja — OEM/ODM mit Ihrem Logo, Ihrer Verpackung und Ihren Barcodes."
+   ],
+   [
+    "Wie lange dauert die Lieferung bei Lagerware und bei Private Label?",
+    "Lagerware ist in der Regel in 20–30 Tagen versandbereit. Bei Private Label mit Ihrem Logo und Ihrer Verpackung rechnen wir mit 30–45 Tagen nach Freigabe. Nennen Sie uns Modelle und Zielort, dann bestätigen wir den Termin."
    ]
   ],
   "faq_title": "Häufige Fragen",
-  "f_wa": "WhatsApp (optional)"
+  "f_wa": "WhatsApp (optional)",
+  "form_note": "Kein Katalog nötig — sagen Sie uns einfach, was Sie brauchen.",
+  "privacy": "Datenschutzerklärung"
  },
  "sv": {
   "meta_title": "Grossist kök & bordsartiklar — fabrik sedan 2018 | Wiliheng",
@@ -851,10 +920,16 @@
    [
     "Kan ni tillverka under vårt varumärke?",
     "Ja — OEM/ODM med er logotyp, förpackning och streckkoder."
+   ],
+   [
+    "Kan vi få en videovisning av fabriken innan vi beställer?",
+    "Ja. Vi spelar in en fabriksgenomgång på 15–20 minuter, normalt inom 1–2 arbetsdagar från förfrågan. Den visar produktionsflödet i Yangjiang och våra egna steg; ange vilka produktkategorier ni vill se så förbereder vi videon."
    ]
   ],
   "faq_title": "Vanliga frågor",
-  "f_wa": "WhatsApp (valfritt)"
+  "f_wa": "WhatsApp (valfritt)",
+  "form_note": "Ingen katalog behövs — berätta bara vad ni behöver.",
+  "privacy": "Integritetspolicy"
  },
  "cs": {
   "meta_title": "Velkoobchod kuchyňské a stolní zboží — továrna od 2018 | Wiliheng",
@@ -910,9 +985,135 @@
    [
     "Můžete vyrábět pod naší značkou?",
     "Ano — OEM/ODM s vaším logem, obalem a čárovými kódy."
+   ],
+   [
+    "Můžeme v jedné objednávce kombinovat různé modely a velikosti?",
+    "Ano. Minimální množství je 500 ks na model, u smíšených objednávek se počítá celkové množství. Konkrétní kombinaci potvrdíme podle dostupných modelů a obalu, nabídku obvykle připravíme do 24 hodin."
    ]
   ],
   "faq_title": "Časté dotazy",
-  "f_wa": "WhatsApp (nepovinné)"
+  "f_wa": "WhatsApp (nepovinné)",
+  "form_note": "Katalog není potřeba — napište nám prostě, co potřebujete.",
+  "privacy": "Zásady ochrany osobních údajů"
+ },
+ "id": {
+  "meta_title": "Grosir peralatan dapur & meja — pabrik sejak 2018 | Wiliheng",
+  "meta_desc": "Gunting dapur, pengupas, talenan, alas silikon, dan peralatan makan 304 dari pabrik sendiri di Yangjiang. MOQ 500 per model, OEM dengan merek Anda.",
+  "h1": "Peralatan dapur & meja grosir, langsung dari pabrik",
+  "lede": "Kami memproduksi gunting dapur, pengupas, talenan, alas silikon, dan peralatan makan stainless 304 untuk importir, distributor, dan pemilik merek. Sejak 2018 di Yangjiang, Guangdong.",
+  "chips": [
+   "MOQ 500 pcs per model",
+   "Logo Anda diukir laser",
+   "Sampel ±1 minggu",
+   "Dokumen ekspor lengkap"
+  ],
+  "cta_wholesale": "Grosir: daftar harga",
+  "cta_oem": "Bahas OEM / merek sendiri",
+  "hero_ph": "Email perusahaan",
+  "hero_btn": "Daftar harga + katalog (PDF)",
+  "hero_note": "PDF + 3–5 model yang cocok, biasanya dalam 24 jam. Tanpa newsletter.",
+  "hero_ok": "Terima kasih — kami balas dalam 24 jam.",
+  "gallery_title": "Sebagian koleksi kami",
+  "gallery_more": "Ini hanya sebagian — kami punya lebih dari 48 lini: peralatan dapur, gunting, alat makan, alas silikon.",
+  "cards_title": "Cara kami bekerja",
+  "cards_sub": "Inti bisnis kami adalah merek sendiri untuk merek Anda; kami juga menyediakan stok untuk grosir.",
+  "card1_t": "Merek sendiri & OEM/ODM",
+  "card1_b": "Logo Anda di produk, kemasan Anda, barcode siap jual.",
+  "card2_t": "Grosir & distribusi",
+  "card2_b": "Stok lini dengan harga pabrik, harga bertingkat dari 500 pcs, waktu kirim terencana.",
+  "card3_t": "Ekspor & dokumen",
+  "card3_b": "Dokumen ekspor, pengemasan, dan pemuatan kontainer kami urus.",
+  "form_title": "Minta penawaran",
+  "form_sub": "Sebutkan lini dan jumlah — harga dan model dalam 24 jam.",
+  "f_company": "Perusahaan",
+  "f_name": "Nama Anda",
+  "f_email": "Email perusahaan",
+  "f_country": "Negara",
+  "f_line": "Lini produk",
+  "f_qty": "Perkiraan jumlah",
+  "f_msg": "Catatan",
+  "form_btn": "Kirim permintaan",
+  "form_ok": "Diterima — kami balas dalam 24 jam.",
+  "consent": "Saya setuju data saya digunakan untuk menjawab pertanyaan saya.",
+  "wa_intent": "Indonesia WhatsApp",
+  "f_wa": "WhatsApp (opsional)",
+  "privacy": "Kebijakan privasi",
+  "foot_note": "MOQ 500 pcs per model. Harga dan waktu kirim dikonfirmasi tertulis. Hanya B2B.",
+  "answer": "Wiliheng adalah pabrik peralatan dapur dan meja di Yangjiang, Guangdong, Tiongkok, sejak 2018. Kami memproduksi untuk importir, distributor, dan pemilik merek: material, kemasan, dan logo sesuai spesifikasi Anda, mulai 500 pcs per model.",
+  "faq": [
+   [
+    "Berapa minimum order?",
+    "500 pcs per model. Untuk stok tersedia, jumlah lebih kecil bisa didiskusikan."
+   ],
+   [
+    "Berapa lama sampel?",
+    "Biasanya dalam satu minggu setelah spesifikasi dikonfirmasi."
+   ],
+   [
+    "Bisa produksi dengan merek kami?",
+    "Ya — OEM/ODM dengan logo, kemasan, dan barcode Anda."
+   ]
+  ],
+  "faq_title": "Pertanyaan umum"
+ },
+ "th": {
+  "meta_title": "ขายส่งอุปกรณ์ครัวและโต๊ะอาหาร — โรงงานตั้งแต่ปี 2018 | Wiliheng",
+  "meta_desc": "กรรไกรครัว ที่ปอกเปลือก เขียง แผ่นซิลิโคน และภาชนะ 304 จากโรงงานของเราในหยางเจียง MOQ 500 ชิ้นต่อรุ่น OEM ภายใต้แบรนด์ของคุณ",
+  "h1": "อุปกรณ์ครัวและโต๊ะอาหารขายส่ง ตรงจากโรงงาน",
+  "lede": "เราผลิตกรรไกรครัว ที่ปอกเปลือก เขียง แผ่นซิลิโคน และภาชนะสแตนเลส 304 สำหรับผู้นำเข้า ผู้ค้าส่ง และเจ้าของแบรนด์ ตั้งแต่ปี 2018 ที่หยางเจียง มณฑลกวางตุ้ง",
+  "chips": [
+   "MOQ 500 ชิ้น/รุ่น",
+   "สลักโลโก้ด้วยเลเซอร์",
+   "ตัวอย่างประมาณ 1 สัปดาห์",
+   "เอกสารส่งออกครบ"
+  ],
+  "cta_wholesale": "ขายส่ง: ใบราคา",
+  "cta_oem": "คุยเรื่อง OEM / แบรนด์ของคุณ",
+  "hero_ph": "อีเมลบริษัท",
+  "hero_btn": "ใบราคา + แคตตาล็อก (PDF)",
+  "hero_note": "PDF + 3–5 รุ่นที่เหมาะ ปกติภายใน 24 ชั่วโมง ไม่มีจดหมายข่าว",
+  "hero_ok": "ขอบคุณ — เราตอบกลับภายใน 24 ชั่วโมง",
+  "gallery_title": "ตัวอย่างสินค้าของเรา",
+  "gallery_more": "นี่เป็นเพียงตัวอย่าง — เรามีกว่า 48 ไลน์: อุปกรณ์ครัว กรรไกร เครื่องใช้บนโต๊ะ แผ่นซิลิโคน",
+  "cards_title": "วิธีที่เราทำงาน",
+  "cards_sub": "ธุรกิจหลักของเราคือ OEM ให้แบรนด์ของคุณ และมีสินค้าพร้อมส่งสำหรับผู้ค้าส่ง",
+  "card1_t": "แบรนด์ของคุณ & OEM/ODM",
+  "card1_b": "โลโก้บนสินค้า บรรจุภัณฑ์ของคุณ บาร์โค้ดพร้อมขาย",
+  "card2_t": "ขายส่ง & ตัวแทนจำหน่าย",
+  "card2_b": "สินค้าในสต็อกราคาโรงงาน ราคาขั้นบันไดตั้งแต่ 500 ชิ้น กำหนดเวลาส่งได้",
+  "card3_t": "ส่งออก & เอกสาร",
+  "card3_b": "เอกสารส่งออก บรรจุภัณฑ์ และการโหลดตู้คอนเทนเนอร์ เราจัดการให้",
+  "form_title": "ขอใบเสนอราคา",
+  "form_sub": "แจ้งไลน์สินค้าและจำนวน — ราคาและรุ่นภายใน 24 ชั่วโมง",
+  "f_company": "บริษัท",
+  "f_name": "ชื่อของคุณ",
+  "f_email": "อีเมลบริษัท",
+  "f_country": "ประเทศ",
+  "f_line": "ไลน์สินค้า",
+  "f_qty": "จำนวนโดยประมาณ",
+  "f_msg": "หมายเหตุ",
+  "form_btn": "ส่งคำขอ",
+  "form_ok": "ได้รับแล้ว — เราตอบกลับภายใน 24 ชั่วโมง",
+  "consent": "ฉันยินยอมให้ใช้ข้อมูลของฉันเพื่อตอบคำถาม",
+  "wa_intent": "Thailand WhatsApp",
+  "f_wa": "WhatsApp (ไม่บังคับ)",
+  "privacy": "นโยบายความเป็นส่วนตัว",
+  "foot_note": "MOQ 500 ชิ้นต่อรุ่น ราคาและเวลาจัดส่งยืนยันเป็นลายลักษณ์อักษร B2B เท่านั้น",
+  "answer": "Wiliheng เป็นโรงงานอุปกรณ์ครัวและโต๊ะอาหารในหยางเจียง กวางตุ้ง จีน ตั้งแต่ปี 2018 เราผลิตให้ผู้นำเข้า ผู้ค้าส่ง และเจ้าของแบรนด์: วัสดุ บรรจุภัณฑ์ และโลโก้ตามสเปกของคุณ เริ่ม 500 ชิ้นต่อรุ่น",
+  "faq": [
+   [
+    "จำนวนสั่งซื้อขั้นต่ำเท่าไหร่",
+    "500 ชิ้นต่อรุ่น สำหรับสินค้าพร้อมส่ง สอบถามรุ่นที่มีได้"
+   ],
+   [
+    "ได้ตัวอย่างเร็วแค่ไหน",
+    "ปกติภายในหนึ่งสัปดาห์หลังยืนยันสเปก"
+   ],
+   [
+    "ผลิตภายใต้แบรนด์เราได้ไหม",
+    "ได้ — OEM/ODM พร้อมโลโก้ บรรจุภัณฑ์ และบาร์โค้ดของคุณ"
+   ]
+  ],
+  "faq_title": "คำถามที่พบบ่อย"
  }
 }

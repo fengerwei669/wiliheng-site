@@ -183,6 +183,7 @@ C = {
   # 询盘表单（第二条转化路径）：德国/美国采购员很多在办公桌前，公司禁用 WhatsApp，
   # 只填表。表单比 WhatsApp 多给公司名/数量/邮箱，询盘质量更高。
   'form_ttl': 'Anfrage in 30 Sekunden',
+  'form_note': 'Kein Katalog nötig — schreiben Sie einfach, was Sie brauchen.',
   'form_sub': ('Sie brauchen kein WhatsApp: Firma und E-Mail genügen. Wir antworten mit '
                '<strong>3–5 passenden Modellen, echten Fotos und Preisen</strong> — in der Regel '
                'innerhalb von 24 Stunden (Mo–Fr).'),
@@ -332,6 +333,7 @@ C = {
            'A quote usually within 24 hours on working days, with a live video walkthrough of production on '
            'request. Samples for OEM/private label take about a week.')],
   'form_ttl': 'Enquiry in 30 seconds',
+  'form_note': 'No catalogue needed — just tell us what you\'re looking for.',
   'form_sub': ('No WhatsApp needed: company and email are enough. We reply with '
                '<strong>3–5 matching models, real photos and pricing</strong> — usually within '
                '24 hours on working days.'),
@@ -548,6 +550,7 @@ HERO_FORM = """<form id="enqhero" data-hero="1" style="margin-top:20px;display:f
 FORM = """<section id="enquiry" style="background:#f7f9f5">
   <div class="wrap">
     <h2>{form_ttl}</h2>
+    <p class="mut" style="margin:-6px 0 14px">{form_note}</p>
     <p class="sub">{form_sub}</p>
     <style>
       #enq{{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}}
@@ -632,8 +635,24 @@ FORM_JS = """<script>
 </script>"""
 
 
+def _auto_faq(code):
+    """英文广告页的自动增量问答（ad_seo_daily.py 每天写入 site/ad_us_qa.json）。
+
+    为什么单独一个文件：这两个页的文案是脚本里的 dict（C），不是 ad_ads_i18n.json；
+    直接往 dict 里塞会让生成器变成“数据 + 代码”混一起，且每天改代码容易冲突。
+    """
+    try:
+        d = json.loads((Path(__file__).resolve().parent / 'ad_us_qa.json').read_text(encoding='utf-8'))
+        return [tuple(x) for x in (d.get(code) or []) if isinstance(x, list) and len(x) == 2]
+    except Exception:
+        return []
+
+
 def build(code):
-    c = C[code]
+    c = dict(C[code])                      # 浅拷贝：下面要往 faq 里追加自动问答
+    extra = _auto_faq(code)
+    if extra:
+        c['faq'] = list(c['faq']) + extra
     # 同意管理：德语页（欧盟流量）默认全拒绝 + 显示横幅；美国页默认允许、不显示横幅
     consent = ("{ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', "
                "analytics_storage:'denied', wait_for_update: 500}" if code == 'de' else
@@ -671,7 +690,7 @@ def build(code):
     form_block = FORM.format(plines=''.join('<option>%s</option>' % x for x in c['f_plines']),
                              qtys=''.join('<option>%s</option>' % x for x in c['f_qtys']),
                              priv=priv, **{k: c[k] for k in
-                             ('form_ttl', 'form_sub', 'f_company', 'f_email', 'f_name', 'f_country',
+                             ('form_ttl', 'form_note', 'form_sub', 'f_company', 'f_email', 'f_name', 'f_country',
                               'f_pline', 'f_qty', 'f_msg', 'f_consent', 'f_btn', 'f_ok', 'f_note')})
     form_js = (FORM_JS.replace('__FORM_LABEL__', FORM_LABEL).replace('__LANG__', code)
                       .replace('__FORM_CODE__', c['form_code'])

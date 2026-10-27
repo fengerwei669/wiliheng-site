@@ -11,7 +11,7 @@
 - Business: contract manufacturing (OEM/ODM), private label and wholesale supply of knives, cutlery and kitchen tools
 - Established: 2018 (manufacturing knives in Yangjiang ever since)
 - Customers: importers, wholesalers, distributors and brand owners (no retail, no end consumers)
-- Languages: Arabic, Czech, Dutch, English, French, German, Italian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish, Chinese
+- Languages: Arabic, Czech, Dutch, English, French, German, Indonesian, Italian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Thai, Turkish, Chinese
 
 ## Verified factory facts
 
@@ -95,7 +95,9 @@ MOQ (500 pcs per model), capability, sample lead time (about one week) and a dir
 | Romanian | Romania, Moldova | https://wiliheng.com/ad/ro/ |
 | Swedish | Sweden | https://wiliheng.com/ad/sv/ |
 | Czech | Czechia | https://wiliheng.com/ad/cs/ |
+| Indonesian | Indonesia | https://wiliheng.com/ad/id/ |
+| Thai | Thailand | https://wiliheng.com/ad/th/ |
 
-Languages served: Arabic, Czech, Dutch, English, French, German, Italian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish.
+Languages served: Arabic, Czech, Dutch, English, French, German, Indonesian, Italian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Thai, Turkish.
 
 <!-- END multi-language (auto) -->

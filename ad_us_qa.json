@@ -1,0 +1,55 @@
+{
+ "_说明": "英文广告落地页（/ad/us/、/ad/us-ware/）的自动增量问答；生成器 site/build_landing.py",
+ "us": [
+  [
+   "What is your MOQ if we mix several kitchen and tableware items?",
+   "Our MOQ is 500 pcs per model. For mixed assortments, the total quantity across models counts toward that minimum. Send your item list and target quantities, and we usually quote within 24 hours on working days."
+  ],
+  [
+   "Can you handle private label with our logo and retail packaging?",
+   "Yes. OEM/private label orders with your logo and packaging take 30-45 days after approval. Pre-production samples take about 1 week; sample charges are credited against the production order. Send your item list and packaging format, and we usually quote within 24 hours on working days."
+  ],
+  [
+   "What are your payment terms for a first wholesale order?",
+   "We typically work on 30% deposit and 70% before shipment. Stock models take 20-30 days after deposit; OEM/private label orders take 30-45 days after approval. We usually confirm your quote within 24 hours on working days."
+  ],
+  [
+   "Can we review your factory before placing a first order?",
+   "Yes. We can arrange a 15-20 minute factory video walkthrough from our Yangjiang facility, usually within 1-2 working days of your inquiry. Tell us your product categories and target quantities so we can cover the relevant production lines."
+  ],
+  [
+   "What packaging options do you offer for retail-ready wholesale orders?",
+   "We offer color boxes, blister packs and protective sleeves, packed in retail-ready export cartons. For OEM packaging, plan on 30-45 days after approval. Send your item list and packaging format, and we usually quote within 24 hours on working days."
+  ],
+  [
+   "What lead time should we plan for stock items versus custom logo orders?",
+   "Stock models usually take 20-30 days after deposit. OEM/private label orders with your logo and packaging take 30-45 days after approval. Send your item list and quantities, and we usually quote within 24 hours on working days."
+  ]
+ ],
+ "usware": [
+  [
+   "What is your MOQ if we mix several items in one order?",
+   "Our MOQ is 500 pcs per model. For mixed assortments, the total quantity across models counts toward that MOQ. Send your item list and target quantities; we usually quote within 24 hours on working days."
+  ],
+  [
+   "Can you send samples before we place a wholesale order?",
+   "Yes. For OEM/private label, we make a pre-production sample in about 1 week. Samples are charged and credited against the production order. Send the item list, logo and packaging details, and we usually quote within 24 hours on working days."
+  ],
+  [
+   "What is your lead time for private-label orders with our logo and packaging?",
+   "For OEM/private label orders with your logo and packaging, production typically takes 30-45 days after approval. Stock models usually run 20-30 days. We confirm the schedule with your quote, usually within 24 hours on working days."
+  ],
+  [
+   "What are your standard payment terms for a first wholesale order?",
+   "Typically 30% deposit and 70% before shipment. We confirm terms on the proforma invoice with your quote, usually within 24 hours on working days. Send your item list and target quantities for mixed container planning."
+  ],
+  [
+   "What packaging options do you offer for retail-ready wholesale orders?",
+   "We offer color boxes, blister packs, protective sleeves, and retail-ready export cartons. Send your product mix and shelf requirements; we confirm packaging details with your quote, usually within 24 hours on working days."
+  ],
+  [
+   "Can we review your factory before placing a wholesale order?",
+   "Yes. We can send a 15-20 minute factory video walkthrough from our Yangjiang facility, usually within 1-2 working days of your request. Tell us which product categories you plan to source and we will include the relevant production steps."
+  ]
+ ]
+}

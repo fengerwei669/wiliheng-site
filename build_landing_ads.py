@@ -17,6 +17,7 @@
 用法：python site/build_landing_ads.py [--langs es,fr]
 """
 import json
+import urllib.parse
 import re
 import subprocess
 import sys
@@ -25,7 +26,7 @@ from critical_css import CSS as CRITICAL_CSS
 
 BASE = Path(__file__).resolve().parent          # site/
 ROOT = BASE.parent
-LANGS_DEFAULT = ['es', 'fr', 'it', 'pt', 'nl', 'pl', 'ru', 'ar', 'tr', 'ro', 'sv', 'cs', 'de-ware']  # 2026-10-16：按欧盟进口数据加 瑞典/捷克/奥地利(无刀德语)
+LANGS_DEFAULT = ['es', 'fr', 'it', 'pt', 'nl', 'pl', 'ru', 'ar', 'tr', 'ro', 'sv', 'cs', 'de-ware', 'id', 'th']  # 2026-10-16：按欧盟进口数据加 瑞典/捷克/奥地利(无刀德语)
 WHATSAPP = '8618124886695'
 EMAIL = 'fengerwei669@gmail.com'
 SINCE = '2018'
@@ -48,6 +49,8 @@ CAT_LABEL = {
     'sv': {'Shears & scissors': 'Kökssaxar', 'Chopping boards': 'Skärbrädor', 'Knife sharpeners': 'Handslipare'},
     'cs': {'Shears & scissors': 'Kuchyňské nůžky', 'Chopping boards': 'Prkénka', 'Knife sharpeners': 'Ruční brousky'},
     'de-ware': {'Shears & scissors': 'Küchenscheren', 'Chopping boards': 'Schneidebretter', 'Knife sharpeners': 'Handschärfer'},
+    'id': {'Shears & scissors': 'Gunting dapur', 'Chopping boards': 'Talenan', 'Knife sharpeners': 'Pengasah tangan'},
+    'th': {'Shears & scissors': 'กรรไกรครัว', 'Chopping boards': 'เขียง', 'Knife sharpeners': 'ที่ลับมีดมือ'},
 }
 
 JS = r"""
@@ -81,7 +84,7 @@ gtag('config','AW-17434685893');
    if(!v('email')){f.elements['email'].focus();return;}
    if(f.elements['consent']&&!f.elements['consent'].checked){f.elements['consent'].focus();return;}
    var payload={token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase()+'F',page:location.pathname,
-                company:v('company'),name:v('name'),email:v('email'),country:v('country'),
+                company:v('company'),name:(v('name')||v('company')),email:v('email'),country:v('country'),whatsapp:v('whatsapp'),
                 whatsapp:v('whatsapp'),kw:QP('kw'),campaign:QP('cpn'),adgroup:QP('adg'),gclid:QP('gclid'),intent:'landing form'};
    var send=function(url){return fetch(url,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});};
    var fallback=function(){location.href='mailto:__EMAIL__?subject=Enquiry%20'+LANG.toUpperCase()+'&body='+encodeURIComponent(JSON.stringify(payload,null,1));};
@@ -163,7 +166,7 @@ PAGE = """<!DOCTYPE html>
 {faq_block}
   <!-- 手机端常驻悬浮 WhatsApp（2026-10-10 加）：前一天 8 次广告点击 0 次联系动作 →
        把"联系"永远放在拇指可及处。点击由现有 wa.me 埋点自动统计，无需额外 JS。 -->
-  <a class="wa-float" href="https://wa.me/{wa}" target="_blank" rel="noopener"
+  <a class="wa-float" href="{wa_whole}" target="_blank" rel="noopener"
      data-intent="{cta_wholesale}" aria-label="{cta_wholesale}">
     <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2m5.8 14.09c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.03.24-2.93-.61-2.3-1.03-3.74-3.44-3.85-3.6-.11-.16-.92-1.26-.92-2.4 0-1.14.6-1.7.81-1.93.21-.23.46-.29.61-.29h.44c.14 0 .33-.05.51.39.19.45.64 1.56.7 1.67.06.11.1.24.02.39-.08.15-.15.24-.29.38-.14.14-.3.32-.43.43-.14.13-.29.26-.13.53.16.27.71 1.17 1.52 1.9 1.05.94 1.94 1.23 2.21 1.37.27.13.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.59.75 1.86.89.27.13.45.2.52.31.07.12.07.68-.17 1.36z"/></svg>
   </a>
@@ -191,6 +194,7 @@ PAGE = """<!DOCTYPE html>
 
 <section><div class="wrap">
   <h2>{form_title}</h2><p class="sub">{form_sub}</p>
+  <p class="sub" style="font-weight:600;color:#2b3a42">{form_note}</p>
   <form id="enq">
     <input name="company" placeholder="{f_company}" required>
     <input id="email2" name="email" type="email" placeholder="{f_email}" required>
@@ -204,7 +208,7 @@ PAGE = """<!DOCTYPE html>
 </div></section>
 
 <div id="ui-consent" hidden>{consent}</div>
-<footer><div class="wrap">{foot_note}<br>{addr}</div></footer>
+<footer><div class="wrap">{foot_note}<br>{addr}<br><a href="{privacy_url}" style="color:#3f6b00">{privacy_label}</a></div></footer>
 {js_body}
 </body></html>
 """
@@ -245,18 +249,31 @@ def build(lang, d):
     js = (JS.replace('__TOKEN__', TOKEN).replace('__WA__', WA_LABEL).replace('__FORM__', FORM_LABEL)
              .replace('__LANG__', lang).replace('__INTENT__', d['wa_intent']).replace('__EMAIL__', EMAIL))
     js_head, _, js_body = js.partition('<!--SPLIT-->')
+    _tag = '[%s] ' % lang.upper().replace('DE-WARE', 'AT')
+    wa_whole = 'https://wa.me/%s?text=%s' % (WHATSAPP, urllib.parse.quote(_tag + d['cta_wholesale']))
+    wa_oem = 'https://wa.me/%s?text=%s' % (WHATSAPP, urllib.parse.quote(_tag + 'OEM — ' + d['cta_oem']))
+    _hero_kw = {'wa_whole': wa_whole, 'wa_oem': wa_oem,
+                'cta_wholesale': d['cta_wholesale'], 'cta_oem': d['cta_oem'],
+                'hero_ph': d['hero_ph'], 'hero_btn': d['hero_btn']}
+    _hero_a = HERO_BLOCKS['cta'].format(**_hero_kw)
+    _hero_b = HERO_BLOCKS['form'].format(**_hero_kw)
     html = PAGE.format(
         CRITICAL_CSS=CRITICAL_CSS,
         hreflang=build_hreflang(lang),
         jsonld=build_jsonld(lang, d),
         answer_block=build_answer(d),
         faq_block=build_faq(d),
-        hero_first=HERO_BLOCKS['cta'] if _variant_for(lang) == 'A' else HERO_BLOCKS['form'],
-        hero_second=HERO_BLOCKS['form'] if _variant_for(lang) == 'A' else HERO_BLOCKS['cta'],
+        privacy_label=d.get('privacy', 'Privacy policy'),
+        privacy_url=('/ad/de/datenschutz.html' if lang == 'de-ware' else '/privacy.html'),
+        hero_first=_hero_a if _variant_for(lang) == 'A' else _hero_b,
+        hero_second=_hero_b if _variant_for(lang) == 'A' else _hero_a,
         **_theme_for(lang),
         lang=lang, rtl=' dir="rtl"' if d.get('rtl') else '', js=js_head, js_body=js_body,
         meta_title=d['meta_title'], meta_desc=d['meta_desc'], h1=d['h1'], lede=d['lede'],
-        wa=WHATSAPP, cta_wholesale=d['cta_wholesale'], cta_oem=d['cta_oem'],
+        wa=WHATSAPP,
+        wa_whole=wa_whole,
+        wa_oem=wa_oem,
+        cta_wholesale=d['cta_wholesale'], cta_oem=d['cta_oem'],
         hero_ph=d['hero_ph'], hero_btn=d['hero_btn'], hero_note=d['hero_note'],
         chips=''.join('<li>%s</li>' % c for c in d['chips']),
         gallery_title=d['gallery_title'],
@@ -264,7 +281,8 @@ def build(lang, d):
         gallery=gal, cards_title=d['cards_title'], cards_sub=d['cards_sub'],
         card1_t=d['card1_t'], card1_b=d['card1_b'], card2_t=d['card2_t'], card2_b=d['card2_b'],
         card3_t=d['card3_t'], card3_b=d['card3_b'],
-        form_title=d['form_title'], form_sub=d['form_sub'], f_company=d['f_company'], f_name=d['f_name'],
+        form_title=d['form_title'], form_sub=d['form_sub'], form_note=d.get('form_note') or '',
+        f_company=d['f_company'], f_name=d['f_name'],
         f_email=d['f_email'], f_country=d['f_country'], f_wa=d.get('f_wa','WhatsApp (optional)'),
          consent=d['consent'], form_btn=d['form_btn'], form_ok=d['form_ok'],
         foot_note=d['foot_note'],
@@ -273,9 +291,9 @@ def build(lang, d):
 
 
 HERO_BLOCKS = {
-    'cta': ('<div>\n    <a class="btn" href="https://wa.me/{wa}" target="_blank" rel="noopener" '
+    'cta': ('<div>\n    <a class="btn" href="{wa_whole}" target="_blank" rel="noopener" '
             'data-intent="{cta_wholesale}">{cta_wholesale}</a>\n'
-            '    <a class="btn ghost" href="https://wa.me/{wa}" target="_blank" rel="noopener" '
+            '    <a class="btn ghost" href="{wa_oem}" target="_blank" rel="noopener" '
             'data-intent="{cta_oem}">{cta_oem}</a>\n   </div>'),
     'form': ('<form id="hero" onsubmit="return false" style="margin-top:18px;max-width:620px;'
              'display:flex;gap:10px;flex-wrap:wrap">\n'
@@ -298,12 +316,12 @@ def _variant_for(lang):
 
 # 落地页 → 各语言版本（hreflang 用）。英语版是 /ad/us-ware/，德语版是 /ad/de/。
 LANG_URLS = {'es': '/ad/es/', 'fr': '/ad/fr/', 'it': '/ad/it/', 'pt': '/ad/pt/', 'nl': '/ad/nl/',
-             'sv': '/ad/sv/', 'cs': '/ad/cs/', 'de-ware': '/ad/de-ware/',
+             'sv': '/ad/sv/', 'cs': '/ad/cs/', 'de-ware': '/ad/de-ware/', 'id': '/ad/id/', 'th': '/ad/th/',
              'pl': '/ad/pl/', 'ru': '/ad/ru/', 'ar': '/ad/ar/', 'tr': '/ad/tr/', 'ro': '/ad/ro/',
              'en': '/ad/us-ware/', 'de': '/ad/de/'}
 LANG_HTML = {'es': 'es', 'fr': 'fr', 'it': 'it', 'pt': 'pt', 'nl': 'nl', 'pl': 'pl', 'ru': 'ru',
              'ar': 'ar', 'tr': 'tr', 'ro': 'ro', 'en': 'en', 'de': 'de',
-             'sv': 'sv', 'cs': 'cs', 'de-ware': 'de'}   # 2026-10-16：瑞典/捷克/奥地利(无刀德语页)
+             'sv': 'sv', 'cs': 'cs', 'de-ware': 'de', 'id': 'id', 'th': 'th'}   # 2026-10-16：瑞典/捷克/奥地利(无刀德语页)
 
 
 def build_hreflang(lang):

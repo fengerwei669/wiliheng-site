@@ -1,0 +1,956 @@
+{
+ "_说明": "广告落地页的多语种文案（厨房/餐具口径，非德国市场不含刀具 —— 刀具政策只放行德国）。共享内容（h1/lede/facts/families/faq/oem）直接复用 web/content/i18n.json，这里只放落地页专用串。生成器：site/build_landing_ads.py",
+ "_为什么非德国用厨房口径": "2026-10-05 实测：西语广告指向新站语言页/厨房品类页/已过审厨房页全部被 POLICY_FINDING 拒（整站含刀具）。所以非德国市场必须用本文件生成的'无刀厨房口径'落地页。",
+ "en": {
+  "meta_title": "Kitchen & tableware wholesale — factory direct since 2018 | Wiliheng",
+  "meta_desc": "Shears, peelers, chopping boards, silicone mats and tableware — OEM/private label straight from our Yangjiang factory. MOQ 500 pcs per model.",
+  "h1": "Wholesale kitchen & tableware, straight from the factory",
+  "lede": "We produce shears, peelers, chopping boards, silicone mats and 304 tableware in Yangjiang — for importers, distributors and brand owners. Your brand, your packaging, your specs.",
+  "chips": [
+   "MOQ 500 pcs per model",
+   "Your logo, laser engraved",
+   "43 in-house steps",
+   "40 machines, 20 CNC",
+   "Sample in about a week"
+  ],
+  "cta_wholesale": "Wholesale: price list",
+  "cta_oem": "Discuss OEM / private label",
+  "hero_ph": "Business email address",
+  "hero_btn": "Get price list + line card (PDF)",
+  "hero_note": "PDF + 3–5 matching models, usually within 24 hours. No newsletter.",
+  "hero_ok": "Thanks — we reply within 24 hours. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Download the line card (PDF) now</strong></a>",
+  "gallery_title": "A selection from our range",
+  "gallery_more": "A selection — we run 48+ lines in kitchen & tableware. See the <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">full catalogue</a>, or tell us your line and we shortlist 3–5 matching models with photos and pricing.",
+  "cards_title": "How we work",
+  "cards_sub": "Our core business is private label for your brand; wholesale stock we supply alongside it.",
+  "card1_t": "Own brand & OEM/ODM",
+  "card1_b": "Your logo on the product, your case and packaging, barcodes done. Production starts after you approve the sample.",
+  "card2_t": "Wholesale & distribution",
+  "card2_b": "Stock lines at factory prices, tiered pricing from 500 pcs, fixed lead times, retail-ready packaging.",
+  "card3_t": "Export & documents",
+  "card3_b": "We handle export documents, packing and container loading. Shipping to the EU and the US since 2018.",
+  "form_title": "Request a quote",
+  "form_sub": "Tell us your line and quantity — we reply with prices and matching models within 24 hours.",
+  "f_company": "Company",
+  "f_name": "Your name",
+  "f_email": "Business email",
+  "f_country": "Country",
+  "f_line": "Product line you buy",
+  "f_qty": "Estimated quantity",
+  "f_msg": "Anything else",
+  "form_btn": "Send request",
+  "form_ok": "Received — we reply within 24 hours.",
+  "consent": "I agree that my details are used to answer my enquiry.",
+  "wa_intent": "New site WhatsApp",
+  "foot_note": "MOQ 500 pcs per model. Prices and lead times confirmed on written enquiry. Wholesale/B2B only.",
+  "answer": "Wiliheng is a kitchen and tableware factory in Yangjiang (Guangdong, China), operating since 2018. We make kitchen shears, peelers, chopping boards, silicone mats and 304 stainless tableware for importers, distributors and HORECA chains. Minimum order is 500 pieces per model, with in-house production (43 steps, 40 machines including 20 CNC), private label/OEM with your logo, and full export documentation.",
+  "faq": [
+   [
+    "What is the minimum order quantity?",
+    "500 pieces per model. For stock lines smaller quantities can be discussed; it is confirmed in writing in the quotation."
+   ],
+   [
+    "Can I get samples, and how long do they take?",
+    "Yes. Samples and the price list are usually sent within a week; sample shipping is quoted separately."
+   ],
+   [
+    "Do you do private label (OEM)?",
+    "Yes, that is our main business: your logo, your box and packaging, barcodes carrying your item code."
+   ]
+  ],
+  "faq_title": "Frequently asked questions",
+  "f_wa": "WhatsApp (optional)"
+ },
+ "es": {
+  "meta_title": "Menaje de cocina y mesa al por mayor — fábrica desde 2018 | Wiliheng",
+  "meta_desc": "Tijeras, peladores, tablas de cortar, tapetes de silicona y vajilla 304 — OEM/marca blanca directo de nuestra fábrica en Yangjiang. MOQ 500 uds por modelo.",
+  "h1": "Menaje de cocina y mesa al por mayor, directo de fábrica",
+  "lede": "Fabricamos tijeras, peladores, tablas de cortar, tapetes de silicona y vajilla 304 en Yangjiang — para importadores, distribuidores y propietarios de marca. Su marca, su embalaje, sus especificaciones.",
+  "chips": [
+   "MOQ 500 uds por modelo",
+   "Su logo grabado a láser",
+   "43 pasos en casa",
+   "40 máquinas, 20 CNC",
+   "Muestra en 1 semana"
+  ],
+  "cta_wholesale": "Mayoreo: lista de precios",
+  "cta_oem": "Hablar de OEM / marca blanca",
+  "hero_ph": "Correo de empresa",
+  "hero_btn": "Lista de precios + catálogo (PDF)",
+  "hero_note": "PDF + 3–5 modelos que encajan, normalmente en 24 horas. Sin boletines.",
+  "hero_ok": "Gracias — respondemos en 24 horas. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Descargar el catálogo (PDF) ahora</strong></a>",
+  "gallery_title": "Una selección de nuestro surtido",
+  "gallery_more": "Esto es una selección — trabajamos más de 48 líneas de menaje de cocina y mesa. Vea el <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">catálogo completo</a> o díganos su línea y le enviamos 3–5 modelos con fotos y precios.",
+  "cards_title": "Cómo trabajamos",
+  "cards_sub": "Nuestro negocio principal es la marca blanca para su marca; además servimos stock al por mayor.",
+  "card1_t": "Marca propia y OEM/ODM",
+  "card1_b": "Su logo en el producto, su estuche y embalaje, códigos de barras listos. La producción empieza tras aprobar la muestra.",
+  "card2_t": "Mayoreo y distribución",
+  "card2_b": "Líneas de stock a precios de fábrica, precios escalonados desde 500 uds, plazos fijos, embalaje para retail.",
+  "card3_t": "Exportación y documentos",
+  "card3_b": "Nos ocupamos de documentos de exportación, embalaje y carga del contenedor. Exportamos a la UE y EE.UU. desde 2018.",
+  "form_title": "Solicitar presupuesto",
+  "form_sub": "Díganos su línea y cantidad — respondemos con precios y modelos en 24 horas.",
+  "f_company": "Empresa",
+  "f_name": "Su nombre",
+  "f_email": "Correo de empresa",
+  "f_country": "País",
+  "f_line": "Línea de producto que compra",
+  "f_qty": "Cantidad estimada",
+  "f_msg": "Algo más",
+  "form_btn": "Enviar solicitud",
+  "form_ok": "Recibido — respondemos en 24 horas.",
+  "consent": "Acepto que mis datos se usen para responder a mi consulta.",
+  "wa_intent": "España WhatsApp",
+  "foot_note": "MOQ 500 uds por modelo. Precios y plazos se confirman por escrito. Solo mayoristas/B2B.",
+  "answer": "Wiliheng es una fábrica de menaje de cocina y mesa situada en Yangjiang (Guangdong, China), activa desde 2018. Produce tijeras de cocina, peladores, tablas de cortar, tapetes de silicona y vajilla de acero inoxidable 304 para importadores, distribuidores y cadenas HORECA. La cantidad mínima es de 500 unidades por modelo, con producción propia (43 etapas, 40 máquinas, 20 de ellas CNC), marca blanca/OEM con su logo y documentación de exportación completa.",
+  "faq": [
+   [
+    "¿Cuál es la cantidad mínima de pedido?",
+    "500 unidades por modelo. Para líneas en stock podemos hablar de cantidades menores; se confirma por escrito en el presupuesto."
+   ],
+   [
+    "¿Se pueden pedir muestras y cuánto tardan?",
+    "Sí. Enviamos muestras y la lista de precios normalmente en una semana; el envío de muestras se cotiza aparte."
+   ],
+   [
+    "¿Hacen marca blanca (OEM)?",
+    "Sí, es nuestro negocio principal: su logo grabado o impreso, su caja y embalaje, y códigos de barras con su referencia."
+   ],
+   [
+    "¿Cuál es el plazo de entrega para un pedido OEM con nuestro logo y embalaje?",
+    "Para modelos en stock, 20-30 días. Para OEM/marca blanca con su logo y embalaje, 30-45 días tras la aprobación de la muestra. Confirmamos por escrito en el presupuesto."
+   ]
+  ],
+  "faq_title": "Preguntas frecuentes",
+  "f_wa": "WhatsApp (opcional)"
+ },
+ "fr": {
+  "meta_title": "Arts de la table et ustensiles de cuisine en gros — usine depuis 2018 | Wiliheng",
+  "meta_desc": "Ciseaux, éplucheurs, planches à découper, tapis en silicone et vaisselle 304 — OEM/marque blanche directement de notre usine de Yangjiang. MOQ 500 pcs par modèle.",
+  "h1": "Ustensiles de cuisine et arts de la table en gros, directement d'usine",
+  "lede": "Nous fabriquons ciseaux, éplucheurs, planches à découper, tapis en silicone et vaisselle 304 à Yangjiang — pour importateurs, distributeurs et propriétaires de marque. Votre marque, votre emballage, vos spécifications.",
+  "chips": [
+   "MOQ 500 pcs par modèle",
+   "Votre logo gravé au laser",
+   "43 étapes en interne",
+   "40 machines, 20 CNC",
+   "Échantillon en 1 semaine"
+  ],
+  "cta_wholesale": "Gros : liste de prix",
+  "cta_oem": "Parler d'OEM / marque blanche",
+  "hero_ph": "E-mail professionnel",
+  "hero_btn": "Liste de prix + catalogue (PDF)",
+  "hero_note": "PDF + 3–5 modèles adaptés, généralement en 24 h. Pas de newsletter.",
+  "hero_ok": "Merci — nous répondons en 24 h. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Télécharger le catalogue (PDF)</strong></a>",
+  "gallery_title": "Un extrait de notre gamme",
+  "gallery_more": "Ceci est un extrait — nous proposons plus de 48 lignes d'ustensiles de cuisine et d'arts de la table. Voir le <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">catalogue complet</a>, ou indiquez-nous votre ligne et nous sélectionnons 3–5 modèles avec photos et prix.",
+  "cards_title": "Notre façon de travailler",
+  "cards_sub": "Notre cœur de métier est la marque blanche pour votre marque ; nous fournissons aussi du stock en gros.",
+  "card1_t": "Marque propre et OEM/ODM",
+  "card1_b": "Votre logo sur le produit, votre étui et emballage, codes-barres prêts. La production démarre après validation de l'échantillon.",
+  "card2_t": "Gros et distribution",
+  "card2_b": "Lignes en stock à prix d'usine, tarifs dégressifs dès 500 pcs, délais fixes, emballage prêt pour la vente.",
+  "card3_t": "Export et documents",
+  "card3_b": "Nous gérons documents d'export, emballage et chargement du conteneur. Export UE et USA depuis 2018.",
+  "form_title": "Demander un devis",
+  "form_sub": "Indiquez votre ligne et vos quantités — nous répondons avec prix et modèles sous 24 h.",
+  "f_company": "Société",
+  "f_name": "Votre nom",
+  "f_email": "E-mail professionnel",
+  "f_country": "Pays",
+  "f_line": "Ligne de produits",
+  "f_qty": "Quantité estimée",
+  "f_msg": "Autre chose",
+  "form_btn": "Envoyer la demande",
+  "form_ok": "Bien reçu — nous répondons sous 24 h.",
+  "consent": "J'accepte que mes données servent à répondre à ma demande.",
+  "wa_intent": "France WhatsApp",
+  "foot_note": "MOQ 500 pcs par modèle. Prix et délais confirmés par écrit. Gros/B2B uniquement.",
+  "answer": "Wiliheng est une usine d'ustensiles de cuisine et de table située à Yangjiang (Guangdong, Chine), active depuis 2018. Nous produisons ciseaux de cuisine, éplucheurs, planches à découper, tapis en silicone et vaisselle en inox 304 pour des importateurs, distributeurs et chaînes HORECA. La quantité minimale est de 500 pièces par modèle, avec production intégrée (43 étapes, 40 machines dont 20 CNC), marque blanche/OEM avec votre logo et documents d'exportation complets.",
+  "faq": [
+   [
+    "Quelle est la quantité minimale de commande ?",
+    "500 pièces par modèle. Pour les références en stock, des quantités inférieures sont possibles ; c'est confirmé par écrit dans le devis."
+   ],
+   [
+    "Peut-on obtenir des échantillons et en combien de temps ?",
+    "Oui. Échantillons et tarif sont généralement envoyés en une semaine ; le transport des échantillons est chiffré séparément."
+   ],
+   [
+    "Faites-vous de la marque blanche (OEM) ?",
+    "Oui, c'est notre activité principale : votre logo, votre boîte et emballage, codes-barres à votre référence."
+   ]
+  ],
+  "faq_title": "Questions fréquentes",
+  "f_wa": "WhatsApp (facultatif)"
+ },
+ "it": {
+  "meta_title": "Articoli da cucina e tavola all'ingrosso — fabbrica dal 2018 | Wiliheng",
+  "meta_desc": "Forbici, pelapatate, taglieri, tappetini in silicone e stoviglie 304 — OEM/private label direttamente dalla nostra fabbrica di Yangjiang. MOQ 500 pz per modello.",
+  "h1": "Articoli da cucina e tavola all'ingrosso, direttamente dalla fabbrica",
+  "lede": "Produciamo forbici, pelapatate, taglieri, tappetini in silicone e stoviglie 304 a Yangjiang — per importatori, distributori e titolari di marca. Il vostro marchio, il vostro imballaggio, le vostre specifiche.",
+  "chips": [
+   "MOQ 500 pz per modello",
+   "Vostro logo inciso al laser",
+   "43 fasi interne",
+   "40 macchine, 20 CNC",
+   "Campione in 1 settimana"
+  ],
+  "cta_wholesale": "Ingrosso: listino prezzi",
+  "cta_oem": "Parlare di OEM / private label",
+  "hero_ph": "Email aziendale",
+  "hero_btn": "Listino + catalogo (PDF)",
+  "hero_note": "PDF + 3–5 modelli adatti, di solito entro 24 ore. Nessuna newsletter.",
+  "hero_ok": "Grazie — rispondiamo entro 24 ore. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Scarica il catalogo (PDF)</strong></a>",
+  "gallery_title": "Una selezione della nostra gamma",
+  "gallery_more": "Questa è una selezione — gestiamo oltre 48 linee di articoli da cucina e tavola. Vedere il <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">catalogo completo</a>, oppure indicarci la vostra linea e selezioniamo 3–5 modelli con foto e prezzi.",
+  "cards_title": "Come lavoriamo",
+  "cards_sub": "Il nostro core business è il private label per il vostro marchio; forniamo anche stock all'ingrosso.",
+  "card1_t": "Marchio proprio e OEM/ODM",
+  "card1_b": "Il vostro logo sul prodotto, astuccio e imballaggio vostri, codici a barre pronti. La produzione parte dopo l'approvazione del campione.",
+  "card2_t": "Ingrosso e distribuzione",
+  "card2_b": "Linee a stock a prezzi di fabbrica, prezzi a scaglioni da 500 pz, tempi fissi, imballaggio pronto per il retail.",
+  "card3_t": "Export e documenti",
+  "card3_b": "Gestiamo documenti di export, imballaggio e carico del container. Esportiamo in UE e USA dal 2018.",
+  "form_title": "Richiedere un preventivo",
+  "form_sub": "Indicate linea e quantità — rispondiamo con prezzi e modelli entro 24 ore.",
+  "f_company": "Azienda",
+  "f_name": "Vostro nome",
+  "f_email": "Email aziendale",
+  "f_country": "Paese",
+  "f_line": "Linea di prodotto",
+  "f_qty": "Quantità stimata",
+  "f_msg": "Altro",
+  "form_btn": "Invia richiesta",
+  "form_ok": "Ricevuto — rispondiamo entro 24 ore.",
+  "consent": "Accetto che i miei dati siano usati per rispondere alla richiesta.",
+  "wa_intent": "Italia WhatsApp",
+  "foot_note": "MOQ 500 pz per modello. Prezzi e tempi confermati per iscritto. Solo ingrosso/B2B.",
+  "answer": "Wiliheng è una fabbrica di utensili da cucina e da tavola con sede a Yangjiang (Guangdong, Cina), attiva dal 2018. Produciamo forbici da cucina, pelapatate, taglieri, tappetini in silicone e stoviglie in acciaio inox 304 per importatori, distributori e catene HORECA. Quantità minima 500 pezzi per modello, produzione interna (43 fasi, 40 macchine di cui 20 CNC), private label/OEM con il vostro logo e documenti di export completi.",
+  "faq": [
+   [
+    "Qual è la quantità minima d'ordine?",
+    "500 pezzi per modello. Per le referenze a stock si può valutare una quantità inferiore; viene confermata per iscritto nel preventivo."
+   ],
+   [
+    "Si possono avere campioni e in quanto tempo?",
+    "Sì. Campioni e listino vengono inviati di norma in una settimana; il trasporto dei campioni è quotato a parte."
+   ],
+   [
+    "Lavorate in private label (OEM)?",
+    "Sì, è la nostra attività principale: il vostro logo, la vostra scatola e imballo, codici a barre con il vostro codice."
+   ],
+   [
+    "Quali sono i tempi di consegna per modelli a stock e per un ordine con logo e imballo personalizzati?",
+    "Per i modelli a stock servono 20-30 giorni; per OEM/private label con vostro logo e imballo 30-45 giorni dall'approvazione. Il preventivo arriva di norma entro 24 ore lavorative."
+   ]
+  ],
+  "faq_title": "Domande frequenti",
+  "f_wa": "WhatsApp (facoltativo)"
+ },
+ "pt": {
+  "meta_title": "Utensílios de cozinha e mesa por atacado — fábrica desde 2018 | Wiliheng",
+  "meta_desc": "Tesouras, descascadores, tábuas de corte, tapetes de silicone e louça 304 — OEM/marca própria direto da nossa fábrica em Yangjiang. MOQ 500 un. por modelo.",
+  "h1": "Utensílios de cozinha e mesa por atacado, direto da fábrica",
+  "lede": "Produzimos tesouras, descascadores, tábuas de corte, tapetes de silicone e louça 304 em Yangjiang — para importadores, distribuidores e donos de marca. A sua marca, a sua embalagem, as suas especificações.",
+  "chips": [
+   "MOQ 500 un. por modelo",
+   "O seu logo gravado a laser",
+   "43 etapas internas",
+   "40 máquinas, 20 CNC",
+   "Amostra em 1 semana"
+  ],
+  "cta_wholesale": "Atacado: lista de preços",
+  "cta_oem": "Falar de OEM / marca própria",
+  "hero_ph": "E-mail comercial",
+  "hero_btn": "Lista de preços + catálogo (PDF)",
+  "hero_note": "PDF + 3–5 modelos adequados, normalmente em 24 horas. Sem newsletter.",
+  "hero_ok": "Obrigado — respondemos em 24 horas. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Descarregar o catálogo (PDF)</strong></a>",
+  "gallery_title": "Uma seleção do nosso sortido",
+  "gallery_more": "Isto é uma seleção — trabalhamos mais de 48 linhas de cozinha e mesa. Veja o <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">catálogo completo</a>, ou diga-nos a sua linha e enviamos 3–5 modelos com fotos e preços.",
+  "cards_title": "Como trabalhamos",
+  "cards_sub": "O nosso negócio principal é a marca própria para a sua marca; também fornecemos stock por atacado.",
+  "card1_t": "Marca própria e OEM/ODM",
+  "card1_b": "O seu logo no produto, estojo e embalagem seus, códigos de barras prontos. A produção começa após aprovar a amostra.",
+  "card2_t": "Atacado e distribuição",
+  "card2_b": "Linhas em stock a preços de fábrica, preços escalonados desde 500 un., prazos fixos, embalagem pronta para retalho.",
+  "card3_t": "Exportação e documentos",
+  "card3_b": "Tratamos de documentos de exportação, embalagem e carregamento do contentor. Exportamos para a UE e EUA desde 2018.",
+  "form_title": "Pedir orçamento",
+  "form_sub": "Diga-nos a linha e a quantidade — respondemos com preços e modelos em 24 horas.",
+  "f_company": "Empresa",
+  "f_name": "O seu nome",
+  "f_email": "E-mail comercial",
+  "f_country": "País",
+  "f_line": "Linha de produto",
+  "f_qty": "Quantidade estimada",
+  "f_msg": "Outro assunto",
+  "form_btn": "Enviar pedido",
+  "form_ok": "Recebido — respondemos em 24 horas.",
+  "consent": "Aceito que os meus dados sejam usados para responder ao meu pedido.",
+  "wa_intent": "Portugal WhatsApp",
+  "foot_note": "MOQ 500 un. por modelo. Preços e prazos confirmados por escrito. Apenas atacado/B2B.",
+  "answer": "A Wiliheng é uma fábrica de utensílios de cozinha e mesa em Yangjiang (Guangdong, China), ativa desde 2018. Produz tesouras de cozinha, descascadores, tábuas de corte, tapetes de silicone e louça em aço inox 304 para importadores, distribuidores e redes HORECA. O mínimo é 500 unidades por modelo, com produção própria (43 etapas, 40 máquinas, 20 CNC), marca própria/OEM com o seu logo e documentação de exportação completa.",
+  "faq": [
+   [
+    "Qual é a quantidade mínima?",
+    "500 unidades por modelo. Para linhas em stock falamos de quantidades menores; confirmamos por escrito na cotação."
+   ],
+   [
+    "É possível pedir amostras e quanto tempo levam?",
+    "Sim. Enviamos amostras e a lista de preços normalmente em uma semana; o frete das amostras é cotado à parte."
+   ],
+   [
+    "Fazem marca própria (OEM)?",
+    "Sim, é o nosso negócio principal: o seu logo, a sua caixa e embalagem, e códigos de barras com a sua referência."
+   ],
+   [
+    "Podem combinar vários modelos e categorias num único pedido?",
+    "Sim. Em pedidos mistos, a quantidade total conta para o mínimo de 500 unidades por modelo. Para modelos em stock, o prazo é de 20 a 30 dias; OEM com logo e embalagem própria fica em 30 a 45 dias após aprovação."
+   ]
+  ],
+  "faq_title": "Perguntas frequentes",
+  "f_wa": "WhatsApp (opcional)"
+ },
+ "nl": {
+  "meta_title": "Keuken- en tafelartikelen groothandel — fabriek sinds 2018 | Wiliheng",
+  "meta_desc": "Scharen, schillers, snijplanken, siliconen matten en 304 tafelgerei — OEM/private label direct van onze fabriek in Yangjiang. MOQ 500 stuks per model.",
+  "h1": "Keuken- en tafelartikelen groothandel, direct van de fabriek",
+  "lede": "Wij produceren scharen, schillers, snijplanken, siliconen matten en 304 tafelgerei in Yangjiang — voor importeurs, distributeurs en merkhouders. Uw merk, uw verpakking, uw specificaties.",
+  "chips": [
+   "MOQ 500 stuks per model",
+   "Uw logo lasergegraveerd",
+   "43 stappen in huis",
+   "40 machines, 20 CNC",
+   "Monster binnen 1 week"
+  ],
+  "cta_wholesale": "Groothandel: prijslijst",
+  "cta_oem": "OEM / private label bespreken",
+  "hero_ph": "Zakelijk e-mailadres",
+  "hero_btn": "Prijslijst + catalogus (PDF)",
+  "hero_note": "PDF + 3–5 passende modellen, meestal binnen 24 uur. Geen nieuwsbrief.",
+  "hero_ok": "Bedankt — we reageren binnen 24 uur. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Catalogus (PDF) nu downloaden</strong></a>",
+  "gallery_title": "Een selectie uit ons assortiment",
+  "gallery_more": "Dit is een selectie — wij voeren meer dan 48 lijnen keuken- en tafelartikelen. Bekijk de <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">volledige catalogus</a>, of geef uw lijn door en wij selecteren 3–5 modellen met foto's en prijzen.",
+  "cards_title": "Hoe wij werken",
+  "cards_sub": "Onze kernactiviteit is private label voor uw merk; daarnaast leveren we groothandelstock.",
+  "card1_t": "Eigen merk en OEM/ODM",
+  "card1_b": "Uw logo op het product, uw etui en verpakking, barcodes gereed. Productie start na uw goedkeuring van het monster.",
+  "card2_t": "Groothandel en distributie",
+  "card2_b": "Voorraadlijnen tegen fabrieksprijzen, staffelprijzen vanaf 500 stuks, vaste levertijden, retail-klare verpakking.",
+  "card3_t": "Export en documenten",
+  "card3_b": "Wij regelen exportdocumenten, verpakking en containerbelading. Sinds 2018 export naar de EU en de VS.",
+  "form_title": "Prijsopgave aanvragen",
+  "form_sub": "Geef uw lijn en hoeveelheid door — wij antwoorden binnen 24 uur met prijzen en modellen.",
+  "f_company": "Bedrijf",
+  "f_name": "Uw naam",
+  "f_email": "Zakelijk e-mailadres",
+  "f_country": "Land",
+  "f_line": "Productlijn",
+  "f_qty": "Geschatte hoeveelheid",
+  "f_msg": "Overig",
+  "form_btn": "Aanvraag versturen",
+  "form_ok": "Ontvangen — wij reageren binnen 24 uur.",
+  "consent": "Ik stem ermee in dat mijn gegevens worden gebruikt om mijn aanvraag te beantwoorden.",
+  "wa_intent": "Nederland WhatsApp",
+  "foot_note": "MOQ 500 stuks per model. Prijzen en levertijden schriftelijk bevestigd. Alleen groothandel/B2B.",
+  "answer": "Wiliheng is een fabriek van keuken- en tafelgerei in Yangjiang (Guangdong, China), actief sinds 2018. Wij produceren keukenscharen, schillers, snijplanken, siliconenmatten en 304 tafelgerei voor importeurs, distributeurs en horecaketens. De minimale afname is 500 stuks per model, met eigen productie (43 stappen, 40 machines waarvan 20 CNC), private label/OEM met uw logo en volledige exportdocumentatie.",
+  "faq": [
+   [
+    "Wat is de minimale afname?",
+    "500 stuks per model. Voor voorraadartikelen is een kleinere hoeveelheid bespreekbaar; dit wordt schriftelijk in de offerte bevestigd."
+   ],
+   [
+    "Zijn monsters mogelijk en hoe snel?",
+    "Ja. Monsters en prijslijst sturen we doorgaans binnen een week; verzendkosten van monsters worden apart berekend."
+   ],
+   [
+    "Doen jullie private label (OEM)?",
+    "Ja, dat is onze hoofdactiviteit: uw logo, uw doos en verpakking, barcodes met uw artikelnummer."
+   ],
+   [
+    "Hoe lang is de levertijd voor OEM/private label?",
+    "Voor voorraadmodellen 20-30 dagen; OEM/private label met uw logo en verpakking 30-45 dagen na goedkeuring van het monster. De planning bevestigen we in de offerte."
+   ]
+  ],
+  "faq_title": "Veelgestelde vragen",
+  "f_wa": "WhatsApp (optioneel)"
+ },
+ "pl": {
+  "meta_title": "Akcesoria kuchenne i stołowe hurt — fabryka od 2018 | Wiliheng",
+  "meta_desc": "Nożyce, obieraczki, deski do krojenia, maty silikonowe i zastawa 304 — OEM/private label bezpośrednio z naszej fabryki w Yangjiang. MOQ 500 szt. na model.",
+  "h1": "Akcesoria kuchenne i stołowe hurtowo, prosto z fabryki",
+  "lede": "Produkujemy nożyce, obieraczki, deski do krojenia, maty silikonowe i zastawę 304 w Yangjiang — dla importerów, dystrybutorów i właścicieli marek. Wasza marka, wasze opakowanie, wasza specyfikacja.",
+  "chips": [
+   "MOQ 500 szt. na model",
+   "Wasze logo grawerowane laserowo",
+   "43 etapy u nas",
+   "40 maszyn, 20 CNC",
+   "Próbka w 1 tydzień"
+  ],
+  "cta_wholesale": "Hurt: cennik",
+  "cta_oem": "Rozmowa o OEM / private label",
+  "hero_ph": "Firmowy adres e-mail",
+  "hero_btn": "Cennik + katalog (PDF)",
+  "hero_note": "PDF + 3–5 pasujących modeli, zwykle w 24 godziny. Bez newslettera.",
+  "hero_ok": "Dziękujemy — odpowiadamy w 24 godziny. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Pobierz katalog (PDF)</strong></a>",
+  "gallery_title": "Wybór z naszej oferty",
+  "gallery_more": "To wybór — mamy ponad 48 linii akcesoriów kuchennych i stołowych. Zobacz <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">pełny katalog</a> lub podaj swoją linię, a wybierzemy 3–5 modeli ze zdjęciami i cenami.",
+  "cards_title": "Jak pracujemy",
+  "cards_sub": "Naszą podstawą jest private label dla waszej marki; równolegle dostarczamy towar hurtowy.",
+  "card1_t": "Własna marka i OEM/ODM",
+  "card1_b": "Wasze logo na produkcie, wasze etui i opakowanie, gotowe kody kreskowe. Produkcja startuje po zatwierdzeniu próbki.",
+  "card2_t": "Hurt i dystrybucja",
+  "card2_b": "Linie magazynowe w cenach fabrycznych, ceny progowe od 500 szt., stałe terminy, opakowanie gotowe do sprzedaży.",
+  "card3_t": "Eksport i dokumenty",
+  "card3_b": "Zajmujemy się dokumentami eksportowymi, pakowaniem i załadunkiem kontenera. Eksport do UE i USA od 2018.",
+  "form_title": "Poproś o wycenę",
+  "form_sub": "Podaj linię i ilość — odpowiemy z cenami i modelami w 24 godziny.",
+  "f_company": "Firma",
+  "f_name": "Imię i nazwisko",
+  "f_email": "Firmowy e-mail",
+  "f_country": "Kraj",
+  "f_line": "Linia produktów",
+  "f_qty": "Szacowana ilość",
+  "f_msg": "Inne uwagi",
+  "form_btn": "Wyślij zapytanie",
+  "form_ok": "Otrzymaliśmy — odpowiemy w 24 godziny.",
+  "consent": "Zgadzam się na użycie moich danych do odpowiedzi na zapytanie.",
+  "wa_intent": "Polska WhatsApp",
+  "foot_note": "MOQ 500 szt. na model. Ceny i terminy potwierdzane na piśmie. Tylko hurt/B2B.",
+  "answer": "Wiliheng to fabryka akcesoriów kuchennych i zastawy stołowej w Yangjiang (Guangdong, Chiny), działająca od 2018 roku. Produkujemy nożyce kuchenne, obieraczki, deski do krojenia, maty silikonowe i zastawę ze stali 304 dla importerów, dystrybutorów i sieci HoReCa. Minimalne zamówienie to 500 sztuk na model, produkcja własna (43 etapy, 40 maszyn, w tym 20 CNC), private label/OEM z Twoim logo i pełna dokumentacja eksportowa.",
+  "faq": [
+   [
+    "Jakie jest minimalne zamówienie?",
+    "500 sztuk na model. Dla pozycji magazynowych możliwa jest mniejsza ilość — potwierdzamy ją pisemnie w ofercie."
+   ],
+   [
+    "Czy można otrzymać próbki i ile to trwa?",
+    "Tak. Próbki i cennik wysyłamy zwykle w ciągu tygodnia; koszt wysyłki próbek wyceniamy osobno."
+   ],
+   [
+    "Czy produkujecie pod naszą marką (OEM)?",
+    "Tak, to nasza główna działalność: Twoje logo, Twoje opakowanie, kody kreskowe z Twoim numerem."
+   ],
+   [
+    "Jakie są warunki płatności przy pierwszym zamówieniu?",
+    "Standardowo 30% zadatku, 70% przed wysyłką. Warunki potwierdzamy w zamówieniu; wycena zwykle w ciągu 24 godzin w dni robocze."
+   ]
+  ],
+  "faq_title": "Częste pytania",
+  "f_wa": "WhatsApp (opcjonalnie)"
+ },
+ "ru": {
+  "meta_title": "Кухонные и столовые товары оптом — фабрика с 2018 | Wiliheng",
+  "meta_desc": "Ножницы, овощечистки, разделочные доски, силиконовые коврики и посуда 304 — OEM/private label прямо с нашей фабрики в Янцзяне. MOQ 500 шт. на модель.",
+  "h1": "Кухонные и столовые товары оптом, напрямую с фабрики",
+  "lede": "Мы производим ножницы, овощечистки, разделочные доски, силиконовые коврики и посуду 304 в Янцзяне — для импортёров, дистрибьюторов и владельцев брендов. Ваш бренд, ваша упаковка, ваши спецификации.",
+  "chips": [
+   "MOQ 500 шт. на модель",
+   "Ваш логотип лазером",
+   "43 этапа у нас",
+   "40 станков, 20 ЧПУ",
+   "Образец за 1 неделю"
+  ],
+  "cta_wholesale": "Опт: прайс-лист",
+  "cta_oem": "Обсудить OEM / private label",
+  "hero_ph": "Корпоративная почта",
+  "hero_btn": "Прайс-лист + каталог (PDF)",
+  "hero_note": "PDF + 3–5 подходящих моделей, обычно в течение 24 часов. Без рассылок.",
+  "hero_ok": "Спасибо — отвечаем в течение 24 часов. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>Скачать каталог (PDF)</strong></a>",
+  "gallery_title": "Часть нашего ассортимента",
+  "gallery_more": "Это выборка — у нас более 48 линий кухонных и столовых товаров. Смотрите <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">полный каталог</a> или укажите свою линию — подберём 3–5 моделей с фото и ценами.",
+  "cards_title": "Как мы работаем",
+  "cards_sub": "Основное направление — private label для вашего бренда; параллельно поставляем оптовый склад.",
+  "card1_t": "Свой бренд и OEM/ODM",
+  "card1_b": "Ваш логотип на изделии, ваша упаковка и кейс, готовые штрихкоды. Производство после утверждения образца.",
+  "card2_t": "Опт и дистрибуция",
+  "card2_b": "Складские линии по ценам фабрики, ступенчатые цены от 500 шт., фиксированные сроки, готовая упаковка.",
+  "card3_t": "Экспорт и документы",
+  "card3_b": "Берём на себя экспортные документы, упаковку и загрузку контейнера. Экспорт в ЕС и США с 2018 года.",
+  "form_title": "Запросить цену",
+  "form_sub": "Укажите линию и количество — ответим ценами и моделями в течение 24 часов.",
+  "f_company": "Компания",
+  "f_name": "Ваше имя",
+  "f_email": "Рабочая почта",
+  "f_country": "Страна",
+  "f_line": "Линия товаров",
+  "f_qty": "Ожидаемое количество",
+  "f_msg": "Дополнительно",
+  "form_btn": "Отправить запрос",
+  "form_ok": "Получено — ответим в течение 24 часов.",
+  "consent": "Согласен на использование моих данных для ответа на запрос.",
+  "wa_intent": "KZ/UZ/KG WhatsApp",
+  "foot_note": "MOQ 500 шт. на модель. Цены и сроки подтверждаются письменно. Только опт/B2B.",
+  "answer": "Wiliheng — фабрика кухонной и столовой посуды в Янцзяне (Гуандун, Китай), работаем с 2018 года. Производим кухонные ножницы, овощечистки, разделочные доски, силиконовые коврики и посуду из стали 304 для импортёров, дистрибьюторов и сетей HoReCa. Минимальный заказ — 500 штук на модель, собственное производство (43 этапа, 40 станков, 20 с ЧПУ), работа под вашим брендом и полный пакет экспортных документов.",
+  "faq": [
+   [
+    "Какой минимальный заказ?",
+    "500 штук на модель. По складским позициям возможны меньшие объёмы — фиксируем в коммерческом предложении."
+   ],
+   [
+    "Можно ли получить образцы и как быстро?",
+    "Да. Образцы и прайс-лист обычно в течение недели; доставка образцов считается отдельно."
+   ],
+   [
+    "Работаете под нашим брендом?",
+    "Да, это наше основное направление: ваше лого, ваша упаковка и штрихкоды с вашим артикулом."
+   ]
+  ],
+  "faq_title": "Частые вопросы",
+  "f_wa": "WhatsApp (необязательно)"
+ },
+ "ar": {
+  "rtl": true,
+  "meta_title": "أدوات المطبخ والمائدة بالجملة — مصنع منذ 2018 | Wiliheng",
+  "meta_desc": "مقصات، قشارات، ألواح تقطيع، حصائر سيليكون وأدوات مائدة 304 — تصنيع بعلامتك التجارية مباشرة من مصنعنا في يانغجيانغ. الحد الأدنى 500 قطعة للموديل.",
+  "h1": "أدوات المطبخ والمائدة بالجملة، مباشرة من المصنع",
+  "lede": "ننتج المقصات والقشارات وألواح التقطيع وحصائر السيليكون وأدوات المائدة 304 في يانغجيانغ — للمستوردين والموزعين وأصحاب العلامات التجارية. علامتك، تغليفك، مواصفاتك.",
+  "chips": [
+   "الحد الأدنى 500 قطعة للموديل",
+   "شعارك محفور بالليزر",
+   "43 مرحلة داخل المصنع",
+   "40 ماكينة منها 20 CNC",
+   "عينة في أسبوع"
+  ],
+  "cta_wholesale": "الجملة: قائمة الأسعار",
+  "cta_oem": "مناقشة التصنيع بعلامتك",
+  "hero_ph": "بريد العمل الإلكتروني",
+  "hero_btn": "قائمة الأسعار + الكتالوج (PDF)",
+  "hero_note": "ملف PDF + 3–5 موديلات مناسبة، عادة خلال 24 ساعة. بدون رسائل إعلانية.",
+  "hero_ok": "شكراً — نرد خلال 24 ساعة. <a href=\"/Wiliheng-Knives-Line-Card.pdf\" target=\"_blank\" rel=\"noopener\"><strong>حمّل الكتالوج (PDF) الآن</strong></a>",
+  "gallery_title": "جزء من تشكيلتنا",
+  "gallery_more": "هذه عيّنة — لدينا أكثر من 48 خطاً من أدوات المطبخ والمائدة. اطّلع على <a href=\"{cat}\" target=\"_blank\" rel=\"noopener\">الكتالوج الكامل</a>، أو أخبرنا بخطّك ونختار لك 3–5 موديلات مع الصور والأسعار.",
+  "cards_title": "كيف نعمل",
+  "cards_sub": "عملنا الأساسي هو التصنيع بعلامتكم التجارية؛ ونوفّر كذلك البضاعة الجاهزة بالجملة.",
+  "card1_t": "علامتك وOEM/ODM",
+  "card1_b": "شعارك على المنتج، علبتك وتغليفك، وباركود جاهز. يبدأ الإنتاج بعد اعتمادك للعينة.",
+  "card2_t": "الجملة والتوزيع",
+  "card2_b": "خطوط جاهزة بأسعار المصنع، أسعار متدرجة من 500 قطعة، مواعيد ثابتة، تغليف جاهز للرف.",
+  "card3_t": "التصدير والمستندات",
+  "card3_b": "نتولّى مستندات التصدير والتغليف وتحميل الحاوية. نصدّر إلى الاتحاد الأوروبي والولايات المتحدة منذ 2018.",
+  "form_title": "اطلب عرض سعر",
+  "form_sub": "أخبرنا بخطّك والكمية — نرد بالأسعار والموديلات خلال 24 ساعة.",
+  "f_company": "الشركة",
+  "f_name": "اسمك",
+  "f_email": "بريد العمل",
+  "f_country": "الدولة",
+  "f_line": "خط المنتجات",
+  "f_qty": "الكمية المتوقعة",
+  "f_msg": "ملاحظات",
+  "form_btn": "إرسال الطلب",
+  "form_ok": "تم الاستلام — نرد خلال 24 ساعة.",
+  "consent": "أوافق على استخدام بياناتي للرد على استفساري.",
+  "wa_intent": "الشرق الأوسط WhatsApp",
+  "foot_note": "الحد الأدنى 500 قطعة للموديل. تُؤكَّد الأسعار والمواعيد كتابياً. الجملة/B2B فقط.",
+  "answer": "شركة Wiliheng مصنع لأدوات المطبخ والمائدة في يانغجيانغ (غوانغدونغ، الصين)، تعمل منذ 2018. ننتج مقصات المطبخ والقشارات وألواح التقطيع وحصائر السيليكون وأدوات المائدة من الستانلس 304 للمستوردين والموزعين وسلاسل الضيافة. الحد الأدنى 500 قطعة للموديل، بتصنيع داخلي (43 مرحلة و40 ماكينة منها 20 CNC)، وتصنيع بعلامتك التجارية مع كامل مستندات التصدير.",
+  "faq": [
+   [
+    "ما هو الحد الأدنى للطلب؟",
+    "500 قطعة للموديل. للمنتجات المتوفرة بالمخزن يمكن مناقشة كميات أقل، ونثبتها كتابيًا في عرض السعر."
+   ],
+   [
+    "هل يمكن الحصول على عينات، وكم تستغرق؟",
+    "نعم. نرسل العينات وقائمة الأسعار عادة خلال أسبوع، ويُحتسب شحن العينات بشكل منفصل."
+   ],
+   [
+    "هل تصنعون بعلامتنا التجارية؟",
+    "نعم، هذا نشاطنا الأساسي: شعارك على المنتج، والتغليف بمواصفاتك، والباركود بأرقامك."
+   ]
+  ],
+  "faq_title": "أسئلة شائعة",
+  "f_wa": "واتساب (اختياري)"
+ },
+ "tr": {
+  "meta_title": "Toptan mutfak ve sofra ürünleri — 2018'den beri fabrika | Wiliheng",
+  "meta_desc": "Makas, soyacak, kesme tahtası, silikon mat ve 304 sofra ürünleri üretiyoruz. Toptan, OEM ve kendi markanız için doğrudan fabrikadan.",
+  "h1": "Toptan mutfak ve sofra ürünleri, doğrudan fabrikadan",
+  "lede": "Yangjiang'daki fabrikamızda makas, soyacak, kesme tahtası, silikon mat ve 304 çelik sofra ürünleri üretiyoruz; ithalatçılar, distribütörler ve kendi markasını kuran alıcılar için.",
+  "chips": [
+   "Model başına MOQ 500 adet",
+   "Lazerle logo işleme",
+   "43 üretim adımı",
+   "40 makine (20 CNC)",
+   "1 haftada numune"
+  ],
+  "cta_wholesale": "Toptan: fiyat listesi",
+  "cta_oem": "OEM / kendi markanız",
+  "hero_ph": "Kurumsal e-posta",
+  "hero_btn": "Fiyat listesi + katalog (PDF)",
+  "hero_note": "PDF + uygun 3–5 model, genellikle 24 saat içinde. Spam yok.",
+  "hero_ok": "Teşekkürler — 24 saat içinde dönüş yapıyoruz. <a href=\"/Wiliheng-Knives-Catalog.pdf\">Kataloğu indirin</a>.",
+  "gallery_title": "Ürün yelpazemizden bir seçki",
+  "gallery_more": "Bu sadece bir seçki — 48'den fazla mutfak ve sofra ürün grubu üretiyoruz.",
+  "cards_title": "Nasıl çalışıyoruz",
+  "cards_sub": "Ana işimiz markanız için fason üretim; toptan ve ihracat da yapıyoruz.",
+  "card1_t": "Kendi markanız ve OEM/ODM",
+  "card1_b": "Ürüne lazer logo, kutu ve ambalaj, barkod — sizin markanızla.",
+  "card2_t": "Toptan ve distribütörlük",
+  "card2_b": "Fabrika fiyatıyla stok grupları, kademeli fiyatlar.",
+  "card3_t": "İhracat ve evraklar",
+  "card3_b": "İhracat evrakları, paketleme ve konteyner yüklemesini biz hallederiz.",
+  "form_title": "Teklif isteyin",
+  "form_sub": "Ürün grubunuzu ve miktarı yazın — fiyat ve model listesiyle dönüyoruz.",
+  "f_company": "Şirket",
+  "f_name": "Adınız",
+  "f_email": "Kurumsal e-posta",
+  "f_country": "Ülke",
+  "f_line": "Satın aldığınız ürün grubu",
+  "f_qty": "Tahmini miktar",
+  "f_msg": "Eklemek istedikleriniz",
+  "form_btn": "Talebi gönder",
+  "form_ok": "Alındı — 24 saat içinde dönüyoruz.",
+  "consent": "Verilerimin talebimi yanıtlamak için kullanılmasını kabul ediyorum.",
+  "wa_intent": "Türkiye WhatsApp",
+  "foot_note": "Model başına MOQ 500 adet. Fiyat ve termin e-posta ile teyit edilir.",
+  "answer": "Wiliheng, Yangjiang (Guangdong, Çin) merkezli bir mutfak ve sofra ürünleri fabrikasıdır; 2018'den beri faaliyettedir. İthalatçılar, distribütörler ve HORECA zincirleri için mutfak makası, soyacak, kesme tahtası, silikon mat ve 304 paslanmaz sofra ürünleri üretiyoruz. Model başına minimum 500 adet, kendi üretimimiz (43 adım, 40 makine, 20 CNC), sizin markanızla fason üretim ve tam ihracat evrakı.",
+  "faq": [
+   [
+    "Minimum sipariş miktarı nedir?",
+    "Model başına 500 adet. Stoktaki ürünlerde daha az miktar konuşulabilir; teklifte yazılı olarak teyit edilir."
+   ],
+   [
+    "Numune alınabilir mi, ne kadar sürer?",
+    "Evet. Numune ve fiyat listesi genellikle bir hafta içinde gönderilir; numune kargo bedeli ayrıca fiyatlanır."
+   ],
+   [
+    "Kendi markamızla üretim (OEM) yapıyor musunuz?",
+    "Evet, ana işimiz bu: ürün üzerine logonuz, kutunuz ve ambalajınız, barkodlar sizin kodunuzla."
+   ]
+  ],
+  "faq_title": "Sık sorulan sorular",
+  "f_wa": "WhatsApp (isteğe bağlı)"
+ },
+ "ro": {
+  "meta_title": "Veselă și accesorii de bucătărie en-gros — fabrică din 2018 | Wiliheng",
+  "meta_desc": "Producem foarfece, curățătoare, tocătoare, preșuri din silicon și veselă 304. En-gros, OEM și marcă proprie, direct de la fabrică.",
+  "h1": "Veselă și accesorii de bucătărie en-gros, direct de la fabrică",
+  "lede": "La fabrica noastră din Yangjiang producem foarfece, curățătoare, tocătoare, preșuri din silicon și veselă din inox 304 — pentru importatori, distribuitori și pentru cei care își construiesc propria marcă.",
+  "chips": [
+   "MOQ 500 buc/model",
+   "Logo gravat cu laser",
+   "43 de etape de producție",
+   "40 de mașini (20 CNC)",
+   "Mostre într-o săptămână"
+  ],
+  "cta_wholesale": "En-gros: lista de prețuri",
+  "cta_oem": "Discuție OEM / marcă proprie",
+  "hero_ph": "E-mail de firmă",
+  "hero_btn": "Lista de prețuri + catalog (PDF)",
+  "hero_note": "PDF + 3–5 modele potrivite, de obicei în 24 de ore. Fără spam.",
+  "hero_ok": "Mulțumim — răspundem în 24 de ore. <a href=\"/Wiliheng-Knives-Catalog.pdf\">Descărcați catalogul</a>.",
+  "gallery_title": "O selecție din gama noastră",
+  "gallery_more": "Este doar o selecție — lucrăm peste 48 de linii de veselă și accesorii.",
+  "cards_title": "Cum lucrăm",
+  "cards_sub": "Activitatea principală este producția în numele mărcii dumneavoastră; facem și en-gros și export.",
+  "card1_t": "Marcă proprie și OEM/ODM",
+  "card1_b": "Logo pe produs, cutie și ambalaj, coduri de bare — cu marca dumneavoastră.",
+  "card2_t": "En-gros și distribuție",
+  "card2_b": "Linii în stoc la preț de fabrică, prețuri pe volume.",
+  "card3_t": "Export și documente",
+  "card3_b": "Ne ocupăm de documente de export, ambalare și încărcare în container.",
+  "form_title": "Cereți o ofertă",
+  "form_sub": "Spuneți-ne linia și cantitatea — revenim cu prețuri și modele.",
+  "f_company": "Firma",
+  "f_name": "Numele dumneavoastră",
+  "f_email": "E-mail de firmă",
+  "f_country": "Țara",
+  "f_line": "Linia de produse pe care o cumpărați",
+  "f_qty": "Cantitate estimată",
+  "f_msg": "Alte detalii",
+  "form_btn": "Trimiteți cererea",
+  "form_ok": "Am primit — răspundem în 24 de ore.",
+  "consent": "Accept ca datele mele să fie folosite pentru a răspunde solicitării mele.",
+  "wa_intent": "România WhatsApp",
+  "foot_note": "MOQ 500 buc/model. Prețurile și termenele se confirmă prin e-mail.",
+  "answer": "Wiliheng este o fabrică de accesorii de bucătărie și veselă din Yangjiang (Guangdong, China), activă din 2018. Producem foarfece de bucătărie, curățătoare, tocătoare, preșuri din silicon și veselă din inox 304 pentru importatori, distribuitori și lanțuri HORECA. Comanda minimă este de 500 bucăți pe model, producție proprie (43 de etape, 40 de mașini, dintre care 20 CNC), marcă proprie/OEM cu logo-ul dumneavoastră și documente complete de export.",
+  "faq": [
+   [
+    "Care este cantitatea minimă de comandă?",
+    "500 bucăți pe model. Pentru articolele din stoc se poate discuta o cantitate mai mică; o confirmăm în scris în ofertă."
+   ],
+   [
+    "Se pot primi mostre și în cât timp?",
+    "Da. Mostrele și lista de prețuri se trimit de obicei într-o săptămână; transportul mostrelor se cotizează separat."
+   ],
+   [
+    "Produceți sub marca noastră (OEM)?",
+    "Da, este activitatea noastră principală: logo-ul dumneavoastră, cutia și ambalajul dumneavoastră, coduri de bare cu codul dumneavoastră."
+   ],
+   [
+    "Care este termenul de livrare pentru o comandă OEM cu ambalaj personalizat?",
+    "Pentru OEM/private label, cu logo și ambalaj aprobate, termenul este de 30-45 zile după aprobarea mostrei. Pentru modelele din stoc livrăm în 20-30 zile. Confirmăm calendarul în ofertă, de obicei în 24 de ore lucrătoare."
+   ]
+  ],
+  "faq_title": "Întrebări frecvente",
+  "f_wa": "WhatsApp (opțional)"
+ },
+ "_theme": {
+  "_说明": "按当地视觉习惯调色。依据：绿色在中东/伊斯兰市场是强正向色；蓝色在独联体=可信/专业；土耳其偏好深青+暖色；拉美偏暖色调。欧洲/北美维持品牌绿。改动都很克制（只动主色与首屏底色），便于后续按转化数据 A/B 归因。",
+  "en": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "de": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "fr": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "it": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "nl": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "pl": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "pt": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "ro": {
+   "accent": "#b9e56b",
+   "accent_text": "#12210a",
+   "hero_bg": "#0e1416",
+   "hero_text": "#ffffff"
+  },
+  "es": {
+   "accent": "#f0c14b",
+   "accent_text": "#231a00",
+   "hero_bg": "#1a1509",
+   "hero_text": "#ffffff"
+  },
+  "ru": {
+   "accent": "#4a90e2",
+   "accent_text": "#04121f",
+   "hero_bg": "#0b1626",
+   "hero_text": "#ffffff"
+  },
+  "ar": {
+   "accent": "#1faa74",
+   "accent_text": "#04231a",
+   "hero_bg": "#08251d",
+   "hero_text": "#ffffff"
+  },
+  "tr": {
+   "accent": "#2bb3a3",
+   "accent_text": "#04211f",
+   "hero_bg": "#0d1f1e",
+   "hero_text": "#ffffff"
+  }
+ },
+ "_hero_variant": {
+  "tr": "B"
+ },
+ "de-ware": {
+  "meta_title": "Großhandel Küche & Tischwaren — Fabrik seit 2018 | Wiliheng",
+  "meta_desc": "Küchenscheren, Schäler, Schneidebretter, Silikonmatten und Geschirr 304 aus eigener Fabrik in Yangjiang. MOQ 500 pro Modell, OEM unter Ihrer Marke.",
+  "h1": "Küche & Tischwaren im Großhandel — direkt ab Fabrik",
+  "lede": "Wir fertigen Küchenscheren, Schäler, Schneidebretter, Silikonmatten und Geschirr aus Edelstahl 304 für Importeure, Großhändler und Eigenmarken-Inhaber. Seit 2018 in Yangjiang, Guangdong.",
+  "chips": [
+   "MOQ 500 Stück pro Modell",
+   "Ihr Logo lasergraviert",
+   "Muster in ca. 1 Woche",
+   "Exportdokumente inklusive"
+  ],
+  "cta_wholesale": "Großhandel: Preisliste",
+  "cta_oem": "OEM / Eigenmarke besprechen",
+  "hero_ph": "Geschäftliche E-Mail",
+  "hero_btn": "Preisliste + Katalog (PDF)",
+  "hero_note": "PDF + 3–5 passende Modelle, in der Regel innerhalb von 24 Stunden. Kein Newsletter.",
+  "hero_ok": "Danke — wir antworten innerhalb von 24 Stunden.",
+  "gallery_title": "Ein Auszug aus unserem Sortiment",
+  "gallery_more": "Das ist eine Auswahl — wir führen über 48 Linien: Küchenwerkzeuge, Scheren, Geschirr, Silikonmatten.",
+  "cards_title": "So arbeiten wir",
+  "cards_sub": "Unser Kerngeschäft ist die Eigenmarke für Ihre Marke; dazu liefern wir Lagerware für den Großhandel.",
+  "card1_t": "Eigenmarke & OEM/ODM",
+  "card1_b": "Ihr Logo auf dem Produkt, Ihre Verpackung, Barcodes fertig für den Handel.",
+  "card2_t": "Großhandel & Distribution",
+  "card2_b": "Lagerlinien zu Fabrikpreisen, Staffelpreise ab 500 Stück, planbare Lieferzeiten.",
+  "card3_t": "Export & Dokumente",
+  "card3_b": "Exportdokumente, Verpackung und Containerverladung übernehmen wir.",
+  "form_title": "Angebot anfordern",
+  "form_sub": "Nennen Sie uns Linie und Menge — Preise und Modelle innerhalb von 24 Stunden.",
+  "f_company": "Firma",
+  "f_name": "Ihr Name",
+  "f_email": "Geschäftliche E-Mail",
+  "f_country": "Land",
+  "f_line": "Produktlinie",
+  "f_qty": "Menge (ca.)",
+  "f_msg": "Sonstiges",
+  "form_btn": "Anfrage senden",
+  "form_ok": "Erhalten — wir antworten innerhalb von 24 Stunden.",
+  "consent": "Ich bin damit einverstanden, dass meine Daten zur Beantwortung meiner Anfrage verwendet werden.",
+  "wa_intent": "Österreich WhatsApp",
+  "foot_note": "MOQ 500 Stück pro Modell. Preise und Lieferzeiten werden schriftlich bestätigt. Nur B2B.",
+  "answer": "Wiliheng ist eine Fabrik für Küche & Tischwaren in Yangjiang, Guangdong, China, seit 2018. Wir fertigen für Importeure, Großhändler und Eigenmarken-Inhaber: Material, Verpackung und Logos nach Ihrer Vorgabe, ab 500 Stück pro Modell.",
+  "faq": [
+   [
+    "Wie hoch ist die Mindestbestellmenge?",
+    "500 Stück pro Modell. Für Lagerware sind kleinere Mengen möglich — fragen Sie die verfügbaren Modelle an."
+   ],
+   [
+    "Wie schnell bekomme ich Muster?",
+    "In der Regel innerhalb einer Woche nach Bestätigung der Spezifikation."
+   ],
+   [
+    "Können Sie unter unserer Marke fertigen?",
+    "Ja — OEM/ODM mit Ihrem Logo, Ihrer Verpackung und Ihren Barcodes."
+   ],
+   [
+    "Wie lange dauert die Lieferung bei Lagerware und bei Private Label?",
+    "Lagerware ist in der Regel in 20–30 Tagen versandbereit. Bei Private Label mit Ihrem Logo und Ihrer Verpackung rechnen wir mit 30–45 Tagen nach Freigabe. Nennen Sie uns Modelle und Zielort, dann bestätigen wir den Termin."
+   ]
+  ],
+  "faq_title": "Häufige Fragen",
+  "f_wa": "WhatsApp (optional)"
+ },
+ "sv": {
+  "meta_title": "Grossist kök & bordsartiklar — fabrik sedan 2018 | Wiliheng",
+  "meta_desc": "Kökssaxar, skalare, skärbrädor, silikonmattor och porslin 304 från egen fabrik i Yangjiang. MOQ 500 per modell, OEM under ert varumärke.",
+  "h1": "Kök & bordsartiklar i grossistledet — direkt från fabrik",
+  "lede": "Vi tillverkar kökssaxar, skalare, skärbrädor, silikonmattor och porslin i rostfritt 304 för importörer, grossister och egna varumärken. Sedan 2018 i Yangjiang, Guangdong.",
+  "chips": [
+   "MOQ 500 st per modell",
+   "Er logotyp lasergraverad",
+   "Prov ca 1 vecka",
+   "Exportdokument ingår"
+  ],
+  "cta_wholesale": "Grossist: prislista",
+  "cta_oem": "Prata OEM / eget varumärke",
+  "hero_ph": "Företagets e-post",
+  "hero_btn": "Prislista + katalog (PDF)",
+  "hero_note": "PDF + 3–5 modeller som passar, normalt inom 24 timmar. Inget nyhetsbrev.",
+  "hero_ok": "Tack — vi svarar inom 24 timmar.",
+  "gallery_title": "Ett urval ur sortimentet",
+  "gallery_more": "Detta är ett urval — vi har över 48 linjer: köksredskap, saxar, porslin, silikonmattor.",
+  "cards_title": "Så arbetar vi",
+  "cards_sub": "Vår kärna är eget varumärke för ert märke; vi levererar även lagerartiklar till grossister.",
+  "card1_t": "Eget varumärke & OEM/ODM",
+  "card1_b": "Er logotyp på produkten, er förpackning, streckkoder klara för handeln.",
+  "card2_t": "Grossist & distribution",
+  "card2_b": "Lagerlinjer till fabrikspris, trapppriser från 500 st, planerade ledtider.",
+  "card3_t": "Export & dokument",
+  "card3_b": "Exportdokument, packning och containerlastning sköter vi.",
+  "form_title": "Begär offert",
+  "form_sub": "Ange linje och volym — priser och modeller inom 24 timmar.",
+  "f_company": "Företag",
+  "f_name": "Ert namn",
+  "f_email": "Företagets e-post",
+  "f_country": "Land",
+  "f_line": "Produktlinje",
+  "f_qty": "Volym (ca)",
+  "f_msg": "Övrigt",
+  "form_btn": "Skicka förfrågan",
+  "form_ok": "Mottaget — vi svarar inom 24 timmar.",
+  "consent": "Jag godkänner att mina uppgifter används för att besvara min förfrågan.",
+  "wa_intent": "Sverige WhatsApp",
+  "foot_note": "MOQ 500 st per modell. Priser och ledtider bekräftas skriftligt. Endast B2B.",
+  "answer": "Wiliheng är en fabrik för kök & bordsartiklar i Yangjiang, Guangdong, Kina, sedan 2018. Vi tillverkar för importörer, grossister och egna varumärken: material, förpackning och logotyp enligt er specifikation, från 500 st per modell.",
+  "faq": [
+   [
+    "Vilken är minsta orderkvantitet?",
+    "500 st per modell. För lagerartiklar kan mindre volymer gå — fråga vilka modeller som finns."
+   ],
+   [
+    "Hur snabbt får jag prover?",
+    "Normalt inom en vecka efter bekräftad specifikation."
+   ],
+   [
+    "Kan ni tillverka under vårt varumärke?",
+    "Ja — OEM/ODM med er logotyp, förpackning och streckkoder."
+   ],
+   [
+    "Kan vi få en videovisning av fabriken innan vi beställer?",
+    "Ja. Vi spelar in en fabriksgenomgång på 15–20 minuter, normalt inom 1–2 arbetsdagar från förfrågan. Den visar produktionsflödet i Yangjiang och våra egna steg; ange vilka produktkategorier ni vill se så förbereder vi videon."
+   ]
+  ],
+  "faq_title": "Vanliga frågor",
+  "f_wa": "WhatsApp (valfritt)"
+ },
+ "cs": {
+  "meta_title": "Velkoobchod kuchyňské a stolní zboží — továrna od 2018 | Wiliheng",
+  "meta_desc": "Kuchyňské nůžky, škrabky, prkénka, silikonové podložky a nádobí 304 z vlastní továrny. MOQ 500 na model, OEM pod vaší značkou.",
+  "h1": "Kuchyňské a stolní zboží ve velkoobchodě — přímo z továrny",
+  "lede": "Vyrábíme kuchyňské nůžky, škrabky, prkénka, silikonové podložky a nádobí z nerezu 304 pro dovozce, velkoobchody a vlastní značky. Od roku 2018 v Jang-ťiangu, Kuang-tung.",
+  "chips": [
+   "MOQ 500 ks na model",
+   "Vaše logo laserem",
+   "Vzorek cca 1 týden",
+   "Exportní doklady v ceně"
+  ],
+  "cta_wholesale": "Velkoobchod: ceník",
+  "cta_oem": "Jednat o OEM / vlastní značce",
+  "hero_ph": "Firemní e-mail",
+  "hero_btn": "Ceník + katalog (PDF)",
+  "hero_note": "PDF + 3–5 vhodných modelů, obvykle do 24 hodin. Žádný newsletter.",
+  "hero_ok": "Děkujeme — odpovídáme do 24 hodin.",
+  "gallery_title": "Výběr ze sortimentu",
+  "gallery_more": "Toto je výběr — máme přes 48 řad: kuchyňské náčiní, nůžky, nádobí, silikonové podložky.",
+  "cards_title": "Jak pracujeme",
+  "cards_sub": "Naším základem je vlastní značka pro vaši značku; dodáváme i skladové položky pro velkoobchody.",
+  "card1_t": "Vlastní značka & OEM/ODM",
+  "card1_b": "Vaše logo na výrobku, váš obal, čárové kódy připravené pro obchod.",
+  "card2_t": "Velkoobchod & distribuce",
+  "card2_b": "Skladové řady za tovární ceny, stupňové ceny od 500 ks, plánované termíny.",
+  "card3_t": "Export & doklady",
+  "card3_b": "Exportní doklady, balení a nakládku kontejneru zařídíme.",
+  "form_title": "Nezávazně poptat",
+  "form_sub": "Napište řadu a objem — ceny a modely do 24 hodin.",
+  "f_company": "Firma",
+  "f_name": "Vaše jméno",
+  "f_email": "Firemní e-mail",
+  "f_country": "Země",
+  "f_line": "Produktová řada",
+  "f_qty": "Objem (cca)",
+  "f_msg": "Další informace",
+  "form_btn": "Odeslat poptávku",
+  "form_ok": "Přijato — odpovídáme do 24 hodin.",
+  "consent": "Souhlasím se zpracováním údajů pro odpověď na můj dotaz.",
+  "wa_intent": "Česko WhatsApp",
+  "foot_note": "MOQ 500 ks na model. Ceny a termíny potvrzujeme písemně. Pouze B2B.",
+  "answer": "Wiliheng je továrna na kuchyňské a stolní zboží v Jang-ťiangu, Kuang-tung, Čína, od roku 2018. Vyrábíme pro dovozce, velkoobchody a vlastní značky: materiál, balení a logo podle vaší specifikace, od 500 ks na model.",
+  "faq": [
+   [
+    "Jaké je minimální množství?",
+    "500 ks na model. U skladových položek lze menší objemy — zeptejte se na dostupné modely."
+   ],
+   [
+    "Jak rychle dostanu vzorky?",
+    "Obvykle do jednoho týdne po potvrzení specifikace."
+   ],
+   [
+    "Můžete vyrábět pod naší značkou?",
+    "Ano — OEM/ODM s vaším logem, obalem a čárovými kódy."
+   ],
+   [
+    "Můžeme v jedné objednávce kombinovat různé modely a velikosti?",
+    "Ano. Minimální množství je 500 ks na model, u smíšených objednávek se počítá celkové množství. Konkrétní kombinaci potvrdíme podle dostupných modelů a obalu, nabídku obvykle připravíme do 24 hodin."
+   ]
+  ],
+  "faq_title": "Časté dotazy",
+  "f_wa": "WhatsApp (nepovinné)"
+ }
+}
