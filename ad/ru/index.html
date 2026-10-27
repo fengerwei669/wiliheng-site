@@ -150,7 +150,7 @@ gtag('config','AW-17434685893');
    if(!v('email')){f.elements['email'].focus();return;}
    if(f.elements['consent']&&!f.elements['consent'].checked){f.elements['consent'].focus();return;}
    var payload={token:TOKEN,lang:LANG,code:'AD-'+LANG.toUpperCase()+'F',page:location.pathname,
-                company:v('company'),name:v('name'),email:v('email'),country:v('country'),
+                company:v('company'),name:(v('name')||v('company')),email:v('email'),country:v('country'),whatsapp:v('whatsapp'),
                 whatsapp:v('whatsapp'),kw:QP('kw'),campaign:QP('cpn'),adgroup:QP('adg'),gclid:QP('gclid'),intent:'landing form'};
    var send=function(url){return fetch(url,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify(payload)});};
    var fallback=function(){location.href='mailto:fengerwei669@gmail.com?subject=Enquiry%20'+LANG.toUpperCase()+'&body='+encodeURIComponent(JSON.stringify(payload,null,1));};
