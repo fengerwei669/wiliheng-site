@@ -18,7 +18,7 @@
 - 43 production steps carried out in house
 - 40 machines, including 20 CNC machining centres, 10 water grinding machines, 5 vertical grinders
 - Heat treatment in house: 2 annealing furnaces and 2 tempering furnaces, Rockwell (HRC) hardness testing
-- 48 production models
+- 51 production models
 - MOQ: 500 pcs per model
 - Pre-production sample: about 1 week
 - Lead time: stock models 20–30 days; OEM/private label 30–45 days after sample approval
@@ -38,6 +38,8 @@
 - [Homepage](https://wiliheng.com/): company, product categories, in-house process steps and specifications
 - [OEM/ODM landing page (German)](https://wiliheng.com/ad/de/): German-language page for German-speaking buyers
 - [OEM/ODM landing page (English)](https://wiliheng.com/ad/us/): English-language page for US buyers
+- [Process](https://wiliheng.com/process/): the 43-step production route, with the data recorded at each step
+- [Steels](https://wiliheng.com/steels/): every steel grade in production mapped to its AISI / EN equivalent and hardness range
 - [Privacy policy](https://wiliheng.com/privacy.html)
 - [Impressum](https://wiliheng.com/ad/de/impressum.html) and [Datenschutz](https://wiliheng.com/ad/de/datenschutz.html) (German legal pages)
 
