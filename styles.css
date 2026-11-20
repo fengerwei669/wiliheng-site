@@ -145,3 +145,9 @@ footer{background:var(--navy);color:#c9d6e2;padding:26px 0;margin-top:10px}
   .pcard .ph{width:104px;height:104px;flex:0 0 104px;aspect-ratio:auto;margin-bottom:0}
   .pcard .ph img{width:100%;height:100%;object-fit:contain}
 }
+
+/* 车间视频（/process/ 每道工序一段，2026-11 新增） */
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:18px}
+.vid{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.vid video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#0d1520}
+.vid figcaption{font-size:13px;color:#54677a;padding:8px 12px}
